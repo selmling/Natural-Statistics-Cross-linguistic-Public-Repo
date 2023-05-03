@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 import math
 
+
+
 def get_random_samples(corpora, interval):
     random_dat = pd.DataFrame()
     for i in corpora:
