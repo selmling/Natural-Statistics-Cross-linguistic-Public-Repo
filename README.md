@@ -12,7 +12,7 @@ Now you're in a virtual environment!
 There are required packages in both python and R for this project. You must install them all in order for the code to run error-free.  
   
   1) Install required python packages. Simply run `pip3 install -r requirements.txt`.
-  2) Install R packages. Enter an R console window, and run: ```install.packages(c("ggplot2", "repr", "plotrix", "dplyr", "lme4", "emmeans", "lmerTest", "tidyverse", "patchwork", "viridis", "scales"))```
+  2) Install R packages. Enter an R console window, and run: ```install.packages(c("ggplot2", "repr", "plotrix", "dplyr", "lme4", "emmeans", "lmerTest", "tidyverse", "patchwork", "viridis", "scales", "cowplot"))```
  
   
 ## Running Code in Jupyter Lab
