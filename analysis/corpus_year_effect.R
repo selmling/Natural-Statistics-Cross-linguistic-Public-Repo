@@ -1,6 +1,7 @@
 library("tidyverse")
 library("kableExtra")
 library("cowplot")
+library("broom")
 
 rand_dat_inc_cg_cc <- read_csv("../data/rand_dat_inc_master_cc_lexdiv.csv")
 rand_dat_inc_cg_nc <- read_csv("../data/rand_dat_inc_master_nc_lexdiv.csv")
@@ -9,12 +10,14 @@ rand_dat_inc_cg <- rbind(rand_dat_inc_cg_cc, rand_dat_inc_cg_nc) %>%
   mutate(single_word_utterance = ifelse(num_tokens == 1, 1, 0)) %>%
   rename(uniqueness = uniquenss)
 
-# year of study
+# ---- year of study
 corpora_year <- read_csv("../data/corpora_year.csv") %>%
     rename(corpus_name = Corpora) %>%
     select(corpus_name, `Year collected`)
 
 rand_dat_inc_cg <- rand_dat_inc_cg %>% left_join(corpora_year)
+
+# ---- linguistic complexity summaries
 
 lexdiv_sumstats <- rand_dat_inc_cg %>%
     select(target_child_id, transcript_id, target_child_age,
@@ -63,7 +66,7 @@ lexdiv_sumstats_long_types %>%
     count(`Year collected`) %>%
     kable("pipe")
 
-# scatterplots
+# ---- scatterplots viz relation between Year collected and simplification effect
 
 stroke <- 1
 shape <- 21
@@ -78,7 +81,7 @@ p1 <- ggplot(lexdiv_sumstats_long_types, aes(color = Language_name)) +
               aes(x = `Year collected`, y = type_diff),
               color = "black") +
   facet_wrap(. ~ Language_name, ncol = 7) +
-  labs(y = "Difference in C & NC Lexical Diversity",
+  labs(y = "Difference in C & NC Lexical Diversity\n(higher is more simplified)",
        x = "Year collected") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
@@ -92,7 +95,7 @@ p2 <- ggplot(mlu_sumstats, aes(color = Language_name)) +
               aes(x = `Year collected`, y = diff),
               color = "black") +
   facet_wrap(. ~ Language_name, ncol = 7) +
-  labs(y = "Difference in C & NC MLUw",
+  labs(y = "Difference in C & NC MLUw\n(higher is more simplified)",
        x = "Year collected") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
@@ -106,7 +109,7 @@ p3 <- ggplot(swu_sumstats, aes(color = Language_name)) +
               aes(x = `Year collected`, y = diff),
               color = "black") +
   facet_wrap(. ~ Language_name, ncol = 7) +
-  labs(y = "Difference in C & NC SWU",
+  labs(y = "Difference in C & NC SWU\n(lower is more simplified)",
        x = "Year collected") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
@@ -115,7 +118,53 @@ g <- plot_grid(p1, p2, p3, ncol = 1, labels = c("A", "B", "C"))
 
 ggsave("../figures/corpus_year.pdf", g, width = 8, height = 12)
 
-# Do child age and year collected correlate?
+# ---- statistical test
+
+options(scipen = 999)
+
+lexdiv_sumstats_long_types %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(fit = map(data, ~ lm(type_diff ~ `Year collected`,
+                              data = .)),
+         tidy = map(fit, tidy)) %>%
+  unnest(cols = c(tidy)) %>%
+  filter(term == "`Year collected`") %>%
+  select(Language_name, estimate, p.value) %>%
+  mutate(p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value)) %>%
+  drop_na() %>%
+  kable("pipe")
+
+mlu_sumstats %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(fit = map(data, ~ lm(diff ~ `Year collected`,
+                              data = .)),
+         tidy = map(fit, tidy)) %>%
+  unnest(cols = c(tidy)) %>%
+  filter(term == "`Year collected`") %>%
+  select(Language_name, estimate, p.value) %>%
+  mutate(p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value)) %>%
+  drop_na() %>%
+  kable("pipe")
+
+swu_sumstats %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(fit = map(data, ~ lm(diff ~ `Year collected`,
+                              data = .)),
+         tidy = map(fit, tidy)) %>%
+  unnest(cols = c(tidy)) %>%
+  filter(term == "`Year collected`") %>%
+  select(Language_name, estimate, p.value) %>%
+  mutate(p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value)) %>%
+  drop_na() %>%
+  kable("pipe")
+
+# ---- Do child age and year collected correlate?
 
 p4 <- rand_dat_inc_cg %>%
   select(target_child_id, transcript_id, target_child_age,
@@ -139,3 +188,26 @@ p4 <- rand_dat_inc_cg %>%
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
 
 ggsave("../figures/corpus_year_x_child_age.pdf", p4, width = 8, height = 4)
+
+# ---- statistical test
+
+rand_dat_inc_cg %>%
+  select(target_child_id, transcript_id, target_child_age,
+         `Year collected`, Language_name) %>%
+  group_by(Language_name, `Year collected`, target_child_age) %>%
+  summarize(Language_name = unique(Language_name),
+            `Year collected` = unique(`Year collected`),
+            target_child_age = unique(target_child_age)) %>% 
+  ungroup() %>% 
+  group_by(Language_name) %>% 
+  nest() %>%
+  mutate(fit = map(data, ~ lm(target_child_age ~ `Year collected`,
+                              data = .)),
+         tidy = map(fit, tidy)) %>%
+  unnest(cols = c(tidy)) %>%
+  filter(term == "`Year collected`") %>%
+  select(Language_name, estimate, p.value) %>%
+  mutate(p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value)) %>%
+  drop_na() %>%
+  kable("pipe")
