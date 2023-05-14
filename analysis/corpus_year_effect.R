@@ -211,3 +211,88 @@ rand_dat_inc_cg %>%
          p.value = gsub("0.0000", "<.0001", p.value)) %>%
   drop_na() %>%
   kable("pipe")
+
+# ---- discretize year of collection
+
+lexdiv_sumstats_long_types %>%
+    group_by(Language_name) %>%
+    count(`Year collected`) %>%
+    kable("pipe")
+
+lexdiv_sum_long_types_corp_yr <- lexdiv_sumstats_long_types %>%
+  ungroup() %>%
+  filter(Language_name %in% c("English", "French", "German",
+                            "Japanese", "Swedish"))
+
+corp_yr_medians <- lexdiv_sum_long_types_corp_yr %>%
+  group_by(Language_name) %>%
+  summarize(`Year collected` = unique(`Year collected`),
+            median = median(`Year collected`))
+
+lexdiv_sum_long_types_corp_yr <- lexdiv_sum_long_types_corp_yr %>%
+  left_join(corp_yr_medians) %>%
+  mutate(time_period = ifelse(`Year collected` > `median`,
+  "recent", "vintage"))
+
+lexdiv_sum_long_types_corp_yr %>%
+        group_by(Language_name) %>%
+        count(time_period) %>%
+        kable("pipe")
+
+# ---- plot by median split of corpus year
+
+# lexical diversity
+
+lexdiv_sumstats <- rand_dat_inc_cg %>%
+    select(target_child_id, transcript_id, target_child_age,
+           `Year collected`, Language_name, contingent,
+           uniqueness, num_tokens) %>%
+  filter(Language_name %in% c("English", "French", "German",
+                            "Japanese", "Swedish")) %>% 
+  group_by(transcript_id, contingent, Language_name, `Year collected`) %>%
+  summarise(variable = "result",
+            types = sum(as.numeric(unlist(uniqueness))),
+            `Year collected` = unique(`Year collected`)) %>%
+  left_join(corp_yr_medians) %>%
+  mutate(time_period = ifelse(`Year collected` > `median`,
+  "recent", "vintage"))
+
+p1 <- ggplot(lexdiv_sumstats, aes(x = contingent, y = types,
+             color = Language_name)) +
+        stat_summary(fun.y = mean, geom = "point", shape = 19, size = 1.75) +
+        stat_summary(fun.data = mean_se, geom = "errorbar",
+                     size = 1.25, width = .5) +
+        facet_grid(time_period ~ Language_name) +
+        coord_cartesian(ylim = c(0, 250)) +
+        theme(axis.text.x = element_text(vjust = 0.5, hjust = .5),
+              axis.ticks.length = unit(-2.5, "pt"),
+              legend.position = "none")
+
+# mluw
+
+mlu_sumstats <- rand_dat_inc_cg %>%
+  select(target_child_id, transcript_id, target_child_age,
+         `Year collected`, Language_name, contingent,
+         num_tokens) %>%
+  filter(Language_name %in% c("English", "French", "German",
+                            "Japanese", "Swedish")) %>% 
+  group_by(transcript_id, contingent, Language_name, `Year collected`) %>%
+  summarise(mean = mean(num_tokens),
+            `Year collected` = unique(`Year collected`)) %>%
+  left_join(corp_yr_medians) %>%
+  mutate(time_period = ifelse(`Year collected` > `median`,
+  "recent", "vintage"))
+
+p2 <- ggplot(mlu_sumstats, aes(x = contingent, y = mean,
+             color = Language_name)) +
+        stat_summary(fun.y = mean, geom = "point", shape = 19, size = 1.75) +
+        stat_summary(fun.data = mean_se, geom = "errorbar",
+                     size = 1.25, width = .5) +
+        facet_grid(time_period ~ Language_name) +
+        coord_cartesian(ylim = c(0, 6)) +
+        theme(axis.text.x = element_text(vjust = 0.5, hjust = .5),
+              axis.ticks.length = unit(-2.5, "pt"),
+              legend.position = "none")
+
+# swu
+
