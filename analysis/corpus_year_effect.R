@@ -1,7 +1,9 @@
+library("lme4")
+library("broom")
+library("emmeans")
+library("cowplot")
 library("tidyverse")
 library("kableExtra")
-library("cowplot")
-library("broom")
 
 rand_dat_inc_cg_cc <- read_csv("../data/rand_dat_inc_master_cc_lexdiv.csv")
 rand_dat_inc_cg_nc <- read_csv("../data/rand_dat_inc_master_nc_lexdiv.csv")
@@ -249,13 +251,15 @@ lexdiv_sumstats <- rand_dat_inc_cg %>%
            uniqueness, num_tokens) %>%
   filter(Language_name %in% c("English", "French", "German",
                             "Japanese", "Swedish")) %>% 
-  group_by(transcript_id, contingent, Language_name, `Year collected`) %>%
+  group_by(target_child_id, transcript_id, contingent, Language_name, `Year collected`) %>%
   summarise(variable = "result",
             types = sum(as.numeric(unlist(uniqueness))),
             `Year collected` = unique(`Year collected`)) %>%
   left_join(corp_yr_medians) %>%
   mutate(time_period = ifelse(`Year collected` > `median`,
-  "recent", "vintage"))
+                              "recent", "vintage"),
+         contingent = if_else(contingent == "contingent",
+                              "C", "NC"))
 
 p1 <- ggplot(lexdiv_sumstats, aes(x = contingent, y = types,
              color = Language_name)) +
@@ -263,6 +267,8 @@ p1 <- ggplot(lexdiv_sumstats, aes(x = contingent, y = types,
         stat_summary(fun.data = mean_se, geom = "errorbar",
                      size = 1.25, width = .5) +
         facet_grid(time_period ~ Language_name) +
+        labs(x = "",
+             y = "Number of unique words") +
         coord_cartesian(ylim = c(0, 250)) +
         theme(axis.text.x = element_text(vjust = 0.5, hjust = .5),
               axis.ticks.length = unit(-2.5, "pt"),
@@ -281,7 +287,9 @@ mlu_sumstats <- rand_dat_inc_cg %>%
             `Year collected` = unique(`Year collected`)) %>%
   left_join(corp_yr_medians) %>%
   mutate(time_period = ifelse(`Year collected` > `median`,
-  "recent", "vintage"))
+                              "recent", "vintage"),
+         contingent = if_else(contingent == "contingent",
+                              "C", "NC"))
 
 p2 <- ggplot(mlu_sumstats, aes(x = contingent, y = mean,
              color = Language_name)) +
@@ -289,6 +297,8 @@ p2 <- ggplot(mlu_sumstats, aes(x = contingent, y = mean,
         stat_summary(fun.data = mean_se, geom = "errorbar",
                      size = 1.25, width = .5) +
         facet_grid(time_period ~ Language_name) +
+        labs(x = "",
+             y = str_wrap("Mean length of utterance in words", 32)) +
         coord_cartesian(ylim = c(0, 6)) +
         theme(axis.text.x = element_text(vjust = 0.5, hjust = .5),
               axis.ticks.length = unit(-2.5, "pt"),
@@ -296,3 +306,86 @@ p2 <- ggplot(mlu_sumstats, aes(x = contingent, y = mean,
 
 # swu
 
+swu_sumstats <- rand_dat_inc_cg %>%
+  group_by(target_child_id, transcript_id, target_child_age,
+           `Year collected`, Language_name, contingent,
+           single_word_utterance) %>% 
+  filter(Language_name %in% c("English", "French", "German",
+                            "Japanese", "Swedish")) %>%
+  group_by(transcript_id, contingent, Language_name, `Year collected`) %>%
+  summarise(mean = mean(single_word_utterance),
+            `Year collected` = unique(`Year collected`)) %>%
+  left_join(corp_yr_medians) %>%
+  mutate(time_period = ifelse(`Year collected` > `median`,
+                              "recent", "vintage"),
+         contingent = if_else(contingent == "contingent",
+                              "C", "NC"))
+
+p3 <- ggplot(swu_sumstats, aes(x = contingent, y = mean,
+             color = Language_name)) +
+        stat_summary(fun.y = mean, geom = "point", shape = 19, size = 1.75) +
+        stat_summary(fun.data = mean_se, geom = "errorbar",
+                     size = 1.25, width = .5) +
+        facet_grid(time_period ~ Language_name) +
+        labs(x = "",
+             y = "Prop. single word utterance") +
+        coord_cartesian(ylim = c(0, .5)) +
+        theme(axis.text.x = element_text(vjust = 0.5, hjust = .5),
+              axis.ticks.length = unit(-2.5, "pt"),
+              legend.position = "none")
+
+plot_grid(p1, p2, p3, ncol = 1, labels = c("A", "B", "C"))
+
+ggsave("../figures/corpus_year_discrete.pdf", width = 6.47, height = 7.3, dpi = 1200)
+
+# ---- statistical test
+
+table_maker <- function(data) { data %>%
+    arrange(Language_name, time_period) %>%
+    select(Language_name, time_period, contrasts) %>%
+    unnest(cols = c(contrasts)) %>%
+    mutate(`Adjusted p-value` = p.adjust(p.value, "holm", 5),
+         `Adjusted p-value` = format(round(`Adjusted p-value`, 4), nsmall = 4),
+         `Adjusted p-value` = gsub("0.0000", "<.0001", `Adjusted p-value`),
+         p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value)) %>%
+    mutate_at(vars(c(estimate, SE, t.ratio)), round, 2) %>%
+    select(Language_name, time_period, estimate, SE, t.ratio, p.value, `Adjusted p-value`) %>%
+    `colnames<-`(c("Language", "Time period", "Estimate", "SE", "Test statistic", "p-value", "Adjusted p-value")) %>%
+    unite("Estimate (SE)", c('Estimate','SE'), sep=" (") %>%
+    mutate(`Estimate (SE)` = paste0(`Estimate (SE)`,")")) %>% 
+    kable("pipe")
+    }
+
+lexdiv_sumstats %>%
+  group_by(Language_name, time_period) %>%
+  nest() %>%
+  mutate(fit = map(data, ~ lmer(types ~ contingent +
+                                (1|transcript_id),
+                                data = .,
+                                REML = FALSE)),
+          summary = map(fit, ~ emmeans(., "contingent")),
+          contrasts = map(summary, ~ summary(contrast(., method = "pairwise")))) %>%
+  table_maker()
+
+mlu_sumstats %>%
+  group_by(Language_name, time_period) %>%
+  nest() %>%
+  mutate(fit = map(data, ~ lmer(mean ~ contingent +
+                                (1|transcript_id),
+                                data = .,
+                                REML = FALSE)),
+          summary = map(fit, ~ emmeans(., "contingent")),
+          contrasts = map(summary, ~ summary(contrast(., method = "pairwise")))) %>%
+  table_maker()
+
+swu_sumstats %>%
+  group_by(Language_name, time_period) %>%
+  nest() %>%
+  mutate(fit = map(data, ~ lmer(mean ~ contingent +
+                                (1|transcript_id),
+                                data = .,
+                                REML = FALSE)),
+          summary = map(fit, ~ emmeans(., "contingent")),
+          contrasts = map(summary, ~ summary(contrast(., method = "pairwise")))) %>%
+  table_maker()
