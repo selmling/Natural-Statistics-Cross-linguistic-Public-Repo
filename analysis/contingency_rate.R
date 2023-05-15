@@ -74,3 +74,7 @@ p2 <- cg_cont_rate %>% ggplot(aes(fill = Language_name)) +
 plot_grid(p1, p2, ncol = 1, labels = c("A", "B"))
 
 ggsave("../figures/contingency_rates.pdf", width = 6.47, height = 5, dpi = 1200)
+
+# ---- Rollins corpus contingency rates
+
+rand_cg_dat
