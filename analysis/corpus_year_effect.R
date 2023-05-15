@@ -236,9 +236,11 @@ lexdiv_sum_long_types_corp_yr <- lexdiv_sum_long_types_corp_yr %>%
   mutate(time_period = ifelse(`Year collected` > `median`,
   "recent", "vintage"))
 
-lexdiv_sum_long_types_corp_yr %>%
+corp_yr_count <- lexdiv_sum_long_types_corp_yr %>%
         group_by(Language_name) %>%
-        count(time_period) %>%
+        count(time_period)
+
+corp_yr_count %>%
         kable("pipe")
 
 # ---- plot by median split of corpus year
@@ -342,7 +344,7 @@ ggsave("../figures/corpus_year_discrete.pdf", width = 6.47, height = 7.3, dpi = 
 
 table_maker <- function(data) { data %>%
     arrange(Language_name, time_period) %>%
-    select(Language_name, time_period, contrasts) %>%
+    select(Language_name, time_period, n, contrasts) %>%
     unnest(cols = c(contrasts)) %>%
     mutate(`Adjusted p-value` = p.adjust(p.value, "holm", 5),
          `Adjusted p-value` = format(round(`Adjusted p-value`, 4), nsmall = 4),
@@ -350,10 +352,12 @@ table_maker <- function(data) { data %>%
          p.value = format(round(p.value, 4), nsmall = 4),
          p.value = gsub("0.0000", "<.0001", p.value)) %>%
     mutate_at(vars(c(estimate, SE, t.ratio)), round, 2) %>%
-    select(Language_name, time_period, estimate, SE, t.ratio, p.value, `Adjusted p-value`) %>%
-    `colnames<-`(c("Language", "Time period", "Estimate", "SE", "Test statistic", "p-value", "Adjusted p-value")) %>%
+    select(Language_name, time_period, n, estimate, SE, t.ratio, p.value, `Adjusted p-value`) %>%
+    `colnames<-`(c("Language", "Time period", "n", "Estimate", "SE", "Test statistic", "p-value", "Adjusted p-value")) %>%
     unite("Estimate (SE)", c('Estimate','SE'), sep=" (") %>%
-    mutate(`Estimate (SE)` = paste0(`Estimate (SE)`,")")) %>% 
+    mutate(`Estimate (SE)` = paste0(`Estimate (SE)`,")")) %>%
+    unite("Time period (n)", c(`Time period`,"n"), sep=" (") %>%
+    mutate(`Time period (n)` = paste0(`Time period (n)`,")")) %>%
     kable("pipe")
     }
 
@@ -366,6 +370,7 @@ lexdiv_sumstats %>%
                                 REML = FALSE)),
           summary = map(fit, ~ emmeans(., "contingent")),
           contrasts = map(summary, ~ summary(contrast(., method = "pairwise")))) %>%
+  left_join(corp_yr_count) %>%
   table_maker()
 
 mlu_sumstats %>%
@@ -377,6 +382,7 @@ mlu_sumstats %>%
                                 REML = FALSE)),
           summary = map(fit, ~ emmeans(., "contingent")),
           contrasts = map(summary, ~ summary(contrast(., method = "pairwise")))) %>%
+  left_join(corp_yr_count) %>%
   table_maker()
 
 swu_sumstats %>%
@@ -388,4 +394,5 @@ swu_sumstats %>%
                                 REML = FALSE)),
           summary = map(fit, ~ emmeans(., "contingent")),
           contrasts = map(summary, ~ summary(contrast(., method = "pairwise")))) %>%
+  left_join(corp_yr_count) %>%
   table_maker()
