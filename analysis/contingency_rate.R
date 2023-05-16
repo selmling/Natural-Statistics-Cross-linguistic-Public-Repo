@@ -167,3 +167,5 @@ plot_grid(
 )
 
 ggsave("../figures/contingency_rates_Rollins.pdf", width = 4.5, height = 3.5, dpi = 1200)
+
+# ---- Lund corpus contingency rates
