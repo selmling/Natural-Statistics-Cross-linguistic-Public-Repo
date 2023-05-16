@@ -106,11 +106,11 @@ p3 <- cont_rate_rollins %>% ggplot(aes(fill = Language_name)) +
                color="black", linetype="dashed", size=.6) +
     geom_text(data=cont_rate_means_rollins,
               aes(label = round(avg_contingency_rate, digits = 2),
-                  x = avg_contingency_rate + .25,
+                  x = avg_contingency_rate + .05,
                   y = 15), size = 3) +
     coord_cartesian(ylim = c(0,25)) +
     labs(y = "Count",
-         x = "Child vocalization contingent Rollins caregiver speech elicitation rate") +
+         x = str_wrap("Child vocalization contingent caregiver speech elicitation rate",48)) +
     theme_classic() +
     theme(axis.text.x = element_text(angle = 90,vjust = 0.5, hjust = .5),
           axis.ticks.length = unit(-2.5, "pt"),
@@ -136,16 +136,34 @@ p4 <- cg_cont_rate_rollins %>% ggplot(aes(fill = Language_name)) +
                color="black", linetype="dashed", size=.6) +
     geom_text(data=cg_cont_rate_means_rollins,
               aes(label = round(avg_contingency_rate, digits = 2),
-                  x = avg_contingency_rate + .1,
+                  x = avg_contingency_rate + .025,
                   y = 15), size = 3) +
     coord_cartesian(ylim = c(0,25)) +
     labs(y = "Count",
-         x = "Proportion of Rollins caregiver utterances which were contingent on child vocalizations") +
+         x = str_wrap("Proportion of caregiver utterances which were contingent on child vocalizations",48)) +
     theme_classic() +
     theme(axis.text.x = element_text(angle = 90,vjust = 0.5, hjust = .5),
           axis.ticks.length = unit(-2.5, "pt"),
           legend.position = "none")
 
-plot_grid(p3, p4, ncol = 1, labels = c("A", "B"))
+plot_col <- plot_grid(p3, p4, ncol = 1, labels = c("A", "B"))
 
-ggsave("../figures/contingency_rates_Rollins.pdf", width = 6.47, height = 5, dpi = 1200)
+# now add the title
+title <- ggdraw() + 
+  draw_label(
+    "Rollins corpus (Lab: unstructured context)",
+    fontface = 'bold',
+    x = 0,
+    hjust = 0
+  ) +
+  theme(
+    plot.margin = margin(0, 0, 0, 7)
+  )
+
+plot_grid(
+  title, plot_col,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+ggsave("../figures/contingency_rates_Rollins.pdf", width = 4.5, height = 3.5, dpi = 1200)
