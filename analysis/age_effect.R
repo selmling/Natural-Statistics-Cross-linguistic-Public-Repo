@@ -1,11 +1,13 @@
 # Are there infant age effects in the extent to which caregiver contingent speech is simplified?
 
-library("tidyverse")
-library("gridExtra")
 library("ggnewscale")
 library("kableExtra")
+library("tidyverse")
+library("gridExtra")
+library("emmeans")
 library("ggpubr")
 library("broom")
+library("lme4")
 
 dropLeadingZero <- function(l){
   str_replace(l, '0(?=.)', '')
@@ -20,34 +22,46 @@ dat <- rbind(cdat, ncdat) %>%
   mutate(single_word_utterance = ifelse(num_tokens==1,1,0)) %>% 
   rename(uniqueness = uniquenss)
 
+corpora_year <- read_csv("../data/corpora_year.csv") %>%
+    rename(corpus_name = Corpora) %>%
+    select(corpus_name, `Year collected`)
+
+dat <- dat %>% left_join(corpora_year)
+
 # ---- linguistic complexity contingent and non-contingent 
 
 lexdiv_sumstats <- dat %>%
   dplyr::select(target_child_id, transcript_id, target_child_age,
-         Language_name, contingent, uniqueness, num_tokens) %>% 
-  group_by(transcript_id, contingent, Language_name) %>% 
+                Language_name, contingent, uniqueness, num_tokens,
+                `Year collected`) %>% 
+  group_by(target_child_id, transcript_id, contingent, Language_name) %>% 
   summarise(variable = 'result',
             types = sum(as.numeric(unlist(uniqueness))),
             tokens = sum(num_tokens),
-            age = unique(target_child_age)) %>%
+            age = unique(target_child_age),
+            year_collected = unique(`Year collected`)) %>%
   pivot_wider(names_from = contingent,
               values_from = c(types, tokens))
 
 mlu_sumstats <- dat %>%
   dplyr::select(target_child_id, transcript_id, target_child_age,
-         Language_name, contingent, num_tokens) %>% 
+                Language_name, contingent, num_tokens,
+                `Year collected`) %>% 
   group_by(transcript_id, contingent, Language_name) %>% 
   summarise(mean = mean(num_tokens),
-            age = unique(target_child_age)) %>%
+            age = unique(target_child_age),
+            year_collected = unique(`Year collected`)) %>%
   spread(contingent, mean) %>% 
   mutate(diff = `non-contingent` - contingent)
 
 swu_sumstats <- dat %>%
   group_by(target_child_id, transcript_id, target_child_age,
-           Language_name, contingent, single_word_utterance) %>% 
+           Language_name, contingent, single_word_utterance,
+           `Year collected`) %>% 
   group_by(transcript_id, contingent, Language_name) %>% 
   summarise(mean = mean(single_word_utterance),
-            age = unique(target_child_age)) %>%
+            age = unique(target_child_age),
+            year_collected = unique(`Year collected`)) %>%
   spread(contingent, mean) %>% 
   mutate(diff = `non-contingent` - contingent)
 
@@ -55,8 +69,8 @@ swu_sumstats <- dat %>%
 
 # wide to long
 lexdiv_sumstats_long_types <- lexdiv_sumstats %>% 
-  dplyr::select(transcript_id, Language_name, age, types_contingent,
-         `types_non-contingent`) %>% 
+  dplyr::select(target_child_id, transcript_id, Language_name, age, types_contingent,
+         `types_non-contingent`, year_collected) %>% 
   mutate(type_diff = `types_non-contingent` - types_contingent) %>% 
   pivot_longer(cols = c(`types_non-contingent`, types_contingent)) %>% 
   rename(Contingency = name,
@@ -104,11 +118,10 @@ p1 <- ggplot(lexdiv_sumstats_long_types, aes(color = Language_name)) +
         legend.text = element_text(size = 12),
         panel.background = element_rect(fill = "grey90"))
 
-
 # wide to long
 lexdiv_sumstats_long_tokens <- lexdiv_sumstats %>% 
   dplyr::select(transcript_id, Language_name, age, tokens_contingent,
-                `tokens_non-contingent`) %>% 
+                `tokens_non-contingent`, year_collected) %>% 
   mutate(token_diff = `tokens_non-contingent` - tokens_contingent) %>% 
   pivot_longer(cols = c(`tokens_non-contingent`, tokens_contingent)) %>% 
   rename(Contingency = name,
@@ -172,9 +185,14 @@ ggplot(lexdiv_sumstats_long_tokens,
   facet_wrap(~ Language_name, ncol = 7) +
   stat_smooth(method = "lm", col = "red")
 
-tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$age))
+# ---- linear models
 
-tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$age))
+# model functions
+tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$age + df$year_collected))
+
+tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$age + df$year_collected))
+
+# number of unique words (types)
 
 # vector for rows to remove
 to_remove <- c("Mandarin", "Polish") # less than 3 observations
@@ -189,7 +207,7 @@ tp_diff_reg_nest <- lexdiv_sumstats_long_types %>%
 
 tp_diff_reg_pr <- tp_diff_reg_nest %>% 
   dplyr::select(-data) %>%
-  unnest() %>%
+  unnest(cols = c(model)) %>%
   ungroup() %>% 
   mutate(p.adj = p.adjust(p.value,method="holm"),
          sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
@@ -199,10 +217,20 @@ tp_diff_reg_pr <- tp_diff_reg_nest %>%
          p.adj = gsub("0.0000","<.0001",p.adj),
          estimate = format(round(estimate,2))) %>% 
   dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
-  filter((term != '(Intercept)')) %>%
+  filter(!term %in% c("(Intercept)","df$year_collected")) %>%
   mutate(term = str_remove_all(term, "[df$]"),
          measure = "Lexical diversity") %>%
-  arrange(Language_name)
+  arrange(Language_name) 
+
+# car vif function to check inflated SE of control variable
+library("car")
+
+lexdiv_sumstats_long_types %>%
+  filter(Language_name == "English") %>%
+  lm(type_diff ~ year_collected + age, data =.) %>%
+  vif()
+
+# number of words (tokens)
 
 tk_diff_reg_nest <- lexdiv_sumstats_long_tokens %>%
   filter(!Language_name %in% to_remove) %>%
@@ -214,7 +242,7 @@ tk_diff_reg_nest <- lexdiv_sumstats_long_tokens %>%
 
 tk_diff_reg_pr <- tk_diff_reg_nest %>% 
   dplyr::select(-data) %>%
-  unnest() %>%
+  unnest(cols = c(model)) %>%
   ungroup() %>% 
   mutate(p.adj = p.adjust(p.value,method="holm"),
          sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
@@ -224,13 +252,13 @@ tk_diff_reg_pr <- tk_diff_reg_nest %>%
          p.adj = gsub("0.0000","<.0001",p.adj),
          estimate = format(round(estimate,2))) %>% 
   dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
-  filter((term != '(Intercept)')) %>%
+  filter(!term %in% c("(Intercept)","df$year_collected")) %>%
   mutate(term = str_remove_all(term, "[df$]"),
          measure = "Total # of words") %>% 
   arrange(Language_name)
 
 # publication-ready table
-table_S4 <- bind_rows(tp_diff_reg_pr, tk_diff_reg_pr) %>%
+table_S11 <- bind_rows(tp_diff_reg_pr, tk_diff_reg_pr) %>%
   dplyr::select(Language_name, estimate, p.value, p.adj) %>%
   rename(Language = Language_name, Estimate = estimate,
          `p-value` = p.value, `Adjusted p-value`= p.adj) %>% 
@@ -238,3 +266,70 @@ table_S4 <- bind_rows(tp_diff_reg_pr, tk_diff_reg_pr) %>%
   kable_paper("striped", full_width = F) %>%
   pack_rows("Lexical diversity", 1, 12) %>%
   pack_rows("Total number of words", 13, 24)
+
+# model functions
+mlu_diff_reg_fun <- function(df) tidy(lm(df$diff ~ df$age + df$year_collected))
+
+swu_diff_reg_fun <- function(df) tidy(lm(df$diff ~ df$age + df$year_collected))
+
+# mean length of utterance in words
+
+mlu_diff_reg_nest <- mlu_sumstats %>%
+  filter(!Language_name %in% to_remove) %>%
+  drop_na(diff) %>%
+  group_by(Language_name) %>% 
+  nest() %>% 
+  mutate(model = map(data, mlu_diff_reg_fun))
+
+mlu_diff_reg_pr <- mlu_diff_reg_nest %>% 
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>% 
+  mutate(p.adj = p.adjust(p.value,method="holm"),
+         sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
+         p.value = format(round(p.value,3),nsmall=4),
+         p.value= gsub("0.0000","<.0001",p.value),
+         p.adj = format(round(p.adj,3),nsmall=4),
+         p.adj = gsub("0.0000","<.0001",p.adj),
+         estimate = format(round(estimate,2))) %>% 
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  filter(!term %in% c("(Intercept)","df$year_collected")) %>%
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Mean length of utterance in words") %>% 
+  arrange(Language_name)
+
+# proportion of single word utterances
+
+swu_diff_reg_nest <- swu_sumstats %>%
+  filter(!Language_name %in% to_remove) %>%
+  drop_na(diff) %>%
+  group_by(Language_name) %>% 
+  nest() %>% 
+  mutate(model = map(data, swu_diff_reg_fun))
+
+swu_diff_reg_pr <- swu_diff_reg_nest %>% 
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>% 
+  mutate(p.adj = p.adjust(p.value,method="holm"),
+         sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
+         p.value = format(round(p.value,3),nsmall=4),
+         p.value= gsub("0.0000","<.0001",p.value),
+         p.adj = format(round(p.adj,3),nsmall=4),
+         p.adj = gsub("0.0000","<.0001",p.adj),
+         estimate = format(round(estimate,2))) %>% 
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  filter(!term %in% c("(Intercept)","df$year_collected")) %>%
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Proportion single word utterances") %>% 
+  arrange(Language_name)
+
+# publication-ready table
+table_S12 <- bind_rows(mlu_diff_reg_pr, swu_diff_reg_pr) %>%
+  dplyr::select(Language_name, estimate, p.value, p.adj) %>%
+  rename(Language = Language_name, Estimate = estimate,
+         `p-value` = p.value, `Adjusted p-value`= p.adj) %>% 
+  kbl(.) %>% 
+  kable_paper("striped", full_width = F) %>%
+  pack_rows("Mean length of utterance in words", 1, 12) %>%
+  pack_rows("Proportion single word utterances", 13, 24)
