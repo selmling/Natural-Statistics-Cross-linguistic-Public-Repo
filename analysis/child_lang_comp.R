@@ -111,3 +111,67 @@ child_word_dat_prop %>%
         legend.text = element_text(size = 12))
 
 ggsave("../figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6)
+
+# ---- difference score test as a function of language competence
+
+# type difference as a function of continuous measure of language competency
+
+# ---- load data
+
+cdat <- read_csv("../data/rand_dat_inc_master_cc_lexdiv.csv")
+ncdat <- read_csv("../data/rand_dat_inc_master_nc_lexdiv.csv")
+
+dat <- rbind(cdat, ncdat) %>% 
+  mutate(single_word_utterance = ifelse(num_tokens==1,1,0)) %>% 
+  rename(uniqueness = uniquenss)
+
+corpora_year <- read_csv("../data/corpora_year.csv") %>%
+    rename(corpus_name = Corpora) %>%
+    select(corpus_name, `Year collected`)
+
+dat <- dat %>% left_join(corpora_year)
+
+# ---- linguistic complexity contingent and non-contingent 
+
+lexdiv_sumstats <- dat %>%
+  dplyr::select(target_child_id, transcript_id, target_child_age,
+                Language_name, contingent, uniqueness, num_tokens,
+                `Year collected`) %>% 
+  group_by(target_child_id, transcript_id, contingent, Language_name) %>% 
+  summarise(variable = 'result',
+            types = sum(as.numeric(unlist(uniqueness))),
+            tokens = sum(num_tokens),
+            age = unique(target_child_age),
+            year_collected = unique(`Year collected`)) %>%
+  pivot_wider(names_from = contingent,
+              values_from = c(types, tokens))
+
+mlu_sumstats <- dat %>%
+  dplyr::select(target_child_id, transcript_id, target_child_age,
+                Language_name, contingent, num_tokens,
+                `Year collected`) %>% 
+  group_by(transcript_id, contingent, Language_name) %>% 
+  summarise(mean = mean(num_tokens),
+            age = unique(target_child_age),
+            year_collected = unique(`Year collected`)) %>%
+  spread(contingent, mean) %>% 
+  mutate(diff = `non-contingent` - contingent)
+
+swu_sumstats <- dat %>%
+  group_by(target_child_id, transcript_id, target_child_age,
+           Language_name, contingent, single_word_utterance,
+           `Year collected`) %>% 
+  group_by(transcript_id, contingent, Language_name) %>% 
+  summarise(mean = mean(single_word_utterance),
+            age = unique(target_child_age),
+            year_collected = unique(`Year collected`)) %>%
+  spread(contingent, mean) %>% 
+  mutate(diff = `non-contingent` - contingent)
+
+# lexical diversity and total number of words
+
+ggplot(lexdiv_sumstats_long_types,
+       aes(x = age, y = type_diff)) + 
+  geom_point() +
+  facet_wrap(~ Language_name, ncol = 7) +
+  stat_smooth(method = "lm", col = "red")
