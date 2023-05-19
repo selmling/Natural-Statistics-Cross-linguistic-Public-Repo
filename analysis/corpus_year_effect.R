@@ -29,7 +29,8 @@ lexdiv_sumstats <- rand_dat_inc_cg %>%
   summarise(variable = "result",
             types = sum(as.numeric(unlist(uniqueness))),
             tokens = sum(num_tokens),
-            `Year collected` = unique(`Year collected`)) %>%
+            `Year collected` = unique(`Year collected`),
+            target_child_age = unique(target_child_age)) %>%
   pivot_wider(names_from = contingent,
               values_from = c(types, tokens))
 
@@ -39,7 +40,8 @@ mlu_sumstats <- rand_dat_inc_cg %>%
            num_tokens) %>%
   group_by(transcript_id, contingent, Language_name, `Year collected`) %>%
   summarise(mean = mean(num_tokens),
-            `Year collected` = unique(`Year collected`)) %>%
+            `Year collected` = unique(`Year collected`),
+            target_child_age = unique(target_child_age)) %>%
   spread(contingent, mean) %>%
   mutate(diff = `non-contingent` - contingent)
 
@@ -49,13 +51,14 @@ swu_sumstats <- rand_dat_inc_cg %>%
            single_word_utterance) %>%
   group_by(transcript_id, contingent, Language_name, `Year collected`) %>%
   summarise(mean = mean(single_word_utterance),
-            `Year collected` = unique(`Year collected`)) %>%
+            `Year collected` = unique(`Year collected`),
+            target_child_age = unique(target_child_age)) %>%
   spread(contingent, mean) %>%
   mutate(diff = `non-contingent` - contingent)
 
 lexdiv_sumstats_long_types <- lexdiv_sumstats %>%
     select(transcript_id, Language_name, `Year collected`, types_contingent,
-         `types_non-contingent`) %>%
+         `types_non-contingent`, target_child_age) %>%
     mutate(type_diff = `types_non-contingent` - types_contingent) %>%
     pivot_longer(cols = c(`types_non-contingent`, types_contingent)) %>%
     rename(Contingency = name,
@@ -124,47 +127,69 @@ ggsave("../figures/corpus_year.pdf", g, width = 8, height = 12)
 
 options(scipen = 999)
 
-lexdiv_sumstats_long_types %>%
+lexdiv_reg_nest <- lexdiv_sumstats_long_types %>%
   group_by(Language_name) %>%
   nest() %>%
-  mutate(fit = map(data, ~ lm(type_diff ~ `Year collected`,
+  mutate(fit = map(data, ~ lm(type_diff ~ `Year collected` + target_child_age,
                               data = .)),
          tidy = map(fit, tidy)) %>%
   unnest(cols = c(tidy)) %>%
   filter(term == "`Year collected`") %>%
   select(Language_name, estimate, p.value) %>%
-  mutate(p.value = format(round(p.value, 4), nsmall = 4),
-         p.value = gsub("0.0000", "<.0001", p.value)) %>%
   drop_na() %>%
-  kable("pipe")
+  mutate(p.adj = p.adjust(p.value, method="holm"),
+         p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value),
+         p.adj = format(round(p.adj,3),nsmall=4),
+         p.adj = gsub("0.0000","<.0001",p.adj),
+         estimate = format(round(estimate,2))) %>% 
+  arrange(Language_name)
 
-mlu_sumstats %>%
+mlu_reg_nest <- mlu_sumstats %>%
   group_by(Language_name) %>%
   nest() %>%
-  mutate(fit = map(data, ~ lm(diff ~ `Year collected`,
+  mutate(fit = map(data, ~ lm(diff ~ `Year collected` + target_child_age,
                               data = .)),
          tidy = map(fit, tidy)) %>%
   unnest(cols = c(tidy)) %>%
   filter(term == "`Year collected`") %>%
   select(Language_name, estimate, p.value) %>%
-  mutate(p.value = format(round(p.value, 4), nsmall = 4),
-         p.value = gsub("0.0000", "<.0001", p.value)) %>%
   drop_na() %>%
-  kable("pipe")
+  mutate(p.adj = p.adjust(p.value, method="holm"),
+         p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value),
+         p.adj = format(round(p.adj,3),nsmall=4),
+         p.adj = gsub("0.0000","<.0001",p.adj),
+         estimate = format(round(estimate,2))) %>% 
+  arrange(Language_name)
 
-swu_sumstats %>%
+swu_reg_nest <- swu_sumstats %>%
   group_by(Language_name) %>%
   nest() %>%
-  mutate(fit = map(data, ~ lm(diff ~ `Year collected`,
+  mutate(fit = map(data, ~ lm(diff ~ `Year collected` + target_child_age,
                               data = .)),
          tidy = map(fit, tidy)) %>%
   unnest(cols = c(tidy)) %>%
   filter(term == "`Year collected`") %>%
   select(Language_name, estimate, p.value) %>%
-  mutate(p.value = format(round(p.value, 4), nsmall = 4),
-         p.value = gsub("0.0000", "<.0001", p.value)) %>%
   drop_na() %>%
-  kable("pipe")
+  mutate(p.adj = p.adjust(p.value, method="holm"),
+         p.value = format(round(p.value, 4), nsmall = 4),
+         p.value = gsub("0.0000", "<.0001", p.value),
+         p.adj = format(round(p.adj,3),nsmall=4),
+         p.adj = gsub("0.0000","<.0001",p.adj),
+         estimate = format(round(estimate,2))) %>% 
+  arrange(Language_name)
+
+# publication-ready table
+table_S10 <- bind_rows(lexdiv_reg_nest, mlu_reg_nest, swu_reg_nest) %>%
+  rename(Language = Language_name, Estimate = estimate,
+         `p-value` = p.value, `Adjusted p-value`= p.adj) %>% 
+  kbl(.) %>% 
+  kable_paper("striped", full_width = F) %>%
+  pack_rows("Number of unique words", 1, 5) %>%
+  pack_rows("Mean length of utterance in words", 6, 10) %>%
+  pack_rows("Proportion of single word utterances", 11, 15)
 
 # ---- Do child age and year collected correlate?
 
