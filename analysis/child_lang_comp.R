@@ -118,6 +118,9 @@ ggsave("../figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6)
 
 # ---- load data
 
+child_word_dat_prop_multiword <- child_word_dat_prop %>% 
+  filter(child_utt_cat == "multiword")
+
 cdat <- read_csv("../data/rand_dat_inc_master_cc_lexdiv.csv")
 ncdat <- read_csv("../data/rand_dat_inc_master_nc_lexdiv.csv")
 
@@ -144,7 +147,8 @@ lexdiv_sumstats <- dat %>%
             age = unique(target_child_age),
             year_collected = unique(`Year collected`)) %>%
   pivot_wider(names_from = contingent,
-              values_from = c(types, tokens))
+              values_from = c(types, tokens)) %>%
+  left_join(child_word_dat_prop_multiword)
 
 mlu_sumstats <- dat %>%
   dplyr::select(target_child_id, transcript_id, target_child_age,
@@ -155,7 +159,8 @@ mlu_sumstats <- dat %>%
             age = unique(target_child_age),
             year_collected = unique(`Year collected`)) %>%
   spread(contingent, mean) %>% 
-  mutate(diff = `non-contingent` - contingent)
+  mutate(diff = `non-contingent` - contingent) %>%
+  left_join(child_word_dat_prop_multiword)
 
 swu_sumstats <- dat %>%
   group_by(target_child_id, transcript_id, target_child_age,
@@ -165,13 +170,13 @@ swu_sumstats <- dat %>%
   summarise(mean = mean(single_word_utterance),
             age = unique(target_child_age),
             year_collected = unique(`Year collected`)) %>%
-  spread(contingent, mean) %>% 
-  mutate(diff = `non-contingent` - contingent)
+  spread(contingent, mean) %>%  %>%
+  left_join(child_word_dat_prop_multiword)
 
-# lexical diversity and total number of words
+# lexical diversity difference and child language competence
 
-ggplot(lexdiv_sumstats_long_types,
-       aes(x = age, y = type_diff)) + 
+ggplot(lexdiv_sumstats,
+       aes(x = child_word_dat_prop_multiword, y = type_diff)) + 
   geom_point() +
   facet_wrap(~ Language_name, ncol = 7) +
   stat_smooth(method = "lm", col = "red")
