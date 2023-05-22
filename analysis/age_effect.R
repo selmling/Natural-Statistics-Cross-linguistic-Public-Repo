@@ -173,17 +173,23 @@ ggsave("../figures/age_effects_all_linear_4.pdf", g, width = 12, height = 8.5)
 
 # lexical diversity and total number of words
 
-ggplot(lexdiv_sumstats_long_types,
-       aes(x = age, y = type_diff)) + 
-  geom_point() +
-  facet_wrap(~ Language_name, ncol = 7) +
-  stat_smooth(method = "lm", col = "red")
+lexdiv_sumstats_long_types %>%
+  drop_na(type_diff) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  ggplot(lexdiv_sumstats_long_types,
+       aes(x = age, y = type_diff)) +
+    geom_point() +
+    facet_wrap(~ Language_name, ncol = 7) +
+    stat_smooth(method = "lm", col = "red")
 
-ggplot(lexdiv_sumstats_long_tokens,
-       aes(x = age, y = token_diff)) + 
-  geom_point() +
-  facet_wrap(~ Language_name, ncol = 7) +
-  stat_smooth(method = "lm", col = "red")
+lexdiv_sumstats_long_tokens %>%
+  drop_na(tokens_diff) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  ggplot(lexdiv_sumstats_long_tokens,
+       aes(x = age, y = token_diff)) +
+    geom_point() +
+    facet_wrap(~ Language_name, ncol = 7) +
+    stat_smooth(method = "lm", col = "red")
 
 # ---- linear models
 
@@ -201,14 +207,14 @@ tp_diff_reg_nest <- lexdiv_sumstats_long_types %>%
   filter(!Language_name %in% to_remove) %>%
   drop_na(type_diff) %>%
   distinct(transcript_id, .keep_all = TRUE) %>%
-  group_by(Language_name) %>% 
-  nest() %>% 
+  group_by(Language_name) %>%
+  nest() %>%
   mutate(model = map(data, tp_diff_reg_fun))
 
-tp_diff_reg_pr <- tp_diff_reg_nest %>% 
+tp_diff_reg_pr <- tp_diff_reg_nest %>%
   dplyr::select(-data) %>%
   unnest(cols = c(model)) %>%
-  ungroup() %>% 
+  ungroup() %>%
   mutate(p.adj = p.adjust(p.value,method="holm"),
          sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
          p.value = format(round(p.value,3),nsmall=4),
@@ -220,7 +226,7 @@ tp_diff_reg_pr <- tp_diff_reg_nest %>%
   filter(!term %in% c("(Intercept)","df$year_collected")) %>%
   mutate(term = str_remove_all(term, "[df$]"),
          measure = "Lexical diversity") %>%
-  arrange(Language_name) 
+  arrange(Language_name)
 
 # car vif function to check inflated SE of control variable
 library("car")
