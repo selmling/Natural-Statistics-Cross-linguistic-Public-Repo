@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import math
 
-
+np.random.seed(0)
 
 def get_random_samples(corpora, interval):
     random_dat = pd.DataFrame()
@@ -23,11 +23,12 @@ def get_random_samples(corpora, interval):
                "Target_Child" in list(tran["speaker_role"]):
                 valid_ids.append(i)
         errs = []
+        print(len(valid_ids))
         for tid in valid_ids:
             tran = c[c['transcript_id']==tid]
             try:
               rand = random_sample(tran, interval)
-              random_dat = random_dat.append(rand)
+              random_dat = pd.concat([random_dat, rand], ignore_index=True)
             except:
               errs.append(tid)
     print("Errors: ", errs)
