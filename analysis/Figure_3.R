@@ -75,4 +75,4 @@ p <- ggplot() +
                                             size=0, linetype="dotted",
                                             colour = "white"))    
 
-ggsave("../figures/Figure_2.pdf", width = 7, height = 2.4, dpi=1200)
+ggsave("../figures/Figure_3.pdf", width = 7, height = 2.4, dpi=1200)
