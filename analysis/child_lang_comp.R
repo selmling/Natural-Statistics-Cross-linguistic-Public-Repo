@@ -1,17 +1,29 @@
+library("ggnewscale")
 library("kableExtra")
 library("tidyverse")
 library("ggridges")
 library("cowplot")
 library("broom")
 
-# ---- Language competence measure 1
+# ---- Language proficiency measure 1
 
-child_dat <- read_csv("../data/child_dat.csv")
+child_dat <- read_csv("data/child_dat.csv")
 
 # drop child blank utterances
 
 child_dat_cln <- child_dat %>%
-  filter(!gloss == "") %>%
+  filter(!gloss == "")
+
+# drop kids who produced fewer than 5 non-blank utterances
+
+excluders <- child_dat_cln %>%
+  group_by(transcript_id) %>%
+  summarise(utterance_count = n()) %>%
+  filter(utterance_count < 5) %>%
+  pull(transcript_id)
+
+child_dat_cln <- child_dat_cln %>%
+  filter(!transcript_id %in% excluders) %>%
   mutate(babble_count = str_count(gloss, "xxx") +
                         str_count(gloss, "yyy") +
                         str_count(gloss, "www"),
@@ -33,7 +45,7 @@ child_word_dat_summary %>%
   geom_smooth(method = lm, color = "black") +
   facet_wrap(~Language_name)
 
-# ---- language competence assignment
+# ---- language proficiency assignment
 
 # 0-1 intelligible words = **babbling stage**
 
@@ -46,7 +58,7 @@ child_word_dat_summary <- child_word_dat_summary %>%
           total_words <= 1 ~ "babbling",
           total_words > 1 & MLUw < 1.5 ~ "single word",
           MLUw >= 1.5 ~ "multiword"
-  )) 
+  ))
 
 # vis check
 
@@ -69,7 +81,7 @@ g
 
 ggsave("../figures/ling_comp_x_age.pdf", g, width = 9, height = 6)
 
-# ---- Language competence measure 2 (continuous)
+# ---- Language proficiency measure 2 (continuous)
 
 # proportion of the following utterance types:
 
@@ -110,7 +122,7 @@ child_word_dat_prop %>%
   theme(text = element_text(size = 14),
         legend.text = element_text(size = 12))
 
-ggsave("../figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6)
+ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6)
 
 # ---- difference score test as a function of language competence
 
@@ -122,14 +134,14 @@ child_word_dat_prop_multiword <- child_word_dat_prop %>%
   filter(child_utt_cat == "multiword") %>%
   rename(prop_multiword = proportion)
 
-cdat <- read_csv("../data/rand_dat_inc_master_cc_lexdiv.csv")
-ncdat <- read_csv("../data/rand_dat_inc_master_nc_lexdiv.csv")
+cdat <- read_csv("data/rand_dat_inc_master_cc_lexdiv.csv")
+ncdat <- read_csv("data/rand_dat_inc_master_nc_lexdiv.csv")
 
 dat <- rbind(cdat, ncdat) %>% 
   mutate(single_word_utterance = ifelse(num_tokens==1,1,0)) %>%
   rename(uniqueness = uniquenss)
 
-corpora_year <- read_csv("../data/corpora_year.csv") %>%
+corpora_year <- read_csv("data/corpora_year.csv") %>%
     rename(corpus_name = Corpora) %>%
     select(corpus_name, `Year collected`)
 
@@ -184,20 +196,107 @@ swu_sumstats <- dat %>%
   mutate(diff = `non-contingent` - contingent) %>%
   left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name"))
 
+# --- Figure 3
 # lexical diversity difference and child language competence
 
-lexdiv_sumstats_long_types %>%
-  drop_na(type_diff) %>%
-  distinct(transcript_id, .keep_all = TRUE) %>%
-  ggplot(., aes(x = prop_multiword, y = type_diff)) +
-    geom_point() +
-    facet_wrap(~ Language_name, ncol = 7) +
-    stat_smooth(method = "lm", col = "red")
+label_custom <- function(x) {
+  # Create a custom labeling function
+  ifelse(x == 1, "1", ifelse(x == 0, "0", sprintf(".%s", substr(format(x), 3, 4))))
+}
 
-# ---- linear models
+stroke = 1
+shape = 21
+size = 2
+
+p1 <- lexdiv_sumstats_long_types %>%
+  drop_na(type_diff) %>%
+  ggplot(., aes(color = Language_name)) +
+  geom_point(aes(x = prop_multiword, y = Types, fill = Contingency),
+             size = size, shape = shape, stroke = stroke,
+             show.legend = TRUE) +
+  guides(color=FALSE) +
+  new_scale_color() +
+  stat_smooth(method=lm,size=1.2, se = TRUE,
+              aes (x = prop_multiword, y = Types, color=Contingency)) +
+  facet_wrap(. ~ Language_name,ncol = 7) +
+  scale_color_manual(labels = c("Contingent", "Non-Contingent"),
+                     values = alpha(c("black","white"), .95)) +
+  scale_fill_manual(values = alpha(c("black", "white"), .3)) +
+  guides(color=FALSE,
+         fill=FALSE) +
+  ylim(0, 400) +
+  scale_x_continuous(limits = c(0, 1), labels = label_custom) +
+  labs(tag = "A",
+       y = "Number of unique words",
+       x = "Child language proficiency \n (prop. multiword utterances)") +
+  theme_classic() +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(colour = "black"),
+        axis.text.y = element_text(colour = "black"),
+        aspect.ratio = .75,
+        legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.background = element_rect(fill = alpha("white", 0.90),
+                                         size = 0, linetype = "dotted",
+                                         colour = "white"),
+        legend.text = element_text(size = 12),
+        panel.background = element_rect(fill = "grey90"))
+
+# wide to long
+lexdiv_sumstats_long_tokens <- lexdiv_sumstats %>% 
+  dplyr::select(transcript_id, Language_name, age, prop_multiword,
+                tokens_contingent, `tokens_non-contingent`, year_collected) %>% 
+  mutate(token_diff = `tokens_non-contingent` - tokens_contingent) %>% 
+  pivot_longer(cols = c(`tokens_non-contingent`, tokens_contingent)) %>% 
+  rename(Contingency = name,
+         Tokens = value)
+
+p2 <- ggplot(lexdiv_sumstats_long_tokens, aes(color = Language_name)) +
+  geom_point(aes(x = prop_multiword, y = Tokens, fill = Contingency),
+             size = size, shape = shape, stroke = stroke,
+             show.legend = TRUE) +
+  guides(color=FALSE) +
+  new_scale_color() +
+  stat_smooth(method=lm,size=1.2, se = TRUE,
+              aes (x = prop_multiword, y = Tokens, color=Contingency)) +
+  facet_wrap(. ~ Language_name,ncol = 7) +
+  scale_color_manual(labels = c("Contingent", "Non-Contingent"),
+                     values = alpha(c("black","white"), .95)) +
+  scale_fill_manual(values = alpha(c("black", "white"), .3)) +
+  guides(fill=FALSE) +
+  ylim(0, 1500) +
+  scale_x_continuous(limits = c(0, 1), labels = label_custom) +
+  labs(tag = "B",
+       y = "Total number of words",
+       x = "Child language proficiency \n (prop. multiword utterances)") +
+  theme_classic() +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(colour = "black"),
+        axis.text.y = element_text(colour = "black"),
+        aspect.ratio = .75,
+        legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.background = element_rect(fill = alpha("white", 0.90),
+                                         size = 0, linetype = "dotted",
+                                         colour = "white"),
+        legend.text = element_text(size = 12),
+        panel.background = element_rect(fill = "grey90"))
+
+pcol <- plot_grid(p1, p2 + guides(color=FALSE), ncol = 1, labels = c("", ""))
+
+legend <- get_legend(
+  p2
+)
+
+g <- plot_grid(pcol, legend, ncol = 1, rel_heights = c(3, .4))
+
+ggsave("figures/Figure_3.pdf", g, width = 12, height = 8.5)
+
+
+# ---- difference score test by language proficiency
 
 # model functions
-tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$prop_multiword + df$age + df$year_collected))
+tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$prop_multiword))
 
 # number of unique words (types)
 
