@@ -298,6 +298,8 @@ ggsave("figures/Figure_3.pdf", g, width = 12, height = 8.5)
 # model functions
 tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$prop_multiword))
 
+tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$prop_multiword))
+
 # number of unique words (types)
 
 # vector for rows to remove
@@ -328,10 +330,48 @@ tp_diff_reg_pr <- tp_diff_reg_nest %>%
          measure = "Lexical diversity") %>%
   arrange(Language_name)
 
-# model functions
-mlu_diff_reg_fun <- function(df) tidy(lm(df$diff ~ df$prop_multiword + df$age + df$year_collected))
+# number of words (tokens)
 
-swu_diff_reg_fun <- function(df) tidy(lm(df$diff ~ df$prop_multiword + df$age + df$year_collected))
+tk_diff_reg_nest <- lexdiv_sumstats_long_tokens %>%
+  filter(!Language_name %in% to_remove) %>%
+  drop_na(token_diff) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>% 
+  nest() %>% 
+  mutate(model = map(data, tk_diff_reg_fun))
+
+tk_diff_reg_pr <- tk_diff_reg_nest %>% 
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>% 
+  mutate(p.adj = p.adjust(p.value,method="holm"),
+         sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
+         p.value = format(round(p.value,3),nsmall=4),
+         p.value= gsub("0.0000","<.0001",p.value),
+         p.adj = format(round(p.adj,3),nsmall=4),
+         p.adj = gsub("0.0000","<.0001",p.adj),
+         estimate = format(round(estimate,2))) %>% 
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  filter(!term %in% c("(Intercept)","df$year_collected")) %>%
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Total # of words") %>% 
+  arrange(Language_name)
+
+# publication-ready table
+table_S11 <- bind_rows(tp_diff_reg_pr, tk_diff_reg_pr) %>%
+  dplyr::select(Language_name, estimate, p.value, p.adj) %>%
+  rename(Language = Language_name, Estimate = estimate,
+         `p-value` = p.value, `Adjusted p-value`= p.adj) %>% 
+  kbl(.) %>% 
+  kable_paper("striped", full_width = F) %>%
+  pack_rows("Lexical diversity", 1, 12) %>%
+  pack_rows("Total number of words", 13, 24)
+
+
+# model functions
+mlu_diff_reg_fun <- function(df) tidy(lm(df$diff ~ df$prop_multiword))
+
+swu_diff_reg_fun <- function(df) tidy(lm(df$diff ~ df$prop_multiword))
 
 # mean length of utterance in words
 

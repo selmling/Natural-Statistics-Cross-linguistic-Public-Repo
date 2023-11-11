@@ -23,7 +23,6 @@ def get_random_samples(corpora, interval):
                "Target_Child" in list(tran["speaker_role"]):
                 valid_ids.append(i)
         errs = []
-        print(len(valid_ids))
         for tid in valid_ids:
             tran = c[c['transcript_id']==tid]
             try:
