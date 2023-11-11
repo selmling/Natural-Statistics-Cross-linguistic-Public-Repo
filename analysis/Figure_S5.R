@@ -1,9 +1,9 @@
-library("wesanderson")
+library("RColorBrewer")
 library('tidyverse')
 library('ggplot2')
 library('scales')
 
-context_dat <- read.csv("../data/context_counts_subject_level.csv")
+context_dat <- read.csv("data/context_counts_subject_level.csv")
 
 context_dat$context <- gsub("HomeBook-reading","Home: book reading",context_dat$context)
 context_dat$context <- gsub("HomeInterview/Unstructured","Home: interview/unstructured",context_dat$context)
@@ -53,14 +53,17 @@ context_summary <- context_summary %>% mutate(row = case_when(
                     Language_name=="Spanish" ~ 1,
                     Language_name=="Swedish" ~ 1))
 
-pal <- wes_palette("Zissou1", 10, type = "continuous")
+num_colors <- length(unique(context_summary$context))
+spectral_colors <- brewer.pal(num_colors + 1, "Spectral")
+reversed_palette <- rev(spectral_colors)
 
 p <- ggplot() +
         geom_bar(aes(y = percent, x = Language_name, fill = context),
                 data = context_summary,
                 stat="identity") +
         facet_wrap(~row, ncol=1, scales='free') +
-        scale_fill_brewer(name = "Recording context", palette = "Spectral",direction = -1) +
+        # scale_fill_brewer(name = "Recording context", palette = "Spectral", direction = -1) +
+        scale_fill_manual(name = "Recording context", values = reversed_palette) +
         labs(y = "Percentage of transcripts",
             x = "") +
         theme_classic() +
@@ -73,6 +76,6 @@ p <- ggplot() +
             legend.key.size = unit(4, 'mm'),
             legend.background = element_rect(fill="white",
                                             size=0, linetype="dotted",
-                                            colour = "white"))    
+                                            colour = "white"))
 
-ggsave("../figures/Figure_3.pdf", width = 7, height = 2.4, dpi=1200)
+ggsave("figures/Figure_S5.pdf", width = 7, height = 2.4, dpi=1200)
