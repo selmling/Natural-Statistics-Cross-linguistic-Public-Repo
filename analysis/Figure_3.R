@@ -196,7 +196,8 @@ swu_sumstats <- dat %>%
   mutate(diff = `non-contingent` - contingent) %>%
   left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name"))
 
-# --- Figure 3
+# ---- Figure 3
+
 # lexical diversity difference and child language competence
 
 label_custom <- function(x) {

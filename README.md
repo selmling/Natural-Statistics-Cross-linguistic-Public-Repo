@@ -26,4 +26,4 @@ There are required packages in both python and R for this project. You must inst
 - `rand_MLUw.ipynb`[<1 min]
 - `rand_SWU.ipynb`. [<1 min]
 - `Figure_2.ipynb`
-- `Figre_3.ipynb`
+- `Figre_3.R`
