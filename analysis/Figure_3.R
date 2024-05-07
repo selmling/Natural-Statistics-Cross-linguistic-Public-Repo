@@ -452,13 +452,3 @@ table_S13 <- bind_rows(tp_diff_reg_pr, mlu_diff_reg_pr, swu_diff_reg_pr) %>%
   pack_rows("Number of unique words", 1, 12) %>%
   pack_rows("Mean length of utterance in words", 13, 24) %>%
   pack_rows("Proportion single word utterances", 25, 36)
-
-# ---- Does age of collection correlate with children's linguistic competence?
-
-mlu_sumstats %>%
-  drop_na(diff) %>%
-  distinct(transcript_id, .keep_all = TRUE) %>%
-  ggplot(., aes(x = year_collected, y = prop_multiword)) +
-    geom_point() +
-    facet_wrap(~ Language_name, ncol = 7) +
-    stat_smooth(method = "lm", col = "red")
