@@ -116,7 +116,7 @@ rangeF0_stats_table %>%
        select(Language, `Contingent Mean (SD)`, `Non-contingent Mean (SD)`, everything()) %>% 
        kbl("pipe")
 
-# mean range
+# mean pitch
 
 meanF0_test <- pitch_dat %>%
   group_by(Language) %>%
