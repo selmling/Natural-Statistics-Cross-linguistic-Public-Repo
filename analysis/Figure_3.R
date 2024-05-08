@@ -100,8 +100,11 @@ child_dat_cln <- child_dat_cln %>%
 
 child_word_dat_prop <- child_dat_cln %>% 
   group_by(Language_name, transcript_id, target_child_age, child_utt_cat) %>%
-  summarize(n = n()) %>%
-  mutate(proportion = n / sum(n))
+  summarize(n = n(), .groups = 'drop') %>%
+  complete(child_utt_cat, nesting(transcript_id, Language_name, target_child_age), fill = list(n = 0))%>% 
+  group_by(transcript_id) %>% 
+  mutate(proportion = n / sum(n)) %>% 
+  select(Language_name, transcript_id, target_child_age, child_utt_cat, proportion)
 
 # vis check
 
@@ -141,24 +144,25 @@ dat <- rbind(cdat, ncdat) %>%
   mutate(single_word_utterance = ifelse(num_tokens==1,1,0)) %>%
   rename(uniqueness = uniquenss)
 
-corpora_year <- read_csv("data/corpora_year.csv") %>%
-    rename(corpus_name = Corpora) %>%
-    select(corpus_name, `Year collected`)
+# corpora_year <- read_csv("data/corpora_year.csv") %>%
+#     rename(corpus_name = Corpora) %>%
+#     select(corpus_name, `Year collected`)
 
-dat <- dat %>% left_join(corpora_year)
+# dat <- dat %>% left_join(corpora_year)
 
 # ---- linguistic complexity contingent and non-contingent 
 
 lexdiv_sumstats <- dat %>%
   dplyr::select(target_child_id, transcript_id, target_child_age,
-                Language_name, contingent, uniqueness, num_tokens,
-                `Year collected`) %>%
+                Language_name, contingent, uniqueness, num_tokens) %>%
+                # `Year collected`
   group_by(target_child_id, transcript_id, contingent, Language_name) %>% 
   summarise(variable = 'result',
             types = sum(as.numeric(unlist(uniqueness))),
             tokens = sum(num_tokens),
             age = unique(target_child_age),
-            year_collected = unique(`Year collected`)) %>%
+            # year_collected = unique(`Year collected`)
+            ) %>%
   pivot_wider(names_from = contingent,
               values_from = c(types, tokens)) %>%
   left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name"))
@@ -166,7 +170,7 @@ lexdiv_sumstats <- dat %>%
 # wide to long
 lexdiv_sumstats_long_types <- lexdiv_sumstats %>% 
   select(target_child_id, transcript_id, Language_name, age, types_contingent,
-         `types_non-contingent`, prop_multiword, year_collected) %>% 
+         `types_non-contingent`, prop_multiword) %>% 
   mutate(type_diff = `types_non-contingent` - types_contingent) %>% 
   pivot_longer(cols = c(`types_non-contingent`, types_contingent)) %>% 
   rename(Contingency = name,
@@ -174,24 +178,20 @@ lexdiv_sumstats_long_types <- lexdiv_sumstats %>%
 
 mlu_sumstats <- dat %>%
   dplyr::select(target_child_id, transcript_id, target_child_age,
-                Language_name, contingent, num_tokens,
-                `Year collected`) %>%
+                Language_name, contingent, num_tokens) %>%
   group_by(transcript_id, contingent, Language_name) %>%
   summarise(mean = mean(num_tokens),
-            age = unique(target_child_age),
-            year_collected = unique(`Year collected`)) %>%
+            age = unique(target_child_age)) %>%
   spread(contingent, mean) %>%
   mutate(diff = `non-contingent` - contingent) %>%
   left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name"))
 
 swu_sumstats <- dat %>%
   group_by(target_child_id, transcript_id, target_child_age,
-           Language_name, contingent, single_word_utterance,
-           `Year collected`) %>% 
+           Language_name, contingent, single_word_utterance) %>% 
   group_by(transcript_id, contingent, Language_name) %>%
   summarise(mean = mean(single_word_utterance),
-            age = unique(target_child_age),
-            year_collected = unique(`Year collected`)) %>%
+            age = unique(target_child_age)) %>%
   spread(contingent, mean) %>%
   mutate(diff = `non-contingent` - contingent) %>%
   left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name"))
@@ -246,7 +246,7 @@ p1 <- lexdiv_sumstats_long_types %>%
 # wide to long
 lexdiv_sumstats_long_tokens <- lexdiv_sumstats %>% 
   dplyr::select(transcript_id, Language_name, age, prop_multiword,
-                tokens_contingent, `tokens_non-contingent`, year_collected) %>% 
+                tokens_contingent, `tokens_non-contingent`) %>% 
   mutate(token_diff = `tokens_non-contingent` - tokens_contingent) %>% 
   pivot_longer(cols = c(`tokens_non-contingent`, tokens_contingent)) %>% 
   rename(Contingency = name,
@@ -292,6 +292,13 @@ legend <- get_legend(
 g <- plot_grid(pcol, legend, ncol = 1, rel_heights = c(3, .4))
 
 ggsave("figures/Figure_3.pdf", g, width = 12, height = 8.5)
+
+# ---- contingent increase test
+
+# model functions
+tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$prop_multiword))
+
+tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$prop_multiword))
 
 
 # ---- difference score test by language proficiency
