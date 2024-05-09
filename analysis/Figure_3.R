@@ -293,20 +293,24 @@ g <- plot_grid(pcol, legend, ncol = 1, rel_heights = c(3, .4))
 
 ggsave("figures/Figure_3.pdf", g, width = 12, height = 8.5)
 
-# ---- contingent increase test
-
-# model functions
-tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$prop_multiword))
-
-tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$prop_multiword))
-
-
 # ---- difference score test by language proficiency
 
 # model functions
 tp_diff_reg_fun <- function(df) tidy(lm(df$`type_diff` ~ df$prop_multiword))
 
 tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$prop_multiword))
+
+# format function
+adjust_pvalues_and_format <- function(df) {
+  df %>%
+    mutate(p.adj = p.adjust(p.value, "holm"),
+           sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
+           p.value = format(round(p.value,3),nsmall=4),
+           p.value= gsub("0.0000","<.0001",p.value),
+           p.adj = format(round(p.adj,3),nsmall=4),
+           p.adj = gsub("0.0000","<.0001",p.adj),
+           estimate = format(round(estimate,2)))
+}
 
 # number of unique words (types)
 
@@ -326,13 +330,7 @@ tp_diff_reg_pr <- tp_diff_reg_nest %>%
   unnest(cols = c(model)) %>%
   ungroup() %>%
   filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
-  mutate(p.adj = p.adjust(p.value, "holm"),
-         sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
-         p.value = format(round(p.value,3),nsmall=4),
-         p.value= gsub("0.0000","<.0001",p.value),
-         p.adj = format(round(p.adj,3),nsmall=4),
-         p.adj = gsub("0.0000","<.0001",p.adj),
-         estimate = format(round(estimate,2))) %>% 
+  adjust_pvalues_and_format() %>%
   dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
   mutate(term = str_remove_all(term, "[df$]"),
          measure = "Lexical diversity") %>%
@@ -351,14 +349,8 @@ tk_diff_reg_nest <- lexdiv_sumstats_long_tokens %>%
 tk_diff_reg_pr <- tk_diff_reg_nest %>% 
   dplyr::select(-data) %>%
   unnest(cols = c(model)) %>%
-  ungroup() %>% 
-  mutate(p.adj = p.adjust(p.value,method="holm"),
-         sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
-         p.value = format(round(p.value,3),nsmall=4),
-         p.value= gsub("0.0000","<.0001",p.value),
-         p.adj = format(round(p.adj,3),nsmall=4),
-         p.adj = gsub("0.0000","<.0001",p.adj),
-         estimate = format(round(estimate,2))) %>% 
+  ungroup() %>%
+  adjust_pvalues_and_format() %>%
   dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
   filter(!term %in% c("(Intercept)","df$year_collected")) %>%
   mutate(term = str_remove_all(term, "[df$]"),
@@ -403,13 +395,7 @@ mlu_diff_reg_pr <- mlu_diff_reg_nest %>%
   unnest(cols = c(model)) %>%
   ungroup() %>%
   filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
-  mutate(p.adj = p.adjust(p.value,method="holm"),
-         sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
-         p.value = format(round(p.value,3),nsmall=4),
-         p.value= gsub("0.0000","<.0001",p.value),
-         p.adj = format(round(p.adj,3),nsmall=4),
-         p.adj = gsub("0.0000","<.0001",p.adj),
-         estimate = format(round(estimate,2))) %>% 
+  adjust_pvalues_and_format() %>%
   dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>%
   mutate(term = str_remove_all(term, "[df$]"),
          measure = "Mean length of utterance in words") %>% 
@@ -437,13 +423,7 @@ swu_diff_reg_pr <- swu_diff_reg_nest %>%
   unnest(cols = c(model)) %>%
   ungroup() %>%  
   filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
-  mutate(p.adj = p.adjust(p.value,method="holm"),
-         sig = ifelse(p.adj <0.05, "Sig.", "Non Sig."),
-         p.value = format(round(p.value,3),nsmall=4),
-         p.value= gsub("0.0000","<.0001",p.value),
-         p.adj = format(round(p.adj,3),nsmall=4),
-         p.adj = gsub("0.0000","<.0001",p.adj),
-         estimate = format(round(estimate,2))) %>% 
+  adjust_pvalues_and_format() %>%
   dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>%
   mutate(term = str_remove_all(term, "[df$]"),
          measure = "Proportion single word utterances") %>% 
@@ -459,3 +439,56 @@ table_S13 <- bind_rows(tp_diff_reg_pr, mlu_diff_reg_pr, swu_diff_reg_pr) %>%
   pack_rows("Number of unique words", 1, 12) %>%
   pack_rows("Mean length of utterance in words", 13, 24) %>%
   pack_rows("Proportion single word utterances", 25, 36)
+
+# ---- contingent increase test
+
+# model functions
+tp_reg_fun <- function(df) tidy(lm(df$`Types` ~ df$prop_multiword))
+
+tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$prop_multiword))
+
+# number of unique words (types)
+
+# contingent
+
+C_tp_reg_nest <- lexdiv_sumstats_long_types %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "types_contingent") %>%
+  drop_na(Types) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, tp_reg_fun))
+
+C_tp_reg_pr <- C_tp_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Contingent lexical diversity") %>%
+  arrange(Language_name)
+
+  # non-contingent
+
+  NC_tp_reg_nest <- lexdiv_sumstats_long_types %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "types_non-contingent") %>%
+  drop_na(Types) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, tp_reg_fun))
+
+NC_tp_reg_pr <- NC_tp_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Non-contingent lexical diversity") %>%
+  arrange(Language_name)
