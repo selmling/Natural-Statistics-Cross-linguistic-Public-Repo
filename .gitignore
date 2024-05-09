@@ -1,0 +1,7 @@
+.DS_Store
+/data/rand_dat.csv
+/data/rand_dat_inc_master.csv
+/data/rand_dat_inc_master_nc_lexdiv.csv
+/data/rand_dat_inc_master_cc_lexdiv.csv
+/data/context_counts_subject_level.csv
+/data/child_dat.csv
