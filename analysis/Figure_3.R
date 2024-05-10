@@ -209,6 +209,9 @@ stroke = 1
 shape = 21
 size = 2
 
+lexdiv_sumstats_long_types <- lexdiv_sumstats_long_types %>% 
+  filter(!Language_name %in% c("Mandarin", "Polish"))
+
 p1 <- lexdiv_sumstats_long_types %>%
   drop_na(type_diff) %>%
   ggplot(., aes(color = Language_name)) +
@@ -219,7 +222,7 @@ p1 <- lexdiv_sumstats_long_types %>%
   new_scale_color() +
   stat_smooth(method=lm,size=1.2, se = TRUE,
               aes (x = prop_multiword, y = Types, color=Contingency)) +
-  facet_wrap(. ~ Language_name,ncol = 7) +
+  facet_wrap(. ~ Language_name,ncol = 6) +
   scale_color_manual(labels = c("Contingent", "Non-Contingent"),
                      values = alpha(c("black","white"), .95)) +
   scale_fill_manual(values = alpha(c("black", "white"), .3)) +
@@ -250,7 +253,8 @@ lexdiv_sumstats_long_tokens <- lexdiv_sumstats %>%
   mutate(token_diff = `tokens_non-contingent` - tokens_contingent) %>% 
   pivot_longer(cols = c(`tokens_non-contingent`, tokens_contingent)) %>% 
   rename(Contingency = name,
-         Tokens = value)
+         Tokens = value) %>% 
+  filter(!Language_name %in% c("Mandarin", "Polish"))
 
 p2 <- ggplot(lexdiv_sumstats_long_tokens, aes(color = Language_name)) +
   geom_point(aes(x = prop_multiword, y = Tokens, fill = Contingency),
@@ -260,7 +264,7 @@ p2 <- ggplot(lexdiv_sumstats_long_tokens, aes(color = Language_name)) +
   new_scale_color() +
   stat_smooth(method=lm,size=1.2, se = TRUE,
               aes (x = prop_multiword, y = Tokens, color=Contingency)) +
-  facet_wrap(. ~ Language_name,ncol = 7) +
+  facet_wrap(. ~ Language_name,ncol = 6) +
   scale_color_manual(labels = c("Contingent", "Non-Contingent"),
                      values = alpha(c("black","white"), .95)) +
   scale_fill_manual(values = alpha(c("black", "white"), .3)) +
@@ -471,9 +475,9 @@ C_tp_reg_pr <- C_tp_reg_nest %>%
          measure = "Contingent lexical diversity") %>%
   arrange(Language_name)
 
-  # non-contingent
+# non-contingent
 
-  NC_tp_reg_nest <- lexdiv_sumstats_long_types %>%
+NC_tp_reg_nest <- lexdiv_sumstats_long_types %>%
   filter(!Language_name %in% to_remove,
          Contingency == "types_non-contingent") %>%
   drop_na(Types) %>%
@@ -527,9 +531,9 @@ C_tk_reg_pr <- C_tk_reg_nest %>%
          measure = "Contingent total # of words") %>%
   arrange(Language_name)
 
-  # non-contingent
+# non-contingent
 
-  NC_tk_reg_nest <- lexdiv_sumstats_long_tokens %>%
+NC_tk_reg_nest <- lexdiv_sumstats_long_tokens %>%
   filter(!Language_name %in% to_remove,
          Contingency == "tokens_non-contingent") %>%
   drop_na(Tokens) %>%
