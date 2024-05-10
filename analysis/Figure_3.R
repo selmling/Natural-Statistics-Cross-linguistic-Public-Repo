@@ -445,7 +445,7 @@ table_S13 <- bind_rows(tp_diff_reg_pr, mlu_diff_reg_pr, swu_diff_reg_pr) %>%
 # model functions
 tp_reg_fun <- function(df) tidy(lm(df$`Types` ~ df$prop_multiword))
 
-tk_diff_reg_fun <- function(df) tidy(lm(df$`token_diff` ~ df$prop_multiword))
+tk_reg_fun <- function(df) tidy(lm(df$`Tokens` ~ df$prop_multiword))
 
 # number of unique words (types)
 
@@ -492,3 +492,199 @@ NC_tp_reg_pr <- NC_tp_reg_nest %>%
   mutate(term = str_remove_all(term, "[df$]"),
          measure = "Non-contingent lexical diversity") %>%
   arrange(Language_name)
+
+# publication-ready table
+table_S14 <- bind_rows(C_tp_reg_pr, NC_tp_reg_pr) %>%
+  dplyr::select(Language_name, estimate, p.value, p.adj) %>%
+  rename(Language = Language_name, Estimate = estimate,
+         `p-value` = p.value, `Adjusted p-value`= p.adj) %>%
+  kbl(.) %>%
+  kable_paper("striped", full_width = F) %>%
+  pack_rows("Number of contingent unique words", 1, 12) %>%
+  pack_rows("Number of non-contingent unique words", 13, 24)
+
+# number of words (tokens)
+
+# contingent
+
+C_tk_reg_nest <- lexdiv_sumstats_long_tokens %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "tokens_contingent") %>%
+  drop_na(Tokens) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, tk_reg_fun))
+
+C_tk_reg_pr <- C_tk_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Contingent total # of words") %>%
+  arrange(Language_name)
+
+  # non-contingent
+
+  NC_tk_reg_nest <- lexdiv_sumstats_long_tokens %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "tokens_non-contingent") %>%
+  drop_na(Tokens) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, tk_reg_fun))
+
+NC_tk_reg_pr <- NC_tk_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Non-contingent total # of words") %>%
+  arrange(Language_name)
+
+# publication-ready table
+table_S15 <- bind_rows(C_tk_reg_pr, NC_tk_reg_pr) %>%
+  dplyr::select(Language_name, estimate, p.value, p.adj) %>%
+  rename(Language = Language_name, Estimate = estimate,
+         `p-value` = p.value, `Adjusted p-value`= p.adj) %>%
+  kbl(.) %>%
+  kable_paper("striped", full_width = F) %>%
+  pack_rows("Total number of contingent words", 1, 12) %>%
+  pack_rows("Total number of non-contingent words", 13, 24)
+
+# model functions
+mlu_reg_fun <- function(df) tidy(lm(df$`Types` ~ df$prop_multiword))
+
+swu_reg_fun <- function(df) tidy(lm(df$`Tokens` ~ df$prop_multiword))
+
+mlu_sumstats <- mlu_sumstats %>%
+  pivot_longer(cols = c(contingent, `non-contingent`),
+               names_to = "Contingency",
+               values_to = "MLUw")
+  
+swu_sumstats <- swu_sumstats %>%
+  pivot_longer(cols = c(contingent, `non-contingent`),
+               names_to = "Contingency",
+               values_to = "SWU")
+
+# Check from here forward:
+# mean length of utterance in words
+
+# contingent
+
+C_mlu_reg_nest <- mlu_sumstats %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "contingent") %>%
+  drop_na(MLUw) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, mlu_reg_fun))
+
+C_mlu_reg_pr <- C_mlu_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Contingent mean length of utterance in words") %>%
+  arrange(Language_name)
+
+  # non-contingent
+
+  NC_mlu_reg_nest <- mlu_sumstats %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "non-contingent") %>%
+  drop_na(MLUw) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, mlu_reg_fun))
+
+NC_mlu_reg_pr <- NC_mlu_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Non-contingent mean length of utterance in words") %>%
+  arrange(Language_name)
+
+# publication-ready table
+
+table_S16 <- bind_rows(C_mlu_reg_pr, NC_mlu_reg_pr) %>%
+  dplyr::select(Language_name, estimate, p.value, p.adj) %>%
+  rename(Language = Language_name, Estimate = estimate,
+         `p-value` = p.value, `Adjusted p-value`= p.adj) %>%
+  kbl(.) %>%
+  kable_paper("striped", full_width = F) %>%
+  pack_rows("Mean length of contingent utterances in words", 1, 12) %>%
+  pack_rows("Mean length of non-contingent utterances in words", 13, 24)
+
+# proportion of single word utterances
+
+# contingent
+
+C_swu_reg_nest <- swu_sumstats %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "contingent") %>%
+  drop_na(SWU) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, swu_reg_fun))
+
+C_swu_reg_pr <- C_swu_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Contingent proportion single word utterances") %>%
+  arrange(Language_name)
+
+  # non-contingent
+
+  NC_swu_reg_nest <- swu_sumstats %>%
+  filter(!Language_name %in% to_remove,
+         Contingency == "non-contingent") %>%
+  drop_na(SWU) %>%
+  distinct(transcript_id, .keep_all = TRUE) %>%
+  group_by(Language_name) %>%
+  nest() %>%
+  mutate(model = map(data, swu_reg_fun))
+
+NC_swu_reg_pr <- NC_swu_reg_nest %>%
+  dplyr::select(-data) %>%
+  unnest(cols = c(model)) %>%
+  ungroup() %>%
+  filter(!term %in% c("(Intercept)", "df$year_collected", "df$age")) %>%
+  adjust_pvalues_and_format() %>%
+  dplyr::select(c(Language_name, term, estimate, sig, p.value, p.adj)) %>% 
+  mutate(term = str_remove_all(term, "[df$]"),
+         measure = "Non-contingent proportion single word utterances") %>%
+  arrange(Language_name)
+
+# publication-ready table
+
+table_S17 <- bind_rows(C_swu_reg_pr, NC_swu_reg_pr) %>%
+  dplyr::select(Language_name, estimate, p.value, p.adj) %>%
+  rename(Language = Language_name, Estimate = estimate,
+         `p-value` = p.value, `Adjusted p-value`= p.adj) %>%
+  kbl(.) %>%
+  kable_paper("striped", full_width = F) %>%
+  pack_rows("Proportion of single word utterances in contingent utterances", 1, 12) %>%
+  pack_rows("Proportion of single word utterances in non-contingent utterances", 13, 24)
