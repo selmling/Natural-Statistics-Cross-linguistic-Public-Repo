@@ -32,7 +32,31 @@ def get_random_samples(corpora, interval):
               errs.append(tid)
     print("Errors: ", errs)
     return random_dat
-    
+
+def get_random_samples_TSE(corpora, interval):
+    c = corpora
+    random_dat = pd.DataFrame()    
+    ids = c['transcript_id'].unique()
+    valid_ids = []
+    for i in ids:
+        tran = c[c['transcript_id']==i]
+        if longer_than_ten(tran) and \
+            sufficient_child_utterances(tran, 5) and \
+            sufficient_caregiver_utterances(tran, 5) and \
+            has_times(tran) and \
+            "Target_Child" in list(tran["speaker_role"]):
+            valid_ids.append(i)
+    errs = []
+    for tid in valid_ids:
+        tran = c[c['transcript_id']==tid]
+        try:
+          rand = random_sample(tran, interval)
+          random_dat = pd.concat([random_dat, rand], ignore_index=True)
+        except:
+          errs.append(tid)
+    print("Errors: ", errs)
+    return random_dat
+
 def get_maxvoc_samples(corpora, interval):
     maxvoc_dat = pd.DataFrame()
     for i in corpora:    
@@ -100,7 +124,7 @@ def has_times(tran):
     return True
 
 def longer_than_ten(tran):
-  length = tran['media_end'][-1]
+  length = tran['media_end'].iloc[-1]
   if length != None and float(length) > 600:
     return True
   else:
