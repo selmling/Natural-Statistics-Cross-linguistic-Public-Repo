@@ -111,11 +111,12 @@ child_word_dat_prop <- child_dat_cln %>%
 library("wesanderson")
 
 child_word_dat_prop %>%
+  filter(!Language_name %in% c("Mandarin", "Polish")) %>% 
   mutate(child_utt_cat = factor(child_utt_cat, levels=c("babble", "single word", "multiword"))) %>%
   ggplot(aes(x=target_child_age, y = proportion, color=child_utt_cat)) +
   geom_point(alpha = .5) +
   geom_smooth(method = "lm",size = 2) +
-  facet_wrap(~Language_name, ncol = 7) +
+  facet_wrap(~Language_name, ncol = 6) +
   scale_color_manual(name = "Child utterance types",
                      values = wes_palette("Zissou1", n = 3, type = "continuous")) +
   coord_cartesian(y = c(0, 1)) +

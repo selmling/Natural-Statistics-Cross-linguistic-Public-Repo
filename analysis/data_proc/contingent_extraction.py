@@ -63,6 +63,17 @@ def create_tp_result(df):
 
     filtered.to_csv("../data/tp_dat_cont.csv")
 
+def create_tse_result(df):
+
+    # convert to string type to clean strings
+    df["cat"] = df["cat"].astype(str)
+    df["cat"] = df["cat"].apply(clean_string)
+    
+    # filter out rows
+    filtered = filter_tp_table(df)
+
+    filtered.to_csv("../data/tse_dat_cont.csv")
+
 def assign_contingency(df, window,buffer):
     transcripts = df["transcript_id"].unique()
     result = df.copy()
