@@ -73,3 +73,8 @@ TSE_data <- TSE_data %>%
 
 TSE_cont_dat <- TSE_data %>% 
     assign_contingency(.,3,.001)
+
+# save to file
+
+TSE_cont_dat %>% 
+    write_csv("data/TSE_cont_dat.csv")
