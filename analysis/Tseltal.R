@@ -42,9 +42,57 @@ TSE_data %>%
 
 # session durations are described here:
 # Elmlinger, Goldstein & Casillas, 2023 Section 2.3
-# each session is 60 minutes in total
+# each session 60 minutes in total
 # adding arrange line here would probably help
 
+# arrange by transcript_id and media_start
+# then group by transcript_id
+# then find the interval between rows
+# find when intervals between rows are larger than 5 minutes
+
+TSE_dur_dat <- TSE_data %>%
+    group_by(transcript_id) %>%
+    arrange(transcript_id, media_start) %>%
+    mutate(interval = media_start - lag(media_end)) %>%
+    mutate(large_interval = ifelse(is.na(interval), FALSE, interval > 450)) %>%
+    mutate(interval_index = cumsum(large_interval))
+
+# summarize durations of each intveral_index
+
+TSE_dur_sum_dat <- TSE_dur_dat %>%
+    group_by(transcript_id, interval_index) %>%
+    summarize(min = min(media_start, na.rm = TRUE),
+              max = max(media_end, na.rm = TRUE),
+              duration = max - min) %>%
+    mutate(dur_min = duration/60)
+
+TSE_dur_total_dat <- TSE_dur_sum_dat %>%
+    group_by(transcript_id) %>%
+    summarize(total_duration = sum(duration, na.rm = TRUE),
+              total_duration_min = total_duration/60)
+
+# load Tseltal time chunks
+
+TSE_time_chunks <- read_csv("data/TSE_time_chunks.csv") %>%
+    mutate(duration = offset - onset,
+           duration_min = duration/60)
+
+# set seed for reproducibility
+set.seed(123)
+
+# randomly sample 2 5-minute chunks from each transcript_id
+
+TSE_time_chunks %>%
+    filter(duration_min >= 5) %>% 
+    group_by(filename) %>%
+    sample_n(2) %>%
+    ungroup() %>%
+    mutate(transcript_id = str_remove(filename, ".eaf"),
+           media_start = onset,
+           media_end = offset) %>%
+    select(transcript_id, media_start, media_end) %>%
+    write_csv("data/TSE_rand_time_chunks.csv")
+    
 # ---- contingency detection
 
 source_python("analysis/data_proc/contingent_extraction.py")

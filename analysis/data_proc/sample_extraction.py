@@ -37,17 +37,8 @@ def get_random_samples_TSE(corpora, interval):
     c = corpora
     random_dat = pd.DataFrame()    
     ids = c['transcript_id'].unique()
-    valid_ids = []
-    for i in ids:
-        tran = c[c['transcript_id']==i]
-        if longer_than_ten(tran) and \
-            sufficient_child_utterances(tran, 5) and \
-            sufficient_caregiver_utterances(tran, 5) and \
-            has_times(tran) and \
-            "Target_Child" in list(tran["speaker_role"]):
-            valid_ids.append(i)
     errs = []
-    for tid in valid_ids:
+    for tid in ids:
         tran = c[c['transcript_id']==tid]
         try:
           rand = random_sample(tran, interval)
