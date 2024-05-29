@@ -1,0 +1,3139 @@
+,Language_name,target_child_id,transcript_id,contingent,sums,caregiver_type
+1,Croatian,18271,29171,contingent,13,Mother & Father
+2,Croatian,18271,29171,non-contingent,55,Mother & Father
+3,Croatian,18271,29173,contingent,61,Mother only
+4,Croatian,18271,29173,non-contingent,103,Mother only
+5,Croatian,18271,29174,contingent,76,Mother only
+6,Croatian,18271,29174,non-contingent,75,Mother only
+7,Croatian,18271,29175,contingent,87,Mother only
+8,Croatian,18271,29175,non-contingent,75,Mother only
+9,Croatian,18271,29176,contingent,83,Mother only
+10,Croatian,18271,29176,non-contingent,122,Mother only
+11,Croatian,18271,29177,contingent,66,Mother only
+12,Croatian,18271,29177,non-contingent,123,Mother only
+13,Croatian,18271,29178,contingent,140,Mother only
+14,Croatian,18271,29178,non-contingent,157,Mother only
+15,Croatian,18271,29179,contingent,153,Mother & Father
+16,Croatian,18271,29179,non-contingent,172,Mother & Father
+17,Croatian,18271,29180,contingent,97,Mother & Father
+18,Croatian,18271,29180,non-contingent,207,Mother & Father
+19,Croatian,18271,29187,contingent,73,Mother only
+20,Croatian,18271,29187,non-contingent,88,Mother only
+21,Croatian,18271,29192,contingent,114,Mother only
+22,Croatian,18271,29192,non-contingent,191,Mother only
+23,Croatian,18271,29194,contingent,101,Mother & Father
+24,Croatian,18271,29194,non-contingent,161,Mother & Father
+25,Croatian,18271,29195,contingent,118,Mother only
+26,Croatian,18271,29195,non-contingent,139,Mother only
+27,Croatian,18271,29196,contingent,112,Mother only
+28,Croatian,18271,29196,non-contingent,152,Mother only
+29,Croatian,18271,29197,contingent,140,Mother only
+30,Croatian,18271,29197,non-contingent,129,Mother only
+31,Croatian,18271,29199,contingent,98,Mother only
+32,Croatian,18271,29199,non-contingent,143,Mother only
+33,Croatian,18271,29200,contingent,163,Mother only
+34,Croatian,18271,29200,non-contingent,182,Mother only
+35,Croatian,18271,29201,contingent,135,Mother only
+36,Croatian,18271,29201,non-contingent,157,Mother only
+37,Croatian,18271,29202,contingent,97,Mother only
+38,Croatian,18271,29202,non-contingent,189,Mother only
+39,Croatian,18271,29203,contingent,144,Mother only
+40,Croatian,18271,29203,non-contingent,154,Mother only
+41,Croatian,18271,29204,contingent,142,Mother & Father
+42,Croatian,18271,29204,non-contingent,180,Mother & Father
+43,Croatian,18283,29212,contingent,74,Mother & Father
+44,Croatian,18283,29212,non-contingent,106,Mother & Father
+45,Croatian,18283,29213,contingent,59,Mother & Father
+46,Croatian,18283,29213,non-contingent,102,Mother & Father
+47,Croatian,18283,29214,contingent,57,Mother & Father
+48,Croatian,18283,29214,non-contingent,126,Mother & Father
+49,Croatian,18283,29215,contingent,62,Mother & Father
+50,Croatian,18283,29215,non-contingent,94,Mother & Father
+51,Croatian,18283,29216,contingent,64,Mother only
+52,Croatian,18283,29216,non-contingent,121,Mother only
+53,Croatian,18283,29217,contingent,88,Mother only
+54,Croatian,18283,29217,non-contingent,114,Mother only
+55,Croatian,18283,29218,contingent,21,Mother & Father
+56,Croatian,18283,29218,non-contingent,64,Mother & Father
+57,Croatian,18283,29219,contingent,65,Mother only
+58,Croatian,18283,29219,non-contingent,102,Mother only
+59,Croatian,18283,29220,contingent,65,Mother only
+60,Croatian,18283,29220,non-contingent,104,Mother only
+61,Croatian,18283,29222,contingent,61,Mother only
+62,Croatian,18283,29222,non-contingent,159,Mother only
+63,Croatian,18283,29223,contingent,97,Mother only
+64,Croatian,18283,29223,non-contingent,170,Mother only
+65,Croatian,18283,29224,contingent,113,Mother only
+66,Croatian,18283,29224,non-contingent,175,Mother only
+67,Croatian,18283,29225,contingent,60,Mother only
+68,Croatian,18283,29225,non-contingent,68,Mother only
+69,Croatian,18283,29226,contingent,63,Mother & Father
+70,Croatian,18283,29226,non-contingent,81,Mother & Father
+71,Croatian,18283,29227,contingent,69,Mother only
+72,Croatian,18283,29227,non-contingent,151,Mother only
+73,Croatian,18283,29228,contingent,56,Mother only
+74,Croatian,18283,29228,non-contingent,96,Mother only
+75,Croatian,18283,29229,contingent,76,Mother only
+76,Croatian,18283,29229,non-contingent,127,Mother only
+77,Croatian,18283,29230,contingent,106,Mother only
+78,Croatian,18283,29230,non-contingent,165,Mother only
+79,Croatian,18283,29231,contingent,106,Mother only
+80,Croatian,18283,29231,non-contingent,109,Mother only
+81,Croatian,18283,29232,contingent,57,Mother & Father
+82,Croatian,18283,29232,non-contingent,114,Mother & Father
+83,Croatian,18283,29233,contingent,105,Mother & Father
+84,Croatian,18283,29233,non-contingent,107,Mother & Father
+85,Croatian,18283,29234,contingent,78,Mother only
+86,Croatian,18283,29234,non-contingent,108,Mother only
+87,Croatian,18283,29235,contingent,157,Mother only
+88,Croatian,18283,29235,non-contingent,191,Mother only
+89,Croatian,18290,29249,contingent,15,Mother only
+90,Croatian,18290,29249,non-contingent,80,Mother only
+91,Croatian,18290,29253,contingent,112,Mother only
+92,Croatian,18290,29253,non-contingent,144,Mother only
+93,Croatian,18290,29255,contingent,120,Mother & Father
+94,Croatian,18290,29255,non-contingent,179,Mother & Father
+95,Croatian,18290,29258,contingent,100,Mother only
+96,Croatian,18290,29258,non-contingent,200,Mother only
+97,Croatian,18290,29262,contingent,44,Mother only
+98,Croatian,18290,29262,non-contingent,74,Mother only
+99,Croatian,18290,29267,contingent,39,Mother only
+100,Croatian,18290,29267,non-contingent,52,Mother only
+101,Croatian,18290,29271,contingent,105,Mother only
+102,Croatian,18290,29271,non-contingent,128,Mother only
+103,Croatian,18290,29275,contingent,5,Mother only
+104,Croatian,18290,29275,non-contingent,11,Mother only
+105,Croatian,18290,29281,contingent,129,Mother & Father
+106,Croatian,18290,29281,non-contingent,98,Mother & Father
+107,Croatian,18290,29284,contingent,89,Mother & Father
+108,Croatian,18290,29284,non-contingent,107,Mother & Father
+109,Croatian,18290,29285,contingent,130,Mother only
+110,Croatian,18290,29285,non-contingent,110,Mother only
+111,Croatian,18290,29286,contingent,80,Mother only
+112,Croatian,18290,29286,non-contingent,147,Mother only
+113,Croatian,18290,29288,contingent,107,Mother only
+114,Croatian,18290,29288,non-contingent,156,Mother only
+115,Croatian,18290,29289,contingent,29,Father only
+116,Croatian,18290,29289,non-contingent,36,Father only
+117,English,2341,4169,contingent,30,Father only
+118,English,2341,4169,non-contingent,80,Father only
+119,English,2341,4170,contingent,37,Father only
+120,English,2341,4170,non-contingent,70,Father only
+121,English,2341,4174,contingent,69,Father only
+122,English,2341,4174,non-contingent,104,Father only
+123,English,2341,4175,contingent,34,Father only
+124,English,2341,4175,non-contingent,139,Father only
+125,English,2341,4176,contingent,27,Father only
+126,English,2341,4176,non-contingent,154,Father only
+127,English,2341,4177,contingent,37,Father only
+128,English,2341,4177,non-contingent,111,Father only
+129,English,2341,4179,contingent,57,Father only
+130,English,2341,4179,non-contingent,162,Father only
+131,English,2341,4180,contingent,41,Father only
+132,English,2341,4180,non-contingent,123,Father only
+133,English,2341,4181,contingent,37,Mother only
+134,English,2341,4181,non-contingent,183,Mother only
+135,English,2341,4183,contingent,66,Father only
+136,English,2341,4183,non-contingent,180,Father only
+137,English,2341,4184,contingent,16,Mother only
+138,English,2341,4184,non-contingent,175,Mother only
+139,English,2341,4185,contingent,49,Father only
+140,English,2341,4185,non-contingent,179,Father only
+141,English,2341,4186,contingent,42,Father only
+142,English,2341,4186,non-contingent,168,Father only
+143,English,2341,4187,contingent,41,Father only
+144,English,2341,4187,non-contingent,167,Father only
+145,English,2341,4190,contingent,65,Father only
+146,English,2341,4190,non-contingent,159,Father only
+147,English,2341,4191,contingent,91,Father only
+148,English,2341,4191,non-contingent,261,Father only
+149,English,2341,4192,contingent,29,Father only
+150,English,2341,4192,non-contingent,100,Father only
+151,English,2341,4193,contingent,37,Father only
+152,English,2341,4193,non-contingent,123,Father only
+153,English,2341,4200,contingent,53,Father only
+154,English,2341,4200,non-contingent,123,Father only
+155,English,2341,4204,contingent,47,Father only
+156,English,2341,4204,non-contingent,104,Father only
+157,English,2341,4206,contingent,37,Father only
+158,English,2341,4206,non-contingent,97,Father only
+159,English,2341,4207,contingent,41,Father only
+160,English,2341,4207,non-contingent,100,Father only
+161,English,2341,4208,contingent,42,Father only
+162,English,2341,4208,non-contingent,135,Father only
+163,English,2341,4209,contingent,84,Father only
+164,English,2341,4209,non-contingent,135,Father only
+165,English,2341,4210,contingent,91,Father only
+166,English,2341,4210,non-contingent,84,Father only
+167,English,2341,4211,contingent,86,Father only
+168,English,2341,4211,non-contingent,118,Father only
+169,English,2341,4212,contingent,59,Father only
+170,English,2341,4212,non-contingent,124,Father only
+171,English,2341,4213,contingent,86,Father only
+172,English,2341,4213,non-contingent,149,Father only
+173,English,2341,4214,contingent,46,Father only
+174,English,2341,4214,non-contingent,111,Father only
+175,English,2341,4215,contingent,59,Father only
+176,English,2341,4215,non-contingent,73,Father only
+177,English,2341,4216,contingent,81,Father only
+178,English,2341,4216,non-contingent,179,Father only
+179,English,2341,4217,contingent,68,Father only
+180,English,2341,4217,non-contingent,130,Father only
+181,English,2341,4218,contingent,58,Father only
+182,English,2341,4218,non-contingent,122,Father only
+183,English,2341,4219,contingent,15,Father only
+184,English,2341,4219,non-contingent,84,Father only
+185,English,2341,4220,contingent,81,Father only
+186,English,2341,4220,non-contingent,170,Father only
+187,English,2341,4221,contingent,108,Father only
+188,English,2341,4221,non-contingent,158,Father only
+189,English,2341,4222,contingent,54,Father only
+190,English,2341,4222,non-contingent,178,Father only
+191,English,2341,4223,contingent,140,Mother & Father
+192,English,2341,4223,non-contingent,234,Mother & Father
+193,English,2341,4225,contingent,95,Father only
+194,English,2341,4225,non-contingent,125,Father only
+195,English,2341,4226,contingent,36,Father only
+196,English,2341,4226,non-contingent,91,Father only
+197,English,2341,4227,contingent,31,Father only
+198,English,2341,4227,non-contingent,49,Father only
+199,English,2341,4228,contingent,58,Father only
+200,English,2341,4228,non-contingent,112,Father only
+201,English,2341,4229,contingent,36,Father only
+202,English,2341,4229,non-contingent,117,Father only
+203,English,2341,4231,contingent,61,Father only
+204,English,2341,4231,non-contingent,131,Father only
+205,English,2341,4232,contingent,62,Father only
+206,English,2341,4232,non-contingent,81,Father only
+207,English,2341,4233,contingent,60,Father only
+208,English,2341,4233,non-contingent,108,Father only
+209,English,2341,4234,contingent,41,Father only
+210,English,2341,4234,non-contingent,83,Father only
+211,English,2341,4235,contingent,85,Mother & Father
+212,English,2341,4235,non-contingent,166,Mother & Father
+213,English,2341,4236,contingent,58,Father only
+214,English,2341,4236,non-contingent,129,Father only
+215,English,2341,4237,contingent,35,Father only
+216,English,2341,4237,non-contingent,68,Father only
+217,English,2341,4240,contingent,97,Father only
+218,English,2341,4240,non-contingent,152,Father only
+219,English,2341,4241,contingent,77,Father only
+220,English,2341,4241,non-contingent,100,Father only
+221,English,2341,4242,contingent,91,Father only
+222,English,2341,4242,non-contingent,162,Father only
+223,English,2341,4243,contingent,32,Father only
+224,English,2341,4243,non-contingent,111,Father only
+225,English,2341,4244,contingent,90,Father only
+226,English,2341,4244,non-contingent,108,Father only
+227,English,2530,4526,contingent,15,Mother only
+228,English,2530,4526,non-contingent,147,Mother only
+229,English,2530,4531,contingent,114,Mother only
+230,English,2530,4531,non-contingent,147,Mother only
+231,English,2530,4533,contingent,46,Mother only
+232,English,2530,4533,non-contingent,147,Mother only
+233,English,2530,4554,contingent,50,Mother only
+234,English,2530,4554,non-contingent,206,Mother only
+235,English,2530,4563,contingent,35,Mother only
+236,English,2530,4563,non-contingent,116,Mother only
+237,English,2530,4570,contingent,204,Mother only
+238,English,2530,4570,non-contingent,148,Mother only
+239,English,2530,4575,contingent,16,Mother only
+240,English,2530,4575,non-contingent,138,Mother only
+241,English,2530,4586,contingent,93,Mother only
+242,English,2530,4586,non-contingent,89,Mother only
+243,English,2530,4602,contingent,117,Mother only
+244,English,2530,4602,non-contingent,130,Mother only
+245,English,2530,4604,contingent,131,Mother only
+246,English,2530,4604,non-contingent,219,Mother only
+247,English,2530,4605,contingent,39,Mother only
+248,English,2530,4605,non-contingent,165,Mother only
+249,English,2530,4606,contingent,138,Mother only
+250,English,2530,4606,non-contingent,183,Mother only
+251,English,2530,4615,contingent,53,Mother only
+252,English,2530,4615,non-contingent,70,Mother only
+253,English,2530,4617,contingent,33,Mother only
+254,English,2530,4617,non-contingent,76,Mother only
+255,English,2530,4623,contingent,95,Mother only
+256,English,2530,4623,non-contingent,141,Mother only
+257,English,2530,4626,contingent,123,Mother only
+258,English,2530,4626,non-contingent,141,Mother only
+259,English,2530,4634,contingent,14,Mother only
+260,English,2530,4634,non-contingent,91,Mother only
+261,English,2530,4639,contingent,18,Mother only
+262,English,2530,4639,non-contingent,202,Mother only
+263,English,2530,4647,contingent,172,Mother only
+264,English,2530,4647,non-contingent,197,Mother only
+265,English,2530,4648,contingent,35,Mother only
+266,English,2530,4648,non-contingent,116,Mother only
+267,English,2530,4649,contingent,77,Mother only
+268,English,2530,4649,non-contingent,147,Mother only
+269,English,2530,4650,contingent,89,Mother only
+270,English,2530,4650,non-contingent,107,Mother only
+271,English,2530,4677,contingent,60,Mother only
+272,English,2530,4677,non-contingent,59,Mother only
+273,English,2530,4697,contingent,71,Mother only
+274,English,2530,4697,non-contingent,114,Mother only
+275,English,2534,4686,contingent,88,Mother only
+276,English,2534,4686,non-contingent,185,Mother only
+277,English,2534,4705,contingent,42,Mother only
+278,English,2534,4705,non-contingent,115,Mother only
+279,English,3142,6991,contingent,22,Mother & Father
+280,English,3142,6991,non-contingent,31,Mother & Father
+281,English,3142,6994,contingent,9,Mother only
+282,English,3142,6994,non-contingent,26,Mother only
+283,English,3142,6995,non-contingent,27,Mother only
+284,English,3391,7531,contingent,74,Mother & Father
+285,English,3391,7531,non-contingent,123,Mother & Father
+286,English,3391,7532,contingent,105,Mother & Father
+287,English,3391,7532,non-contingent,187,Mother & Father
+288,English,3391,7533,contingent,95,Mother & Father
+289,English,3391,7533,non-contingent,259,Mother & Father
+290,English,3391,7534,contingent,88,Father only
+291,English,3391,7534,non-contingent,156,Father only
+292,English,3391,7535,contingent,62,Mother & Father
+293,English,3391,7535,non-contingent,154,Mother & Father
+294,English,3836,8267,contingent,27,Mother only
+295,English,3836,8267,non-contingent,165,Mother only
+296,English,3836,8269,contingent,30,Mother only
+297,English,3836,8269,non-contingent,121,Mother only
+298,English,3836,8270,contingent,33,Mother only
+299,English,3836,8270,non-contingent,96,Mother only
+300,English,3836,8271,contingent,17,Mother only
+301,English,3836,8271,non-contingent,153,Mother only
+302,English,3836,8272,contingent,21,Mother only
+303,English,3836,8272,non-contingent,155,Mother only
+304,English,3836,8273,contingent,31,Mother only
+305,English,3836,8273,non-contingent,113,Mother only
+306,English,3836,8274,contingent,9,Mother only
+307,English,3836,8274,non-contingent,56,Mother only
+308,English,3836,8275,contingent,17,Mother only
+309,English,3836,8275,non-contingent,69,Mother only
+310,English,3836,8277,contingent,14,Mother only
+311,English,3836,8277,non-contingent,124,Mother only
+312,English,3836,8278,contingent,12,Mother only
+313,English,3836,8278,non-contingent,138,Mother only
+314,English,3842,8282,contingent,35,Mother only
+315,English,3842,8282,non-contingent,160,Mother only
+316,English,3842,8283,contingent,39,Mother only
+317,English,3842,8283,non-contingent,123,Mother only
+318,English,3842,8284,contingent,88,Mother only
+319,English,3842,8284,non-contingent,172,Mother only
+320,English,3842,8285,contingent,14,Mother only
+321,English,3842,8285,non-contingent,181,Mother only
+322,English,3842,8288,contingent,22,Mother only
+323,English,3842,8288,non-contingent,182,Mother only
+324,English,3842,8290,contingent,8,Mother only
+325,English,3842,8290,non-contingent,136,Mother only
+326,English,3846,8294,contingent,38,Mother only
+327,English,3846,8294,non-contingent,112,Mother only
+328,English,3846,8295,contingent,51,Mother only
+329,English,3846,8295,non-contingent,57,Mother only
+330,English,3846,8296,contingent,40,Mother only
+331,English,3846,8296,non-contingent,165,Mother only
+332,English,3846,8297,contingent,52,Mother only
+333,English,3846,8297,non-contingent,113,Mother only
+334,English,3848,8313,contingent,6,Mother only
+335,English,3848,8313,non-contingent,120,Mother only
+336,English,3851,8319,contingent,57,Mother only
+337,English,3851,8319,non-contingent,148,Mother only
+338,English,3851,8321,contingent,27,Mother only
+339,English,3851,8321,non-contingent,159,Mother only
+340,English,3851,8322,contingent,64,Mother only
+341,English,3851,8322,non-contingent,165,Mother only
+342,English,3851,8328,contingent,5,Mother only
+343,English,3851,8328,non-contingent,150,Mother only
+344,English,3851,8332,contingent,17,Mother only
+345,English,3851,8332,non-contingent,171,Mother only
+346,English,3862,8383,contingent,18,Mother only
+347,English,3862,8383,non-contingent,138,Mother only
+348,English,3862,8384,contingent,23,Mother only
+349,English,3862,8384,non-contingent,184,Mother only
+350,English,3862,8385,contingent,65,Mother only
+351,English,3862,8385,non-contingent,128,Mother only
+352,English,3862,8392,contingent,5,Mother only
+353,English,3862,8392,non-contingent,156,Mother only
+354,English,3862,8393,contingent,15,Mother only
+355,English,3862,8393,non-contingent,163,Mother only
+356,English,3865,8395,contingent,47,Mother only
+357,English,3865,8395,non-contingent,186,Mother only
+358,English,3865,8396,contingent,78,Mother only
+359,English,3865,8396,non-contingent,193,Mother only
+360,English,3865,8397,contingent,33,Mother only
+361,English,3865,8397,non-contingent,140,Mother only
+362,English,3865,8406,contingent,7,Mother only
+363,English,3865,8406,non-contingent,183,Mother only
+364,English,3876,8428,contingent,21,Mother only
+365,English,3876,8428,non-contingent,103,Mother only
+366,English,3876,8431,contingent,21,Mother only
+367,English,3876,8431,non-contingent,104,Mother only
+368,English,3876,8432,contingent,9,Mother only
+369,English,3876,8432,non-contingent,138,Mother only
+370,English,3876,8435,contingent,46,Mother only
+371,English,3876,8435,non-contingent,134,Mother only
+372,English,3876,8437,contingent,16,Mother only
+373,English,3876,8437,non-contingent,208,Mother only
+374,English,3882,8455,contingent,33,Mother only
+375,English,3882,8455,non-contingent,76,Mother only
+376,English,3882,8457,contingent,49,Mother only
+377,English,3882,8457,non-contingent,169,Mother only
+378,English,3882,8459,contingent,31,Mother only
+379,English,3882,8459,non-contingent,159,Mother only
+380,English,3887,8472,contingent,4,Mother only
+381,English,3887,8472,non-contingent,65,Mother only
+382,English,3890,8476,contingent,3,Mother only
+383,English,3890,8476,non-contingent,240,Mother only
+384,English,3890,8477,contingent,4,Mother only
+385,English,3890,8477,non-contingent,225,Mother only
+386,English,3890,8478,contingent,25,Mother only
+387,English,3890,8478,non-contingent,162,Mother only
+388,English,3895,8479,contingent,10,Mother & Father
+389,English,3895,8479,non-contingent,64,Mother & Father
+390,English,3895,8486,contingent,69,Mother & Father
+391,English,3895,8486,non-contingent,101,Mother & Father
+392,English,3895,8490,contingent,56,Mother & Father
+393,English,3895,8490,non-contingent,84,Mother & Father
+394,English,3895,8498,contingent,36,Mother & Father
+395,English,3895,8498,non-contingent,83,Mother & Father
+396,English,3895,8501,contingent,48,Mother & Father
+397,English,3895,8501,non-contingent,121,Mother & Father
+398,English,3895,8503,contingent,7,Father only
+399,English,3895,8503,non-contingent,21,Father only
+400,English,3895,8505,contingent,60,Father only
+401,English,3895,8505,non-contingent,97,Father only
+402,English,3895,8506,contingent,53,Mother & Father
+403,English,3895,8506,non-contingent,30,Mother & Father
+404,English,3895,8509,contingent,33,Mother & Father
+405,English,3895,8509,non-contingent,42,Mother & Father
+406,English,3895,8510,contingent,39,Mother only
+407,English,3895,8510,non-contingent,96,Mother only
+408,English,3895,8511,contingent,59,Mother & Father
+409,English,3895,8511,non-contingent,200,Mother & Father
+410,English,3895,8512,contingent,34,Father only
+411,English,3895,8512,non-contingent,108,Father only
+412,English,3895,8520,contingent,16,Mother & Father
+413,English,3895,8520,non-contingent,50,Mother & Father
+414,English,3901,8549,contingent,123,Mother & Father
+415,English,3901,8549,non-contingent,197,Mother & Father
+416,English,3901,8550,contingent,116,Mother only
+417,English,3901,8550,non-contingent,179,Mother only
+418,English,3901,8552,contingent,138,Mother only
+419,English,3901,8552,non-contingent,162,Mother only
+420,English,3901,8556,contingent,30,Mother & Father
+421,English,3901,8556,non-contingent,99,Mother & Father
+422,English,3901,8557,contingent,50,Mother & Father
+423,English,3901,8557,non-contingent,93,Mother & Father
+424,English,3901,8559,contingent,32,Mother only
+425,English,3901,8559,non-contingent,71,Mother only
+426,English,3901,8560,contingent,73,Mother & Father
+427,English,3901,8560,non-contingent,101,Mother & Father
+428,English,3901,8561,contingent,54,Mother & Father
+429,English,3901,8561,non-contingent,80,Mother & Father
+430,English,3901,8564,contingent,63,Mother & Father
+431,English,3901,8564,non-contingent,112,Mother & Father
+432,English,3901,8565,contingent,97,Mother & Father
+433,English,3901,8565,non-contingent,164,Mother & Father
+434,English,3901,8567,contingent,38,Mother & Father
+435,English,3901,8567,non-contingent,155,Mother & Father
+436,English,3901,8570,contingent,42,Mother & Father
+437,English,3901,8570,non-contingent,129,Mother & Father
+438,English,3901,8571,contingent,37,Mother & Father
+439,English,3901,8571,non-contingent,136,Mother & Father
+440,English,3901,8572,contingent,64,Mother & Father
+441,English,3901,8572,non-contingent,136,Mother & Father
+442,English,3901,8575,contingent,63,Mother & Father
+443,English,3901,8575,non-contingent,168,Mother & Father
+444,English,3901,8578,contingent,52,Mother & Father
+445,English,3901,8578,non-contingent,111,Mother & Father
+446,English,3901,8579,contingent,69,Mother & Father
+447,English,3901,8579,non-contingent,219,Mother & Father
+448,English,3901,8580,contingent,105,Mother & Father
+449,English,3901,8580,non-contingent,144,Mother & Father
+450,English,3901,8582,contingent,90,Mother & Father
+451,English,3901,8582,non-contingent,161,Mother & Father
+452,English,3901,8583,contingent,64,Mother & Father
+453,English,3901,8583,non-contingent,199,Mother & Father
+454,English,3901,8584,contingent,59,Mother & Father
+455,English,3901,8584,non-contingent,110,Mother & Father
+456,English,3901,8585,contingent,25,Mother & Father
+457,English,3901,8585,non-contingent,112,Mother & Father
+458,English,3901,8586,contingent,113,Mother only
+459,English,3901,8586,non-contingent,137,Mother only
+460,English,3901,8590,contingent,65,Mother & Father
+461,English,3901,8590,non-contingent,103,Mother & Father
+462,English,3901,8591,contingent,97,Mother & Father
+463,English,3901,8591,non-contingent,117,Mother & Father
+464,English,3901,8593,contingent,69,Mother & Father
+465,English,3901,8593,non-contingent,118,Mother & Father
+466,English,3901,8595,contingent,129,Mother & Father
+467,English,3901,8595,non-contingent,183,Mother & Father
+468,English,3901,8596,contingent,27,Mother & Father
+469,English,3901,8596,non-contingent,70,Mother & Father
+470,English,3901,8597,contingent,75,Mother & Father
+471,English,3901,8597,non-contingent,110,Mother & Father
+472,English,3901,8599,contingent,33,Mother & Father
+473,English,3901,8599,non-contingent,121,Mother & Father
+474,English,3901,8600,contingent,59,Mother & Father
+475,English,3901,8600,non-contingent,110,Mother & Father
+476,English,3901,8601,contingent,74,Mother & Father
+477,English,3901,8601,non-contingent,119,Mother & Father
+478,English,3901,8602,contingent,95,Mother & Father
+479,English,3901,8602,non-contingent,146,Mother & Father
+480,English,3901,8604,contingent,64,Mother & Father
+481,English,3901,8604,non-contingent,112,Mother & Father
+482,English,3901,8605,contingent,47,Mother & Father
+483,English,3901,8605,non-contingent,60,Mother & Father
+484,English,3901,8606,contingent,64,Mother & Father
+485,English,3901,8606,non-contingent,129,Mother & Father
+486,English,3901,8609,contingent,44,Mother & Father
+487,English,3901,8609,non-contingent,98,Mother & Father
+488,English,3901,8610,contingent,87,Mother only
+489,English,3901,8610,non-contingent,79,Mother only
+490,English,3901,8611,contingent,54,Mother & Father
+491,English,3901,8611,non-contingent,107,Mother & Father
+492,English,3901,8615,contingent,58,Mother & Father
+493,English,3901,8615,non-contingent,139,Mother & Father
+494,English,3901,8616,contingent,54,Mother & Father
+495,English,3901,8616,non-contingent,100,Mother & Father
+496,English,3901,8619,contingent,51,Mother & Father
+497,English,3901,8619,non-contingent,115,Mother & Father
+498,English,3901,8622,contingent,37,Mother & Father
+499,English,3901,8622,non-contingent,69,Mother & Father
+500,English,3901,8623,contingent,67,Mother & Father
+501,English,3901,8623,non-contingent,117,Mother & Father
+502,English,3901,8624,contingent,128,Mother only
+503,English,3901,8624,non-contingent,185,Mother only
+504,English,3901,8626,contingent,68,Mother & Father
+505,English,3901,8626,non-contingent,156,Mother & Father
+506,English,3901,8627,contingent,71,Mother & Father
+507,English,3901,8627,non-contingent,138,Mother & Father
+508,English,3901,8629,contingent,38,Mother & Father
+509,English,3901,8629,non-contingent,110,Mother & Father
+510,English,3901,8630,contingent,47,Mother & Father
+511,English,3901,8630,non-contingent,102,Mother & Father
+512,English,3901,8632,contingent,59,Mother & Father
+513,English,3901,8632,non-contingent,112,Mother & Father
+514,English,3901,8633,contingent,84,Mother only
+515,English,3901,8633,non-contingent,121,Mother only
+516,English,3901,8634,contingent,42,Mother & Father
+517,English,3901,8634,non-contingent,140,Mother & Father
+518,English,3901,8637,contingent,65,Mother & Father
+519,English,3901,8637,non-contingent,138,Mother & Father
+520,English,3901,8638,contingent,53,Mother only
+521,English,3901,8638,non-contingent,39,Mother only
+522,English,3901,8640,contingent,22,Mother & Father
+523,English,3901,8640,non-contingent,78,Mother & Father
+524,English,3901,8641,contingent,101,Mother only
+525,English,3901,8641,non-contingent,101,Mother only
+526,English,3901,8642,contingent,151,Mother only
+527,English,3901,8642,non-contingent,160,Mother only
+528,English,3901,8643,contingent,76,Mother only
+529,English,3901,8643,non-contingent,131,Mother only
+530,English,3901,8644,contingent,6,Mother & Father
+531,English,3901,8644,non-contingent,24,Mother & Father
+532,English,3901,8647,contingent,43,Mother & Father
+533,English,3901,8647,non-contingent,131,Mother & Father
+534,English,3901,8648,contingent,68,Mother & Father
+535,English,3901,8648,non-contingent,65,Mother & Father
+536,English,3901,8649,contingent,34,Mother & Father
+537,English,3901,8649,non-contingent,89,Mother & Father
+538,English,3901,8650,contingent,67,Mother & Father
+539,English,3901,8650,non-contingent,117,Mother & Father
+540,English,3901,8651,contingent,95,Mother only
+541,English,3901,8651,non-contingent,96,Mother only
+542,English,3901,8652,contingent,101,Mother & Father
+543,English,3901,8652,non-contingent,143,Mother & Father
+544,English,3901,8653,contingent,81,Mother & Father
+545,English,3901,8653,non-contingent,74,Mother & Father
+546,English,3901,8654,contingent,73,Mother & Father
+547,English,3901,8654,non-contingent,194,Mother & Father
+548,English,3901,8655,contingent,60,Mother only
+549,English,3901,8655,non-contingent,98,Mother only
+550,English,3901,8656,contingent,72,Mother only
+551,English,3901,8656,non-contingent,87,Mother only
+552,English,3901,8658,contingent,23,Mother only
+553,English,3901,8658,non-contingent,25,Mother only
+554,English,3901,8659,contingent,68,Mother & Father
+555,English,3901,8659,non-contingent,96,Mother & Father
+556,English,3901,8660,contingent,42,Mother & Father
+557,English,3901,8660,non-contingent,66,Mother & Father
+558,English,3901,8661,contingent,53,Mother & Father
+559,English,3901,8661,non-contingent,80,Mother & Father
+560,English,3918,9449,contingent,61,Mother & Father
+561,English,3918,9449,non-contingent,197,Mother & Father
+562,English,3918,9453,contingent,61,Mother & Father
+563,English,3918,9453,non-contingent,207,Mother & Father
+564,English,3918,9454,contingent,75,Mother only
+565,English,3918,9454,non-contingent,222,Mother only
+566,English,3918,9455,contingent,66,Mother & Father
+567,English,3918,9455,non-contingent,285,Mother & Father
+568,English,3918,9458,contingent,73,Mother & Father
+569,English,3918,9458,non-contingent,270,Mother & Father
+570,English,3918,9459,contingent,23,Mother & Father
+571,English,3918,9459,non-contingent,297,Mother & Father
+572,English,3918,9460,contingent,63,Mother only
+573,English,3918,9460,non-contingent,258,Mother only
+574,English,3918,9461,contingent,91,Mother & Father
+575,English,3918,9461,non-contingent,249,Mother & Father
+576,English,3918,9462,contingent,63,Mother & Father
+577,English,3918,9462,non-contingent,231,Mother & Father
+578,English,3918,9463,contingent,54,Mother only
+579,English,3918,9463,non-contingent,216,Mother only
+580,English,3918,9464,contingent,105,Mother only
+581,English,3918,9464,non-contingent,248,Mother only
+582,English,3918,9465,contingent,37,Mother & Father
+583,English,3918,9465,non-contingent,275,Mother & Father
+584,English,3918,9466,contingent,70,Mother only
+585,English,3918,9466,non-contingent,248,Mother only
+586,English,3918,9467,contingent,77,Mother only
+587,English,3918,9467,non-contingent,230,Mother only
+588,English,3921,9450,contingent,42,Mother only
+589,English,3921,9450,non-contingent,116,Mother only
+590,English,3921,9451,contingent,62,Mother only
+591,English,3921,9451,non-contingent,115,Mother only
+592,English,3921,9456,contingent,63,Mother only
+593,English,3921,9456,non-contingent,102,Mother only
+594,English,3921,9457,contingent,36,Mother only
+595,English,3921,9457,non-contingent,103,Mother only
+596,English,3921,9470,contingent,23,Mother only
+597,English,3921,9470,non-contingent,103,Mother only
+598,English,3921,9472,contingent,26,Mother only
+599,English,3921,9472,non-contingent,147,Mother only
+600,English,3921,9473,contingent,22,Mother only
+601,English,3921,9473,non-contingent,173,Mother only
+602,English,3921,9475,contingent,41,Mother & Father
+603,English,3921,9475,non-contingent,139,Mother & Father
+604,English,3921,9478,contingent,66,Mother only
+605,English,3921,9478,non-contingent,109,Mother only
+606,English,3921,9479,contingent,29,Mother only
+607,English,3921,9479,non-contingent,105,Mother only
+608,English,3921,9480,contingent,113,Mother only
+609,English,3921,9480,non-contingent,149,Mother only
+610,English,3921,9481,contingent,19,Mother only
+611,English,3921,9481,non-contingent,112,Mother only
+612,English,3921,9482,contingent,48,Mother only
+613,English,3921,9482,non-contingent,110,Mother only
+614,English,3921,9484,contingent,47,Mother only
+615,English,3921,9484,non-contingent,131,Mother only
+616,English,3921,9485,contingent,34,Mother only
+617,English,3921,9485,non-contingent,108,Mother only
+618,English,3921,9486,contingent,39,Mother only
+619,English,3921,9486,non-contingent,152,Mother only
+620,English,3921,9487,contingent,30,Mother only
+621,English,3921,9487,non-contingent,135,Mother only
+622,English,3921,9489,contingent,37,Mother only
+623,English,3921,9489,non-contingent,143,Mother only
+624,English,3921,9490,contingent,63,Mother only
+625,English,3921,9490,non-contingent,116,Mother only
+626,English,3921,9491,contingent,27,Mother only
+627,English,3921,9491,non-contingent,114,Mother only
+628,English,3921,9492,contingent,35,Mother only
+629,English,3921,9492,non-contingent,95,Mother only
+630,English,3921,9493,contingent,44,Mother only
+631,English,3921,9493,non-contingent,216,Mother only
+632,English,3921,9494,contingent,17,Mother only
+633,English,3921,9494,non-contingent,128,Mother only
+634,English,3921,9495,contingent,55,Mother only
+635,English,3921,9495,non-contingent,156,Mother only
+636,English,3921,9496,contingent,83,Mother only
+637,English,3921,9496,non-contingent,119,Mother only
+638,English,3921,9497,contingent,34,Mother only
+639,English,3921,9497,non-contingent,104,Mother only
+640,English,3921,9498,contingent,35,Mother & Father
+641,English,3921,9498,non-contingent,132,Mother & Father
+642,English,3921,9499,contingent,11,Mother & Father
+643,English,3921,9499,non-contingent,179,Mother & Father
+644,English,3921,9502,contingent,70,Mother only
+645,English,3921,9502,non-contingent,128,Mother only
+646,English,3921,9503,contingent,51,Mother only
+647,English,3921,9503,non-contingent,116,Mother only
+648,English,3921,9504,contingent,65,Mother only
+649,English,3921,9504,non-contingent,194,Mother only
+650,English,3921,9505,contingent,55,Mother only
+651,English,3921,9505,non-contingent,125,Mother only
+652,English,3921,9506,contingent,86,Mother only
+653,English,3921,9506,non-contingent,187,Mother only
+654,English,3936,9508,contingent,37,Mother & Father
+655,English,3936,9508,non-contingent,87,Mother & Father
+656,English,3936,9510,contingent,55,Mother & Father
+657,English,3936,9510,non-contingent,73,Mother & Father
+658,English,3936,9515,contingent,36,Mother & Father
+659,English,3936,9515,non-contingent,106,Mother & Father
+660,English,3936,9516,contingent,44,Mother only
+661,English,3936,9516,non-contingent,80,Mother only
+662,English,3936,9517,contingent,56,Mother only
+663,English,3936,9517,non-contingent,123,Mother only
+664,English,3936,9518,contingent,48,Mother only
+665,English,3936,9518,non-contingent,105,Mother only
+666,English,3936,9519,contingent,35,Mother & Father
+667,English,3936,9519,non-contingent,52,Mother & Father
+668,English,3936,9520,contingent,21,Mother & Father
+669,English,3936,9520,non-contingent,49,Mother & Father
+670,English,3936,9522,contingent,64,Father only
+671,English,3936,9522,non-contingent,43,Father only
+672,English,3936,9524,contingent,53,Mother & Father
+673,English,3936,9524,non-contingent,40,Mother & Father
+674,English,3936,9525,contingent,56,Mother only
+675,English,3936,9525,non-contingent,91,Mother only
+676,English,3936,9526,contingent,76,Father only
+677,English,3936,9526,non-contingent,80,Father only
+678,English,3936,9527,contingent,35,Mother & Father
+679,English,3936,9527,non-contingent,73,Mother & Father
+680,English,3936,9528,contingent,41,Mother & Father
+681,English,3936,9528,non-contingent,64,Mother & Father
+682,English,3936,9529,contingent,57,Mother only
+683,English,3936,9529,non-contingent,102,Mother only
+684,English,3936,9533,contingent,41,Mother & Father
+685,English,3936,9533,non-contingent,65,Mother & Father
+686,English,3936,9534,contingent,19,Mother & Father
+687,English,3936,9534,non-contingent,63,Mother & Father
+688,English,3936,9535,contingent,65,Mother & Father
+689,English,3936,9535,non-contingent,54,Mother & Father
+690,English,3936,9538,contingent,43,Mother only
+691,English,3936,9538,non-contingent,78,Mother only
+692,English,3936,9543,contingent,65,Mother only
+693,English,3936,9543,non-contingent,95,Mother only
+694,English,3936,9546,contingent,25,Mother only
+695,English,3936,9546,non-contingent,49,Mother only
+696,English,3936,9547,contingent,11,Mother & Father
+697,English,3936,9547,non-contingent,6,Mother & Father
+698,English,3936,9549,contingent,56,Mother & Father
+699,English,3936,9549,non-contingent,98,Mother & Father
+700,English,3936,9550,contingent,61,Mother & Father
+701,English,3936,9550,non-contingent,45,Mother & Father
+702,English,3936,9551,contingent,119,Mother & Father
+703,English,3936,9551,non-contingent,140,Mother & Father
+704,English,3936,9552,contingent,110,Mother & Father
+705,English,3936,9552,non-contingent,88,Mother & Father
+706,English,3936,9553,contingent,42,Father only
+707,English,3936,9553,non-contingent,44,Father only
+708,English,3936,9555,contingent,50,Mother & Father
+709,English,3936,9555,non-contingent,84,Mother & Father
+710,English,3936,9559,contingent,63,Mother only
+711,English,3936,9559,non-contingent,114,Mother only
+712,English,3936,9560,contingent,29,Mother only
+713,English,3936,9560,non-contingent,40,Mother only
+714,English,3936,9562,contingent,52,Mother & Father
+715,English,3936,9562,non-contingent,111,Mother & Father
+716,English,3936,9567,contingent,40,Mother & Father
+717,English,3936,9567,non-contingent,79,Mother & Father
+718,English,3944,9611,contingent,77,Mother only
+719,English,3944,9611,non-contingent,133,Mother only
+720,English,3944,9612,contingent,85,Mother only
+721,English,3944,9612,non-contingent,119,Mother only
+722,English,3944,9614,contingent,65,Mother only
+723,English,3944,9614,non-contingent,112,Mother only
+724,English,3944,9615,contingent,35,Mother only
+725,English,3944,9615,non-contingent,97,Mother only
+726,English,3944,9617,contingent,70,Mother only
+727,English,3944,9617,non-contingent,131,Mother only
+728,English,3944,9618,contingent,58,Mother only
+729,English,3944,9618,non-contingent,111,Mother only
+730,English,3944,9620,contingent,73,Mother only
+731,English,3944,9620,non-contingent,115,Mother only
+732,English,3953,9669,contingent,18,Mother only
+733,English,3953,9669,non-contingent,87,Mother only
+734,English,3953,9670,contingent,58,Mother only
+735,English,3953,9670,non-contingent,112,Mother only
+736,English,3953,9671,contingent,27,Mother only
+737,English,3953,9671,non-contingent,83,Mother only
+738,English,3953,9672,contingent,38,Mother only
+739,English,3953,9672,non-contingent,119,Mother only
+740,English,3953,9674,contingent,108,Mother only
+741,English,3953,9674,non-contingent,101,Mother only
+742,English,3955,9668,contingent,17,Mother only
+743,English,3955,9668,non-contingent,116,Mother only
+744,English,3959,9739,contingent,5,Mother only
+745,English,3959,9739,non-contingent,69,Mother only
+746,English,3959,9740,contingent,38,Mother only
+747,English,3959,9740,non-contingent,60,Mother only
+748,English,3959,9741,contingent,39,Mother only
+749,English,3959,9741,non-contingent,71,Mother only
+750,English,3959,9743,contingent,60,Mother only
+751,English,3959,9743,non-contingent,80,Mother only
+752,English,3959,9744,contingent,58,Mother only
+753,English,3959,9744,non-contingent,86,Mother only
+754,English,3959,9745,contingent,64,Mother only
+755,English,3959,9745,non-contingent,95,Mother only
+756,English,3959,9747,contingent,50,Mother only
+757,English,3959,9747,non-contingent,82,Mother only
+758,English,4226,10155,contingent,13,Mother only
+759,English,4226,10155,non-contingent,102,Mother only
+760,English,4235,10157,contingent,42,Mother only
+761,English,4235,10157,non-contingent,206,Mother only
+762,English,4238,10159,contingent,5,Mother only
+763,English,4238,10159,non-contingent,176,Mother only
+764,English,4244,10161,contingent,36,Mother only
+765,English,4244,10161,non-contingent,135,Mother only
+766,English,4247,10162,contingent,21,Mother only
+767,English,4247,10162,non-contingent,173,Mother only
+768,English,4250,10163,contingent,36,Mother only
+769,English,4250,10163,non-contingent,189,Mother only
+770,English,4253,10164,contingent,15,Mother only
+771,English,4253,10164,non-contingent,86,Mother only
+772,English,4259,10166,contingent,8,Mother only
+773,English,4259,10166,non-contingent,137,Mother only
+774,English,4265,10168,contingent,5,Mother only
+775,English,4265,10168,non-contingent,272,Mother only
+776,English,4268,10169,contingent,20,Mother only
+777,English,4268,10169,non-contingent,188,Mother only
+778,English,4269,10170,contingent,23,Mother only
+779,English,4269,10170,non-contingent,154,Mother only
+780,English,4273,10172,contingent,16,Mother only
+781,English,4273,10172,non-contingent,242,Mother only
+782,English,4277,10175,contingent,19,Mother only
+783,English,4277,10175,non-contingent,92,Mother only
+784,English,4283,10171,contingent,9,Mother only
+785,English,4283,10171,non-contingent,123,Mother only
+786,English,4288,10176,contingent,10,Mother only
+787,English,4288,10176,non-contingent,214,Mother only
+788,English,4291,10173,non-contingent,129,Mother only
+789,English,4294,10178,contingent,26,Mother only
+790,English,4294,10178,non-contingent,127,Mother only
+791,English,4297,10180,contingent,15,Mother only
+792,English,4297,10180,non-contingent,207,Mother only
+793,English,4305,10181,contingent,18,Mother only
+794,English,4305,10181,non-contingent,153,Mother only
+795,English,4308,10183,contingent,16,Mother only
+796,English,4308,10183,non-contingent,157,Mother only
+797,English,4311,10184,contingent,4,Mother only
+798,English,4311,10184,non-contingent,126,Mother only
+799,English,4312,10185,contingent,1,Mother only
+800,English,4312,10185,non-contingent,40,Mother only
+801,English,4320,10187,contingent,6,Mother only
+802,English,4320,10187,non-contingent,173,Mother only
+803,English,4321,10188,contingent,10,Mother only
+804,English,4321,10188,non-contingent,151,Mother only
+805,English,4322,10189,contingent,13,Mother only
+806,English,4322,10189,non-contingent,129,Mother only
+807,English,4332,10191,contingent,15,Mother only
+808,English,4332,10191,non-contingent,105,Mother only
+809,English,4337,10192,contingent,1,Mother only
+810,English,4337,10192,non-contingent,220,Mother only
+811,English,4338,10193,non-contingent,87,Mother only
+812,English,4342,10196,contingent,4,Mother only
+813,English,4342,10196,non-contingent,135,Mother only
+814,English,4351,10202,contingent,35,Mother only
+815,English,4351,10202,non-contingent,199,Mother only
+816,English,4355,10204,contingent,9,Mother only
+817,English,4355,10204,non-contingent,176,Mother only
+818,English,4364,10201,contingent,6,Mother only
+819,English,4364,10201,non-contingent,296,Mother only
+820,English,4369,10208,contingent,4,Mother only
+821,English,4369,10208,non-contingent,68,Mother only
+822,English,4375,10203,contingent,19,Mother only
+823,English,4375,10203,non-contingent,152,Mother only
+824,English,4383,10210,contingent,2,Mother only
+825,English,4383,10210,non-contingent,136,Mother only
+826,English,4391,10200,contingent,11,Mother only
+827,English,4391,10200,non-contingent,41,Mother only
+828,English,4406,10215,contingent,5,Mother only
+829,English,4406,10215,non-contingent,138,Mother only
+830,English,4413,10220,contingent,16,Mother only
+831,English,4413,10220,non-contingent,212,Mother only
+832,English,4416,10221,non-contingent,227,Mother only
+833,English,4424,10223,contingent,5,Mother only
+834,English,4424,10223,non-contingent,168,Mother only
+835,English,4425,10224,contingent,6,Mother only
+836,English,4425,10224,non-contingent,193,Mother only
+837,English,4436,10227,contingent,11,Mother only
+838,English,4436,10227,non-contingent,196,Mother only
+839,English,4436,10771,non-contingent,307,Mother only
+840,English,4445,10225,contingent,2,Mother only
+841,English,4445,10225,non-contingent,192,Mother only
+842,English,4448,10226,non-contingent,123,Mother only
+843,English,4449,10232,non-contingent,145,Mother only
+844,English,4454,10234,contingent,9,Mother only
+845,English,4454,10234,non-contingent,159,Mother only
+846,English,4455,10236,contingent,12,Mother only
+847,English,4455,10236,non-contingent,148,Mother only
+848,English,4456,10231,contingent,5,Mother only
+849,English,4456,10231,non-contingent,226,Mother only
+850,English,4464,10237,contingent,7,Mother only
+851,English,4464,10237,non-contingent,193,Mother only
+852,English,4469,10239,contingent,8,Mother only
+853,English,4469,10239,non-contingent,194,Mother only
+854,English,4475,10242,non-contingent,160,Mother only
+855,English,4476,10235,non-contingent,114,Mother only
+856,English,4484,10244,contingent,8,Mother only
+857,English,4484,10244,non-contingent,141,Mother only
+858,English,4485,10245,contingent,11,Mother only
+859,English,4485,10245,non-contingent,254,Mother only
+860,English,4486,10246,contingent,5,Mother only
+861,English,4486,10246,non-contingent,103,Mother only
+862,English,4488,10247,contingent,26,Mother only
+863,English,4488,10247,non-contingent,223,Mother only
+864,English,4492,10248,contingent,42,Mother only
+865,English,4492,10248,non-contingent,158,Mother only
+866,English,4496,10241,contingent,31,Mother only
+867,English,4496,10241,non-contingent,233,Mother only
+868,English,4514,10253,contingent,22,Mother only
+869,English,4514,10253,non-contingent,219,Mother only
+870,English,4517,10251,contingent,42,Mother only
+871,English,4517,10251,non-contingent,194,Mother only
+872,English,4525,10256,contingent,7,Mother only
+873,English,4525,10256,non-contingent,139,Mother only
+874,English,4529,10257,contingent,11,Mother only
+875,English,4529,10257,non-contingent,98,Mother only
+876,English,4535,10229,contingent,10,Mother only
+877,English,4535,10229,non-contingent,109,Mother only
+878,English,4544,10262,contingent,6,Mother only
+879,English,4544,10262,non-contingent,105,Mother only
+880,English,4545,10263,contingent,12,Mother only
+881,English,4545,10263,non-contingent,142,Mother only
+882,English,4546,10264,contingent,17,Mother only
+883,English,4546,10264,non-contingent,166,Mother only
+884,English,4549,10265,contingent,23,Mother only
+885,English,4549,10265,non-contingent,74,Mother only
+886,English,4556,10268,contingent,8,Mother only
+887,English,4556,10268,non-contingent,118,Mother only
+888,English,4559,10267,contingent,6,Mother only
+889,English,4559,10267,non-contingent,186,Mother only
+890,English,4564,10269,contingent,11,Mother only
+891,English,4564,10269,non-contingent,140,Mother only
+892,English,4576,10272,contingent,8,Mother only
+893,English,4576,10272,non-contingent,180,Mother only
+894,English,4579,10274,contingent,43,Mother only
+895,English,4579,10274,non-contingent,70,Mother only
+896,English,4581,10275,contingent,33,Mother only
+897,English,4581,10275,non-contingent,138,Mother only
+898,English,4590,10277,contingent,16,Mother only
+899,English,4590,10277,non-contingent,106,Mother only
+900,English,4597,10261,contingent,16,Mother only
+901,English,4597,10261,non-contingent,271,Mother only
+902,English,4600,10279,contingent,8,Mother only
+903,English,4600,10279,non-contingent,225,Mother only
+904,English,4603,10282,non-contingent,131,Mother only
+905,English,4606,10281,contingent,75,Mother only
+906,English,4606,10281,non-contingent,187,Mother only
+907,English,4615,10287,contingent,10,Mother only
+908,English,4615,10287,non-contingent,31,Mother only
+909,English,4618,10289,contingent,3,Mother only
+910,English,4618,10289,non-contingent,190,Mother only
+911,English,4621,10286,contingent,22,Mother only
+912,English,4621,10286,non-contingent,162,Mother only
+913,English,4627,10292,contingent,10,Mother only
+914,English,4627,10292,non-contingent,199,Mother only
+915,English,4630,10293,contingent,12,Mother only
+916,English,4630,10293,non-contingent,109,Mother only
+917,English,4635,10295,contingent,1,Mother only
+918,English,4635,10295,non-contingent,134,Mother only
+919,English,4637,10296,contingent,3,Mother only
+920,English,4637,10296,non-contingent,243,Mother only
+921,English,4651,10298,contingent,3,Mother only
+922,English,4651,10298,non-contingent,94,Mother only
+923,English,4654,10301,contingent,7,Mother only
+924,English,4654,10301,non-contingent,116,Mother only
+925,English,4655,10300,contingent,20,Mother only
+926,English,4655,10300,non-contingent,220,Mother only
+927,English,4666,10305,contingent,2,Mother only
+928,English,4666,10305,non-contingent,145,Mother only
+929,English,4672,10307,contingent,4,Mother only
+930,English,4672,10307,non-contingent,161,Mother only
+931,English,4678,10308,contingent,4,Mother only
+932,English,4678,10308,non-contingent,61,Mother only
+933,English,4679,10309,contingent,8,Mother only
+934,English,4679,10309,non-contingent,153,Mother only
+935,English,4696,10316,contingent,21,Mother only
+936,English,4696,10316,non-contingent,77,Mother only
+937,English,4697,10317,contingent,1,Mother only
+938,English,4697,10317,non-contingent,125,Mother only
+939,English,4705,10318,contingent,3,Mother only
+940,English,4705,10318,non-contingent,137,Mother only
+941,English,4706,10319,contingent,28,Mother only
+942,English,4706,10319,non-contingent,147,Mother only
+943,English,4711,10320,contingent,10,Mother only
+944,English,4711,10320,non-contingent,133,Mother only
+945,English,4714,10291,contingent,21,Mother only
+946,English,4714,10291,non-contingent,199,Mother only
+947,English,4718,10327,contingent,11,Mother only
+948,English,4718,10327,non-contingent,148,Mother only
+949,English,4726,10330,non-contingent,95,Mother only
+950,English,4738,10340,contingent,12,Mother only
+951,English,4738,10340,non-contingent,142,Mother only
+952,English,4741,10344,contingent,15,Mother only
+953,English,4741,10344,non-contingent,164,Mother only
+954,English,4744,10347,contingent,2,Mother only
+955,English,4744,10347,non-contingent,193,Mother only
+956,English,4750,10349,contingent,17,Mother only
+957,English,4750,10349,non-contingent,175,Mother only
+958,English,4751,10351,contingent,13,Mother only
+959,English,4751,10351,non-contingent,120,Mother only
+960,English,4756,10354,contingent,7,Mother only
+961,English,4756,10354,non-contingent,231,Mother only
+962,English,4759,10359,contingent,28,Mother only
+963,English,4759,10359,non-contingent,181,Mother only
+964,English,4762,10362,contingent,3,Mother only
+965,English,4762,10362,non-contingent,68,Mother only
+966,English,4763,10356,contingent,32,Mother only
+967,English,4763,10356,non-contingent,111,Mother only
+968,English,4768,10360,contingent,1,Mother only
+969,English,4768,10360,non-contingent,209,Mother only
+970,English,4769,10361,contingent,4,Mother only
+971,English,4769,10361,non-contingent,212,Mother only
+972,English,4772,10363,contingent,21,Mother only
+973,English,4772,10363,non-contingent,194,Mother only
+974,English,4772,10912,contingent,44,Mother only
+975,English,4772,10912,non-contingent,321,Mother only
+976,English,4780,10372,contingent,3,Mother only
+977,English,4780,10372,non-contingent,176,Mother only
+978,English,4783,10371,contingent,21,Mother only
+979,English,4783,10371,non-contingent,120,Mother only
+980,English,4783,10919,contingent,25,Mother only
+981,English,4783,10919,non-contingent,272,Mother only
+982,English,4786,10374,contingent,11,Mother only
+983,English,4786,10374,non-contingent,97,Mother only
+984,English,4788,10373,contingent,17,Mother only
+985,English,4788,10373,non-contingent,200,Mother only
+986,English,4795,10377,contingent,11,Mother only
+987,English,4795,10377,non-contingent,172,Mother only
+988,English,4802,10380,contingent,19,Mother only
+989,English,4802,10380,non-contingent,117,Mother only
+990,English,4807,10382,contingent,5,Mother only
+991,English,4807,10382,non-contingent,125,Mother only
+992,English,4819,10389,contingent,13,Mother only
+993,English,4819,10389,non-contingent,179,Mother only
+994,English,4822,10390,contingent,36,Mother only
+995,English,4822,10390,non-contingent,165,Mother only
+996,English,4828,10394,non-contingent,207,Mother only
+997,English,4831,10395,contingent,44,Mother only
+998,English,4831,10395,non-contingent,204,Mother only
+999,English,4834,10398,contingent,14,Mother only
+1000,English,4834,10398,non-contingent,160,Mother only
+1001,English,4837,10400,contingent,9,Mother only
+1002,English,4837,10400,non-contingent,176,Mother only
+1003,English,4838,10399,contingent,37,Mother only
+1004,English,4838,10399,non-contingent,160,Mother only
+1005,English,4839,10401,non-contingent,221,Mother only
+1006,English,4846,10402,contingent,12,Mother only
+1007,English,4846,10402,non-contingent,173,Mother only
+1008,English,4847,10404,contingent,88,Mother only
+1009,English,4847,10404,non-contingent,212,Mother only
+1010,English,4852,10403,contingent,28,Mother only
+1011,English,4852,10403,non-contingent,176,Mother only
+1012,English,4853,10405,contingent,33,Mother only
+1013,English,4853,10405,non-contingent,170,Mother only
+1014,English,4858,10406,contingent,2,Mother only
+1015,English,4858,10406,non-contingent,171,Mother only
+1016,English,4859,10407,contingent,14,Mother only
+1017,English,4859,10407,non-contingent,148,Mother only
+1018,English,4868,10409,contingent,8,Mother only
+1019,English,4868,10409,non-contingent,36,Mother only
+1020,English,4876,10411,non-contingent,146,Mother only
+1021,English,4876,10955,non-contingent,332,Mother only
+1022,English,4882,10414,contingent,6,Mother only
+1023,English,4882,10414,non-contingent,192,Mother only
+1024,English,4883,10415,non-contingent,135,Mother only
+1025,English,4889,10417,contingent,22,Mother only
+1026,English,4889,10417,non-contingent,224,Mother only
+1027,English,4895,10419,non-contingent,88,Mother only
+1028,English,4901,10421,contingent,12,Mother only
+1029,English,4901,10421,non-contingent,169,Mother only
+1030,English,4906,10423,contingent,15,Mother only
+1031,English,4906,10423,non-contingent,118,Mother only
+1032,English,4915,10425,contingent,5,Mother only
+1033,English,4915,10425,non-contingent,65,Mother only
+1034,English,4921,10427,contingent,25,Mother only
+1035,English,4921,10427,non-contingent,191,Mother only
+1036,English,4923,10429,contingent,3,Mother only
+1037,English,4923,10429,non-contingent,172,Mother only
+1038,English,4925,10430,contingent,15,Mother only
+1039,English,4925,10430,non-contingent,164,Mother only
+1040,English,4939,10428,contingent,52,Mother only
+1041,English,4939,10428,non-contingent,218,Mother only
+1042,English,4939,10968,contingent,21,Mother only
+1043,English,4939,10968,non-contingent,337,Mother only
+1044,English,4945,10435,contingent,32,Mother only
+1045,English,4945,10435,non-contingent,158,Mother only
+1046,English,4948,10436,contingent,3,Mother only
+1047,English,4948,10436,non-contingent,97,Mother only
+1048,English,4949,10437,contingent,8,Mother only
+1049,English,4949,10437,non-contingent,140,Mother only
+1050,English,4954,10439,contingent,21,Mother only
+1051,English,4954,10439,non-contingent,155,Mother only
+1052,English,4957,10441,contingent,5,Mother only
+1053,English,4957,10441,non-contingent,124,Mother only
+1054,English,4960,10442,contingent,10,Mother only
+1055,English,4960,10442,non-contingent,152,Mother only
+1056,English,4966,10443,contingent,24,Mother only
+1057,English,4966,10443,non-contingent,186,Mother only
+1058,English,4970,10444,contingent,3,Mother only
+1059,English,4970,10444,non-contingent,52,Mother only
+1060,English,4972,10445,contingent,5,Mother only
+1061,English,4972,10445,non-contingent,115,Mother only
+1062,English,4975,10446,contingent,21,Mother only
+1063,English,4975,10446,non-contingent,157,Mother only
+1064,English,4978,10447,contingent,47,Mother only
+1065,English,4978,10447,non-contingent,232,Mother only
+1066,English,4984,10448,contingent,51,Mother only
+1067,English,4984,10448,non-contingent,189,Mother only
+1068,English,4987,10449,contingent,6,Mother only
+1069,English,4987,10449,non-contingent,106,Mother only
+1070,English,4988,10450,contingent,12,Mother only
+1071,English,4988,10450,non-contingent,144,Mother only
+1072,English,4990,10451,contingent,2,Mother only
+1073,English,4990,10451,non-contingent,91,Mother only
+1074,English,4994,10452,contingent,7,Mother only
+1075,English,4994,10452,non-contingent,105,Mother only
+1076,English,4996,10453,contingent,15,Mother only
+1077,English,4996,10453,non-contingent,212,Mother only
+1078,English,4999,10454,contingent,2,Mother only
+1079,English,4999,10454,non-contingent,90,Mother only
+1080,English,5014,10460,contingent,28,Mother only
+1081,English,5014,10460,non-contingent,189,Mother only
+1082,English,5020,10462,contingent,5,Mother only
+1083,English,5020,10462,non-contingent,172,Mother only
+1084,English,5023,10463,non-contingent,126,Mother only
+1085,English,5026,10464,contingent,8,Mother only
+1086,English,5026,10464,non-contingent,176,Mother only
+1087,English,5029,10465,contingent,16,Mother only
+1088,English,5029,10465,non-contingent,219,Mother only
+1089,English,5032,10466,contingent,28,Mother only
+1090,English,5032,10466,non-contingent,201,Mother only
+1091,English,5032,11011,contingent,27,Mother only
+1092,English,5032,11011,non-contingent,300,Mother only
+1093,English,5035,10467,contingent,7,Mother only
+1094,English,5035,10467,non-contingent,172,Mother only
+1095,English,5041,10470,contingent,18,Mother only
+1096,English,5041,10470,non-contingent,133,Mother only
+1097,English,5042,10469,contingent,17,Mother only
+1098,English,5042,10469,non-contingent,197,Mother only
+1099,English,5047,10471,contingent,7,Mother only
+1100,English,5047,10471,non-contingent,198,Mother only
+1101,English,5048,10472,non-contingent,79,Mother only
+1102,English,5059,10475,contingent,5,Mother only
+1103,English,5059,10475,non-contingent,215,Mother only
+1104,English,5068,10479,contingent,53,Mother only
+1105,English,5068,10479,non-contingent,152,Mother only
+1106,English,5071,10480,contingent,9,Mother only
+1107,English,5071,10480,non-contingent,123,Mother only
+1108,English,5073,10484,contingent,9,Mother only
+1109,English,5073,10484,non-contingent,44,Mother only
+1110,English,5079,10485,contingent,23,Mother only
+1111,English,5079,10485,non-contingent,202,Mother only
+1112,English,5086,10486,contingent,20,Mother only
+1113,English,5086,10486,non-contingent,129,Mother only
+1114,English,5092,10488,contingent,49,Mother only
+1115,English,5092,10488,non-contingent,202,Mother only
+1116,English,5095,10489,contingent,20,Mother only
+1117,English,5095,10489,non-contingent,195,Mother only
+1118,English,5104,10492,contingent,39,Mother only
+1119,English,5104,10492,non-contingent,188,Mother only
+1120,English,5107,10493,contingent,6,Mother only
+1121,English,5107,10493,non-contingent,112,Mother only
+1122,English,5108,10494,contingent,8,Mother only
+1123,English,5108,10494,non-contingent,108,Mother only
+1124,English,5119,10498,contingent,10,Mother only
+1125,English,5119,10498,non-contingent,183,Mother only
+1126,English,5128,10501,contingent,20,Mother only
+1127,English,5128,10501,non-contingent,115,Mother only
+1128,English,5140,10505,contingent,21,Mother only
+1129,English,5140,10505,non-contingent,231,Mother only
+1130,English,5143,10506,contingent,22,Mother only
+1131,English,5143,10506,non-contingent,256,Mother only
+1132,English,5146,10507,contingent,28,Mother only
+1133,English,5146,10507,non-contingent,98,Mother only
+1134,English,5149,10508,contingent,3,Mother only
+1135,English,5149,10508,non-contingent,129,Mother only
+1136,English,5152,10509,contingent,5,Mother only
+1137,English,5152,10509,non-contingent,89,Mother only
+1138,English,5155,10510,contingent,9,Mother only
+1139,English,5155,10510,non-contingent,181,Mother only
+1140,English,5158,10511,contingent,17,Mother only
+1141,English,5158,10511,non-contingent,179,Mother only
+1142,English,5163,10513,contingent,5,Mother only
+1143,English,5163,10513,non-contingent,122,Mother only
+1144,English,5173,10517,contingent,36,Mother only
+1145,English,5173,10517,non-contingent,195,Mother only
+1146,English,5176,10519,contingent,32,Mother only
+1147,English,5176,10519,non-contingent,138,Mother only
+1148,English,5179,10520,contingent,1,Mother only
+1149,English,5179,10520,non-contingent,137,Mother only
+1150,English,5185,10522,contingent,35,Mother only
+1151,English,5185,10522,non-contingent,151,Mother only
+1152,English,5188,10523,contingent,54,Mother only
+1153,English,5188,10523,non-contingent,183,Mother only
+1154,English,5189,10524,contingent,15,Mother only
+1155,English,5189,10524,non-contingent,148,Mother only
+1156,English,5191,10525,contingent,11,Mother only
+1157,English,5191,10525,non-contingent,174,Mother only
+1158,English,5198,10527,contingent,32,Mother only
+1159,English,5198,10527,non-contingent,133,Mother only
+1160,English,5201,10529,contingent,26,Mother only
+1161,English,5201,10529,non-contingent,147,Mother only
+1162,English,5204,10528,contingent,11,Mother only
+1163,English,5204,10528,non-contingent,198,Mother only
+1164,English,5209,10530,contingent,13,Mother only
+1165,English,5209,10530,non-contingent,123,Mother only
+1166,English,5210,10531,contingent,33,Mother only
+1167,English,5210,10531,non-contingent,139,Mother only
+1168,English,5216,10535,contingent,42,Mother only
+1169,English,5216,10535,non-contingent,140,Mother only
+1170,English,5224,10534,contingent,30,Mother only
+1171,English,5224,10534,non-contingent,216,Mother only
+1172,English,5227,10536,contingent,13,Mother only
+1173,English,5227,10536,non-contingent,125,Mother only
+1174,English,5233,10538,contingent,1,Mother only
+1175,English,5233,10538,non-contingent,192,Mother only
+1176,English,5236,10539,contingent,30,Mother only
+1177,English,5236,10539,non-contingent,153,Mother only
+1178,English,5237,10540,contingent,8,Mother only
+1179,English,5237,10540,non-contingent,229,Mother only
+1180,English,5242,10541,contingent,15,Mother only
+1181,English,5242,10541,non-contingent,164,Mother only
+1182,English,5245,10542,contingent,19,Mother only
+1183,English,5245,10542,non-contingent,185,Mother only
+1184,English,5248,10543,contingent,28,Mother only
+1185,English,5248,10543,non-contingent,252,Mother only
+1186,English,5251,10544,contingent,7,Mother only
+1187,English,5251,10544,non-contingent,114,Mother only
+1188,English,5254,10545,contingent,20,Mother only
+1189,English,5254,10545,non-contingent,185,Mother only
+1190,English,5257,10546,contingent,39,Mother only
+1191,English,5257,10546,non-contingent,152,Mother only
+1192,English,5260,10547,contingent,60,Mother only
+1193,English,5260,10547,non-contingent,240,Mother only
+1194,English,5261,10548,contingent,8,Mother only
+1195,English,5261,10548,non-contingent,88,Mother only
+1196,English,5262,10549,contingent,52,Mother only
+1197,English,5262,10549,non-contingent,164,Mother only
+1198,English,5262,11094,contingent,21,Mother only
+1199,English,5262,11094,non-contingent,297,Mother only
+1200,English,5265,10550,contingent,8,Mother only
+1201,English,5265,10550,non-contingent,208,Mother only
+1202,English,5272,10551,contingent,26,Mother only
+1203,English,5272,10551,non-contingent,205,Mother only
+1204,English,5281,10553,contingent,26,Mother only
+1205,English,5281,10553,non-contingent,168,Mother only
+1206,English,5282,10555,contingent,15,Mother only
+1207,English,5282,10555,non-contingent,194,Mother only
+1208,English,5284,10556,contingent,36,Mother only
+1209,English,5284,10556,non-contingent,190,Mother only
+1210,English,5290,10557,contingent,2,Mother only
+1211,English,5290,10557,non-contingent,163,Mother only
+1212,English,5293,10558,contingent,7,Mother only
+1213,English,5293,10558,non-contingent,222,Mother only
+1214,English,5296,10559,contingent,8,Mother only
+1215,English,5296,10559,non-contingent,188,Mother only
+1216,English,5302,10561,contingent,47,Mother only
+1217,English,5302,10561,non-contingent,169,Mother only
+1218,English,5305,10562,contingent,24,Mother only
+1219,English,5305,10562,non-contingent,118,Mother only
+1220,English,5305,11106,contingent,1,Mother only
+1221,English,5305,11106,non-contingent,306,Mother only
+1222,English,5308,10563,contingent,52,Mother only
+1223,English,5308,10563,non-contingent,114,Mother only
+1224,English,5317,10566,contingent,13,Mother only
+1225,English,5317,10566,non-contingent,198,Mother only
+1226,English,5318,10567,contingent,14,Mother only
+1227,English,5318,10567,non-contingent,202,Mother only
+1228,English,5320,10568,contingent,31,Mother only
+1229,English,5320,10568,non-contingent,172,Mother only
+1230,English,5323,10569,contingent,47,Mother only
+1231,English,5323,10569,non-contingent,239,Mother only
+1232,English,5332,10571,contingent,28,Mother only
+1233,English,5332,10571,non-contingent,138,Mother only
+1234,English,5335,10572,contingent,2,Mother only
+1235,English,5335,10572,non-contingent,205,Mother only
+1236,English,5336,10573,contingent,36,Mother only
+1237,English,5336,10573,non-contingent,132,Mother only
+1238,English,5341,10574,contingent,26,Mother only
+1239,English,5341,10574,non-contingent,218,Mother only
+1240,English,5344,10575,contingent,47,Mother only
+1241,English,5344,10575,non-contingent,158,Mother only
+1242,English,5347,10577,contingent,110,Mother only
+1243,English,5347,10577,non-contingent,149,Mother only
+1244,English,5350,10578,contingent,84,Mother only
+1245,English,5350,10578,non-contingent,235,Mother only
+1246,English,5350,11123,contingent,50,Mother only
+1247,English,5350,11123,non-contingent,378,Mother only
+1248,English,5351,10579,contingent,102,Mother only
+1249,English,5351,10579,non-contingent,192,Mother only
+1250,English,5356,10580,contingent,120,Mother only
+1251,English,5356,10580,non-contingent,236,Mother only
+1252,English,5357,10581,contingent,75,Mother only
+1253,English,5357,10581,non-contingent,146,Mother only
+1254,English,5359,10582,contingent,76,Mother only
+1255,English,5359,10582,non-contingent,165,Mother only
+1256,English,5361,10583,contingent,19,Mother only
+1257,English,5361,10583,non-contingent,185,Mother only
+1258,English,5367,10586,contingent,49,Mother only
+1259,English,5367,10586,non-contingent,177,Mother only
+1260,English,5369,10584,contingent,32,Mother only
+1261,English,5369,10584,non-contingent,104,Mother only
+1262,English,5371,10585,contingent,44,Mother only
+1263,English,5371,10585,non-contingent,177,Mother only
+1264,English,5377,10587,non-contingent,108,Mother only
+1265,English,5380,10588,contingent,29,Mother only
+1266,English,5380,10588,non-contingent,141,Mother only
+1267,English,5381,10589,contingent,46,Mother only
+1268,English,5381,10589,non-contingent,155,Mother only
+1269,English,5383,10590,contingent,57,Mother only
+1270,English,5383,10590,non-contingent,175,Mother only
+1271,English,5387,10591,contingent,19,Mother only
+1272,English,5387,10591,non-contingent,166,Mother only
+1273,English,5392,10592,contingent,62,Mother only
+1274,English,5392,10592,non-contingent,243,Mother only
+1275,English,5393,10593,contingent,16,Mother only
+1276,English,5393,10593,non-contingent,240,Mother only
+1277,English,5393,11137,contingent,11,Mother only
+1278,English,5393,11137,non-contingent,307,Mother only
+1279,English,5401,10595,contingent,92,Mother only
+1280,English,5401,10595,non-contingent,138,Mother only
+1281,English,5404,10596,contingent,31,Mother only
+1282,English,5404,10596,non-contingent,192,Mother only
+1283,English,5407,10597,contingent,85,Mother only
+1284,English,5407,10597,non-contingent,194,Mother only
+1285,English,5410,10599,contingent,84,Mother only
+1286,English,5410,10599,non-contingent,228,Mother only
+1287,English,5413,10600,contingent,51,Mother only
+1288,English,5413,10600,non-contingent,201,Mother only
+1289,English,5416,10601,contingent,35,Mother only
+1290,English,5416,10601,non-contingent,182,Mother only
+1291,English,5419,10603,contingent,64,Mother only
+1292,English,5419,10603,non-contingent,162,Mother only
+1293,English,5422,10602,contingent,10,Mother only
+1294,English,5422,10602,non-contingent,150,Mother only
+1295,English,5426,10606,contingent,66,Mother only
+1296,English,5426,10606,non-contingent,107,Mother only
+1297,English,5429,10605,contingent,34,Mother only
+1298,English,5429,10605,non-contingent,180,Mother only
+1299,English,5432,10607,contingent,20,Mother only
+1300,English,5432,10607,non-contingent,195,Mother only
+1301,English,5434,10608,contingent,2,Mother only
+1302,English,5434,10608,non-contingent,105,Mother only
+1303,English,5440,10609,contingent,45,Mother only
+1304,English,5440,10609,non-contingent,164,Mother only
+1305,English,5441,10610,contingent,49,Mother only
+1306,English,5441,10610,non-contingent,158,Mother only
+1307,English,5442,10611,contingent,10,Mother only
+1308,English,5442,10611,non-contingent,181,Mother only
+1309,English,5447,10612,contingent,102,Mother only
+1310,English,5447,10612,non-contingent,153,Mother only
+1311,English,5454,10615,contingent,35,Mother only
+1312,English,5454,10615,non-contingent,125,Mother only
+1313,English,5456,10616,contingent,53,Mother only
+1314,English,5456,10616,non-contingent,175,Mother only
+1315,English,5458,10617,contingent,45,Mother only
+1316,English,5458,10617,non-contingent,172,Mother only
+1317,English,5461,10614,contingent,52,Mother only
+1318,English,5461,10614,non-contingent,195,Mother only
+1319,English,5464,10618,contingent,118,Mother only
+1320,English,5464,10618,non-contingent,231,Mother only
+1321,English,5467,10619,contingent,79,Mother only
+1322,English,5467,10619,non-contingent,233,Mother only
+1323,English,5472,10620,contingent,69,Mother only
+1324,English,5472,10620,non-contingent,145,Mother only
+1325,English,5474,10621,non-contingent,178,Mother only
+1326,English,5479,10622,contingent,20,Mother only
+1327,English,5479,10622,non-contingent,190,Mother only
+1328,English,5482,10623,contingent,8,Mother only
+1329,English,5482,10623,non-contingent,163,Mother only
+1330,English,5483,10624,non-contingent,104,Mother only
+1331,English,5491,10626,contingent,14,Mother only
+1332,English,5491,10626,non-contingent,189,Mother only
+1333,English,5498,10628,contingent,2,Mother only
+1334,English,5498,10628,non-contingent,99,Mother only
+1335,English,5501,10629,contingent,25,Mother only
+1336,English,5501,10629,non-contingent,197,Mother only
+1337,English,5504,10630,contingent,17,Mother only
+1338,English,5504,10630,non-contingent,207,Mother only
+1339,English,5505,10631,contingent,13,Mother only
+1340,English,5505,10631,non-contingent,191,Mother only
+1341,English,5509,10632,contingent,8,Mother only
+1342,English,5509,10632,non-contingent,258,Mother only
+1343,English,5511,10633,contingent,54,Mother only
+1344,English,5511,10633,non-contingent,144,Mother only
+1345,English,5513,10634,contingent,9,Mother only
+1346,English,5513,10634,non-contingent,154,Mother only
+1347,English,5517,10635,contingent,48,Mother only
+1348,English,5517,10635,non-contingent,165,Mother only
+1349,English,5521,10637,contingent,10,Mother only
+1350,English,5521,10637,non-contingent,215,Mother only
+1351,English,5523,10636,contingent,40,Mother only
+1352,English,5523,10636,non-contingent,160,Mother only
+1353,English,5525,10638,contingent,95,Mother only
+1354,English,5525,10638,non-contingent,166,Mother only
+1355,English,5529,10639,contingent,44,Mother only
+1356,English,5529,10639,non-contingent,149,Mother only
+1357,English,5532,10640,contingent,64,Mother only
+1358,English,5532,10640,non-contingent,140,Mother only
+1359,English,5536,10641,contingent,7,Mother only
+1360,English,5536,10641,non-contingent,213,Mother only
+1361,English,5543,10643,contingent,13,Mother only
+1362,English,5543,10643,non-contingent,136,Mother only
+1363,English,5546,10644,contingent,12,Mother only
+1364,English,5546,10644,non-contingent,154,Mother only
+1365,English,5547,10645,contingent,65,Mother only
+1366,English,5547,10645,non-contingent,226,Mother only
+1367,English,5549,10646,contingent,104,Mother only
+1368,English,5549,10646,non-contingent,181,Mother only
+1369,English,5555,10647,contingent,87,Mother only
+1370,English,5555,10647,non-contingent,258,Mother only
+1371,English,5558,10648,contingent,33,Mother only
+1372,English,5558,10648,non-contingent,186,Mother only
+1373,English,5559,10649,contingent,6,Mother only
+1374,English,5559,10649,non-contingent,89,Mother only
+1375,English,5564,10650,contingent,65,Mother only
+1376,English,5564,10650,non-contingent,207,Mother only
+1377,English,5567,10651,contingent,100,Mother only
+1378,English,5567,10651,non-contingent,234,Mother only
+1379,English,5570,10652,contingent,31,Mother only
+1380,English,5570,10652,non-contingent,135,Mother only
+1381,English,5572,10653,contingent,41,Mother only
+1382,English,5572,10653,non-contingent,202,Mother only
+1383,English,5575,10654,contingent,8,Mother only
+1384,English,5575,10654,non-contingent,209,Mother only
+1385,English,5577,10655,contingent,20,Mother only
+1386,English,5577,10655,non-contingent,173,Mother only
+1387,English,5582,10656,contingent,6,Mother only
+1388,English,5582,10656,non-contingent,184,Mother only
+1389,English,5585,10657,contingent,4,Mother only
+1390,English,5585,10657,non-contingent,197,Mother only
+1391,English,5588,10658,contingent,42,Mother only
+1392,English,5588,10658,non-contingent,148,Mother only
+1393,English,5590,10659,contingent,72,Mother only
+1394,English,5590,10659,non-contingent,162,Mother only
+1395,English,5592,10660,contingent,4,Mother only
+1396,English,5592,10660,non-contingent,19,Mother only
+1397,English,5593,10661,contingent,26,Mother only
+1398,English,5593,10661,non-contingent,136,Mother only
+1399,English,5597,10662,contingent,35,Mother only
+1400,English,5597,10662,non-contingent,222,Mother only
+1401,English,5601,10663,contingent,63,Mother only
+1402,English,5601,10663,non-contingent,157,Mother only
+1403,English,5603,10666,contingent,100,Mother only
+1404,English,5603,10666,non-contingent,194,Mother only
+1405,English,5603,11211,contingent,44,Mother only
+1406,English,5603,11211,non-contingent,332,Mother only
+1407,English,5612,10668,contingent,53,Mother only
+1408,English,5612,10668,non-contingent,127,Mother only
+1409,English,5615,10664,contingent,28,Mother only
+1410,English,5615,10664,non-contingent,264,Mother only
+1411,English,5618,10667,contingent,12,Mother only
+1412,English,5618,10667,non-contingent,166,Mother only
+1413,English,5619,10670,contingent,19,Mother only
+1414,English,5619,10670,non-contingent,126,Mother only
+1415,English,5621,10669,contingent,81,Mother only
+1416,English,5621,10669,non-contingent,194,Mother only
+1417,English,5626,10671,contingent,93,Mother only
+1418,English,5626,10671,non-contingent,133,Mother only
+1419,English,5628,10672,contingent,83,Mother only
+1420,English,5628,10672,non-contingent,211,Mother only
+1421,English,5630,10673,contingent,21,Mother only
+1422,English,5630,10673,non-contingent,237,Mother only
+1423,English,5633,10674,contingent,17,Mother only
+1424,English,5633,10674,non-contingent,129,Mother only
+1425,English,5639,10675,contingent,46,Mother only
+1426,English,5639,10675,non-contingent,156,Mother only
+1427,English,5640,10676,contingent,51,Mother only
+1428,English,5640,10676,non-contingent,187,Mother only
+1429,English,5645,10677,contingent,34,Mother only
+1430,English,5645,10677,non-contingent,212,Mother only
+1431,English,5645,11231,contingent,19,Mother only
+1432,English,5645,11231,non-contingent,222,Mother only
+1433,English,5648,10678,contingent,23,Mother only
+1434,English,5648,10678,non-contingent,149,Mother only
+1435,English,5651,10679,non-contingent,139,Mother only
+1436,English,5654,10680,contingent,40,Mother only
+1437,English,5654,10680,non-contingent,158,Mother only
+1438,English,5655,10681,contingent,27,Mother only
+1439,English,5655,10681,non-contingent,245,Mother only
+1440,English,5657,10682,contingent,85,Mother only
+1441,English,5657,10682,non-contingent,241,Mother only
+1442,English,5660,10683,contingent,42,Mother only
+1443,English,5660,10683,non-contingent,154,Mother only
+1444,English,5664,10684,contingent,31,Mother only
+1445,English,5664,10684,non-contingent,85,Mother only
+1446,English,5668,10685,contingent,20,Mother only
+1447,English,5668,10685,non-contingent,166,Mother only
+1448,English,5671,10686,contingent,16,Mother only
+1449,English,5671,10686,non-contingent,153,Mother only
+1450,English,5675,10687,contingent,36,Mother only
+1451,English,5675,10687,non-contingent,188,Mother only
+1452,English,5678,10689,contingent,24,Mother only
+1453,English,5678,10689,non-contingent,210,Mother only
+1454,English,5679,10690,contingent,44,Mother only
+1455,English,5679,10690,non-contingent,198,Mother only
+1456,English,5684,10691,contingent,76,Mother only
+1457,English,5684,10691,non-contingent,187,Mother only
+1458,English,5686,10692,contingent,80,Mother only
+1459,English,5686,10692,non-contingent,148,Mother only
+1460,English,5688,10695,contingent,18,Mother only
+1461,English,5688,10695,non-contingent,115,Mother only
+1462,English,5692,10693,contingent,61,Mother only
+1463,English,5692,10693,non-contingent,170,Mother only
+1464,English,5695,10696,contingent,38,Mother only
+1465,English,5695,10696,non-contingent,166,Mother only
+1466,English,5697,10694,contingent,34,Mother only
+1467,English,5697,10694,non-contingent,169,Mother only
+1468,English,5699,10697,contingent,56,Mother only
+1469,English,5699,10697,non-contingent,160,Mother only
+1470,English,5703,10698,contingent,65,Mother only
+1471,English,5703,10698,non-contingent,164,Mother only
+1472,English,23471,43208,contingent,10,Mother only
+1473,English,23471,43208,non-contingent,97,Mother only
+1474,English,23471,43210,contingent,12,Mother only
+1475,English,23471,43210,non-contingent,122,Mother only
+1476,English,23471,43211,contingent,23,Mother only
+1477,English,23471,43211,non-contingent,124,Mother only
+1478,English,23471,43212,contingent,17,Mother only
+1479,English,23471,43212,non-contingent,348,Mother only
+1480,English,23471,43213,contingent,10,Mother only
+1481,English,23471,43213,non-contingent,182,Mother only
+1482,English,23471,43214,contingent,40,Mother only
+1483,English,23471,43214,non-contingent,88,Mother only
+1484,English,23471,43215,contingent,42,Mother & Father
+1485,English,23471,43215,non-contingent,64,Mother & Father
+1486,English,23471,43216,contingent,38,Mother only
+1487,English,23471,43216,non-contingent,111,Mother only
+1488,English,23471,43219,contingent,63,Mother only
+1489,English,23471,43219,non-contingent,128,Mother only
+1490,English,23471,43221,contingent,48,Mother only
+1491,English,23471,43221,non-contingent,96,Mother only
+1492,English,23471,43222,contingent,97,Mother only
+1493,English,23471,43222,non-contingent,142,Mother only
+1494,English,23471,43223,contingent,44,Mother & Father
+1495,English,23471,43223,non-contingent,124,Mother & Father
+1496,English,23471,43225,contingent,71,Mother only
+1497,English,23471,43225,non-contingent,145,Mother only
+1498,English,23471,43226,contingent,30,Mother only
+1499,English,23471,43226,non-contingent,106,Mother only
+1500,English,23471,43227,contingent,34,Mother only
+1501,English,23471,43227,non-contingent,141,Mother only
+1502,English,23471,43228,contingent,55,Mother only
+1503,English,23471,43228,non-contingent,123,Mother only
+1504,English,23471,43229,contingent,85,Mother only
+1505,English,23471,43229,non-contingent,107,Mother only
+1506,English,23471,43230,contingent,84,Mother only
+1507,English,23471,43230,non-contingent,135,Mother only
+1508,English,23471,43231,contingent,76,Mother only
+1509,English,23471,43231,non-contingent,97,Mother only
+1510,English,23471,43232,contingent,63,Mother only
+1511,English,23471,43232,non-contingent,124,Mother only
+1512,English,23471,43234,contingent,64,Mother only
+1513,English,23471,43234,non-contingent,58,Mother only
+1514,English,23487,43261,contingent,15,Mother only
+1515,English,23487,43261,non-contingent,145,Mother only
+1516,English,23487,43262,contingent,25,Mother only
+1517,English,23487,43262,non-contingent,131,Mother only
+1518,English,23487,43263,contingent,56,Mother only
+1519,English,23487,43263,non-contingent,186,Mother only
+1520,English,23487,43264,contingent,37,Mother only
+1521,English,23487,43264,non-contingent,99,Mother only
+1522,English,23487,43265,contingent,108,Mother only
+1523,English,23487,43265,non-contingent,148,Mother only
+1524,English,23487,43266,contingent,65,Mother only
+1525,English,23487,43266,non-contingent,91,Mother only
+1526,English,23487,43267,contingent,65,Mother only
+1527,English,23487,43267,non-contingent,80,Mother only
+1528,English,23487,43268,contingent,64,Mother only
+1529,English,23487,43268,non-contingent,139,Mother only
+1530,English,23487,43270,contingent,55,Mother only
+1531,English,23487,43270,non-contingent,102,Mother only
+1532,English,23487,43271,contingent,56,Mother only
+1533,English,23487,43271,non-contingent,127,Mother only
+1534,English,23487,43273,contingent,84,Mother only
+1535,English,23487,43273,non-contingent,95,Mother only
+1536,English,23487,43275,contingent,64,Mother only
+1537,English,23487,43275,non-contingent,119,Mother only
+1538,English,23487,43276,contingent,62,Mother only
+1539,English,23487,43276,non-contingent,105,Mother only
+1540,English,23487,43277,contingent,6,Mother only
+1541,English,23487,43277,non-contingent,120,Mother only
+1542,English,23487,43278,contingent,10,Mother only
+1543,English,23487,43278,non-contingent,92,Mother only
+1544,English,23487,43280,non-contingent,175,Mother only
+1545,English,23487,43283,contingent,23,Mother only
+1546,English,23487,43283,non-contingent,129,Mother only
+1547,English,23487,43284,contingent,57,Mother only
+1548,English,23487,43284,non-contingent,120,Mother only
+1549,English,23487,43285,contingent,124,Mother only
+1550,English,23487,43285,non-contingent,155,Mother only
+1551,English,23487,43286,contingent,34,Mother only
+1552,English,23487,43286,non-contingent,226,Mother only
+1553,English,23487,43288,contingent,36,Mother only
+1554,English,23487,43288,non-contingent,124,Mother only
+1555,English,23487,43289,contingent,38,Mother only
+1556,English,23487,43289,non-contingent,169,Mother only
+1557,English,23487,43290,contingent,15,Mother only
+1558,English,23487,43290,non-contingent,121,Mother only
+1559,English,23487,43291,contingent,77,Mother only
+1560,English,23487,43291,non-contingent,228,Mother only
+1561,English,23487,43292,contingent,99,Mother only
+1562,English,23487,43292,non-contingent,176,Mother only
+1563,English,23487,43293,contingent,93,Mother only
+1564,English,23487,43293,non-contingent,148,Mother only
+1565,English,23487,43294,contingent,68,Mother only
+1566,English,23487,43294,non-contingent,129,Mother only
+1567,English,23487,43295,contingent,26,Mother only
+1568,English,23487,43295,non-contingent,159,Mother only
+1569,English,23487,43296,contingent,135,Mother only
+1570,English,23487,43296,non-contingent,167,Mother only
+1571,English,23487,43297,contingent,95,Mother only
+1572,English,23487,43297,non-contingent,164,Mother only
+1573,English,23487,43298,contingent,64,Mother only
+1574,English,23487,43298,non-contingent,239,Mother only
+1575,English,23495,43308,contingent,49,Mother only
+1576,English,23495,43308,non-contingent,272,Mother only
+1577,English,23495,43311,contingent,54,Mother only
+1578,English,23495,43311,non-contingent,170,Mother only
+1579,English,23495,43312,contingent,50,Mother only
+1580,English,23495,43312,non-contingent,131,Mother only
+1581,English,23495,43313,contingent,33,Mother only
+1582,English,23495,43313,non-contingent,159,Mother only
+1583,English,23495,43314,contingent,32,Mother only
+1584,English,23495,43314,non-contingent,319,Mother only
+1585,English,23495,43315,contingent,57,Mother only
+1586,English,23495,43315,non-contingent,148,Mother only
+1587,English,23495,43316,contingent,77,Mother only
+1588,English,23495,43316,non-contingent,251,Mother only
+1589,English,23495,43317,contingent,77,Mother only
+1590,English,23495,43317,non-contingent,219,Mother only
+1591,English,23495,43318,contingent,92,Mother only
+1592,English,23495,43318,non-contingent,315,Mother only
+1593,English,23495,43319,contingent,68,Mother only
+1594,English,23495,43319,non-contingent,122,Mother only
+1595,English,23495,43321,contingent,113,Mother only
+1596,English,23495,43321,non-contingent,169,Mother only
+1597,English,23495,43322,contingent,130,Mother only
+1598,English,23495,43322,non-contingent,194,Mother only
+1599,English,23495,43323,contingent,88,Mother only
+1600,English,23495,43323,non-contingent,296,Mother only
+1601,English,23495,43324,contingent,142,Mother only
+1602,English,23495,43324,non-contingent,182,Mother only
+1603,English,23495,43326,contingent,27,Mother only
+1604,English,23495,43326,non-contingent,49,Mother only
+1605,English,23495,43327,contingent,65,Mother only
+1606,English,23495,43327,non-contingent,143,Mother only
+1607,English,23495,43328,contingent,57,Mother & Father
+1608,English,23495,43328,non-contingent,231,Mother & Father
+1609,English,23495,43329,contingent,51,Mother only
+1610,English,23495,43329,non-contingent,217,Mother only
+1611,English,23495,43330,contingent,158,Mother only
+1612,English,23495,43330,non-contingent,152,Mother only
+1613,English,23495,43331,contingent,90,Mother & Father
+1614,English,23495,43331,non-contingent,157,Mother & Father
+1615,English,23495,43332,contingent,117,Mother only
+1616,English,23495,43332,non-contingent,138,Mother only
+1617,English,23495,43333,contingent,116,Mother only
+1618,English,23495,43333,non-contingent,224,Mother only
+1619,English,23495,43334,contingent,55,Mother only
+1620,English,23495,43334,non-contingent,199,Mother only
+1621,English,23495,43336,contingent,89,Mother only
+1622,English,23495,43336,non-contingent,288,Mother only
+1623,English,23495,43337,contingent,138,Mother only
+1624,English,23495,43337,non-contingent,304,Mother only
+1625,English,23495,43338,contingent,113,Mother only
+1626,English,23495,43338,non-contingent,223,Mother only
+1627,English,23495,43339,contingent,100,Mother only
+1628,English,23495,43339,non-contingent,390,Mother only
+1629,English,23495,43340,contingent,61,Mother only
+1630,English,23495,43340,non-contingent,151,Mother only
+1631,English,23495,43341,contingent,101,Mother only
+1632,English,23495,43341,non-contingent,364,Mother only
+1633,English,23495,43342,contingent,87,Mother only
+1634,English,23495,43342,non-contingent,246,Mother only
+1635,English,23495,43343,contingent,70,Mother only
+1636,English,23495,43343,non-contingent,164,Mother only
+1637,English,23495,43345,contingent,94,Mother only
+1638,English,23495,43345,non-contingent,164,Mother only
+1639,English,23495,43346,contingent,118,Mother only
+1640,English,23495,43346,non-contingent,207,Mother only
+1641,English,23495,43348,contingent,110,Mother only
+1642,English,23495,43348,non-contingent,408,Mother only
+1643,English,23495,43349,contingent,73,Mother only
+1644,English,23495,43349,non-contingent,263,Mother only
+1645,English,23495,43350,contingent,45,Mother only
+1646,English,23495,43350,non-contingent,119,Mother only
+1647,English,23495,43351,contingent,96,Mother & Father
+1648,English,23495,43351,non-contingent,142,Mother & Father
+1649,English,23495,43353,contingent,118,Mother only
+1650,English,23495,43353,non-contingent,198,Mother only
+1651,English,23510,43391,contingent,38,Mother only
+1652,English,23510,43391,non-contingent,141,Mother only
+1653,English,23510,43392,contingent,47,Mother only
+1654,English,23510,43392,non-contingent,119,Mother only
+1655,English,23510,43393,contingent,43,Mother only
+1656,English,23510,43393,non-contingent,195,Mother only
+1657,English,23510,43394,contingent,21,Mother only
+1658,English,23510,43394,non-contingent,156,Mother only
+1659,English,23510,43395,contingent,45,Mother only
+1660,English,23510,43395,non-contingent,166,Mother only
+1661,English,23510,43396,contingent,57,Mother & Father
+1662,English,23510,43396,non-contingent,105,Mother & Father
+1663,English,23510,43397,contingent,56,Mother only
+1664,English,23510,43397,non-contingent,149,Mother only
+1665,English,23510,43398,contingent,53,Mother only
+1666,English,23510,43398,non-contingent,183,Mother only
+1667,English,23510,43400,contingent,46,Mother & Father
+1668,English,23510,43400,non-contingent,194,Mother & Father
+1669,English,23510,43402,contingent,76,Mother only
+1670,English,23510,43402,non-contingent,203,Mother only
+1671,English,23510,43403,contingent,26,Mother only
+1672,English,23510,43403,non-contingent,151,Mother only
+1673,English,23510,43405,contingent,61,Mother & Father
+1674,English,23510,43405,non-contingent,147,Mother & Father
+1675,English,23510,43407,contingent,119,Mother only
+1676,English,23510,43407,non-contingent,168,Mother only
+1677,English,23510,43408,contingent,44,Mother only
+1678,English,23510,43408,non-contingent,141,Mother only
+1679,English,23510,43410,contingent,105,Mother only
+1680,English,23510,43410,non-contingent,139,Mother only
+1681,English,23510,43411,contingent,125,Mother only
+1682,English,23510,43411,non-contingent,201,Mother only
+1683,English,23510,43412,contingent,87,Mother only
+1684,English,23510,43412,non-contingent,160,Mother only
+1685,English,23510,43413,contingent,86,Mother only
+1686,English,23510,43413,non-contingent,151,Mother only
+1687,English,23510,43415,contingent,72,Mother only
+1688,English,23510,43415,non-contingent,149,Mother only
+1689,English,23510,43416,contingent,99,Mother only
+1690,English,23510,43416,non-contingent,142,Mother only
+1691,English,23510,43417,contingent,115,Mother only
+1692,English,23510,43417,non-contingent,149,Mother only
+1693,English,23510,43418,contingent,64,Mother only
+1694,English,23510,43418,non-contingent,160,Mother only
+1695,English,23510,43419,contingent,68,Mother & Father
+1696,English,23510,43419,non-contingent,198,Mother & Father
+1697,English,23510,43420,contingent,110,Mother only
+1698,English,23510,43420,non-contingent,141,Mother only
+1699,English,23510,43421,contingent,75,Mother & Father
+1700,English,23510,43421,non-contingent,148,Mother & Father
+1701,English,23510,43422,contingent,74,Mother only
+1702,English,23510,43422,non-contingent,134,Mother only
+1703,English,23510,43424,contingent,70,Mother only
+1704,English,23510,43424,non-contingent,239,Mother only
+1705,English,23510,43425,contingent,130,Mother & Father
+1706,English,23510,43425,non-contingent,184,Mother & Father
+1707,English,23510,43427,contingent,23,Mother only
+1708,English,23510,43427,non-contingent,202,Mother only
+1709,English,23510,43429,contingent,103,Mother only
+1710,English,23510,43429,non-contingent,154,Mother only
+1711,English,23510,43430,contingent,59,Mother only
+1712,English,23510,43430,non-contingent,148,Mother only
+1713,English,23510,43431,contingent,37,Mother only
+1714,English,23510,43431,non-contingent,126,Mother only
+1715,English,23510,43432,contingent,49,Mother only
+1716,English,23510,43432,non-contingent,240,Mother only
+1717,English,23510,43433,contingent,64,Mother only
+1718,English,23510,43433,non-contingent,145,Mother only
+1719,English,23510,43435,contingent,55,Mother only
+1720,English,23510,43435,non-contingent,147,Mother only
+1721,English,23510,43436,contingent,66,Mother only
+1722,English,23510,43436,non-contingent,182,Mother only
+1723,English,23510,43437,contingent,52,Mother only
+1724,English,23510,43437,non-contingent,179,Mother only
+1725,English,23510,43438,contingent,85,Mother & Father
+1726,English,23510,43438,non-contingent,198,Mother & Father
+1727,English,23510,43439,contingent,49,Mother & Father
+1728,English,23510,43439,non-contingent,241,Mother & Father
+1729,English,23510,43440,contingent,91,Mother only
+1730,English,23510,43440,non-contingent,138,Mother only
+1731,English,23510,43441,contingent,106,Mother & Father
+1732,English,23510,43441,non-contingent,194,Mother & Father
+1733,English,23510,43442,contingent,113,Mother & Father
+1734,English,23510,43442,non-contingent,149,Mother & Father
+1735,English,23510,43443,contingent,122,Mother only
+1736,English,23510,43443,non-contingent,187,Mother only
+1737,English,23510,43444,contingent,60,Mother only
+1738,English,23510,43444,non-contingent,127,Mother only
+1739,English,23510,43446,contingent,88,Mother only
+1740,English,23510,43446,non-contingent,155,Mother only
+1741,English,23510,43447,contingent,144,Mother only
+1742,English,23510,43447,non-contingent,195,Mother only
+1743,English,23510,43448,contingent,68,Mother & Father
+1744,English,23510,43448,non-contingent,238,Mother & Father
+1745,English,23510,43449,contingent,59,Mother & Father
+1746,English,23510,43449,non-contingent,245,Mother & Father
+1747,English,23510,43450,contingent,74,Mother & Father
+1748,English,23510,43450,non-contingent,185,Mother & Father
+1749,English,23510,43451,contingent,160,Mother & Father
+1750,English,23510,43451,non-contingent,176,Mother & Father
+1751,English,23510,43452,contingent,69,Mother only
+1752,English,23510,43452,non-contingent,87,Mother only
+1753,English,23510,43453,contingent,42,Mother & Father
+1754,English,23510,43453,non-contingent,104,Mother & Father
+1755,English,23510,43454,contingent,33,Mother only
+1756,English,23510,43454,non-contingent,74,Mother only
+1757,English,23522,43477,contingent,11,Mother & Father
+1758,English,23522,43477,non-contingent,161,Mother & Father
+1759,English,23522,43479,contingent,21,Mother only
+1760,English,23522,43479,non-contingent,151,Mother only
+1761,English,23522,43481,contingent,36,Mother only
+1762,English,23522,43481,non-contingent,117,Mother only
+1763,English,23522,43482,contingent,28,Mother only
+1764,English,23522,43482,non-contingent,212,Mother only
+1765,English,23522,43483,contingent,98,Mother only
+1766,English,23522,43483,non-contingent,144,Mother only
+1767,English,23522,43484,contingent,31,Mother only
+1768,English,23522,43484,non-contingent,122,Mother only
+1769,English,23522,43485,contingent,102,Mother only
+1770,English,23522,43485,non-contingent,182,Mother only
+1771,English,23522,43486,contingent,67,Mother & Father
+1772,English,23522,43486,non-contingent,154,Mother & Father
+1773,English,23522,43487,contingent,28,Mother only
+1774,English,23522,43487,non-contingent,153,Mother only
+1775,English,23522,43488,contingent,72,Mother only
+1776,English,23522,43488,non-contingent,120,Mother only
+1777,English,23522,43489,contingent,43,Mother only
+1778,English,23522,43489,non-contingent,102,Mother only
+1779,English,23522,43490,contingent,28,Mother only
+1780,English,23522,43490,non-contingent,88,Mother only
+1781,English,23522,43491,contingent,16,Mother only
+1782,English,23522,43491,non-contingent,66,Mother only
+1783,English,23522,43492,contingent,50,Mother only
+1784,English,23522,43492,non-contingent,101,Mother only
+1785,English,23522,43493,contingent,47,Mother only
+1786,English,23522,43493,non-contingent,85,Mother only
+1787,English,23522,43494,contingent,100,Mother only
+1788,English,23522,43494,non-contingent,125,Mother only
+1789,English,23522,43496,contingent,72,Mother only
+1790,English,23522,43496,non-contingent,161,Mother only
+1791,English,23522,43497,contingent,68,Mother only
+1792,English,23522,43497,non-contingent,149,Mother only
+1793,English,23522,43498,contingent,63,Mother & Father
+1794,English,23522,43498,non-contingent,133,Mother & Father
+1795,English,23522,43499,contingent,70,Mother only
+1796,English,23522,43499,non-contingent,149,Mother only
+1797,English,23522,43500,contingent,91,Mother only
+1798,English,23522,43500,non-contingent,190,Mother only
+1799,English,23522,43501,contingent,55,Mother only
+1800,English,23522,43501,non-contingent,184,Mother only
+1801,English,23522,43503,contingent,70,Mother only
+1802,English,23522,43503,non-contingent,177,Mother only
+1803,English,23522,43504,contingent,38,Mother & Father
+1804,English,23522,43504,non-contingent,119,Mother & Father
+1805,English,23522,43505,contingent,68,Mother only
+1806,English,23522,43505,non-contingent,185,Mother only
+1807,English,23522,43506,contingent,84,Mother only
+1808,English,23522,43506,non-contingent,144,Mother only
+1809,English,23522,43507,contingent,57,Mother & Father
+1810,English,23522,43507,non-contingent,227,Mother & Father
+1811,English,23522,43508,contingent,104,Mother only
+1812,English,23522,43508,non-contingent,123,Mother only
+1813,English,23530,43530,contingent,31,Mother only
+1814,English,23530,43530,non-contingent,123,Mother only
+1815,English,23530,43531,contingent,58,Mother only
+1816,English,23530,43531,non-contingent,232,Mother only
+1817,English,23530,43532,contingent,27,Mother only
+1818,English,23530,43532,non-contingent,153,Mother only
+1819,English,23530,43533,contingent,49,Mother only
+1820,English,23530,43533,non-contingent,148,Mother only
+1821,English,23530,43534,contingent,89,Father only
+1822,English,23530,43534,non-contingent,132,Father only
+1823,English,23530,43535,contingent,33,Mother only
+1824,English,23530,43535,non-contingent,244,Mother only
+1825,English,23530,43536,contingent,87,Mother only
+1826,English,23530,43536,non-contingent,117,Mother only
+1827,English,23530,43537,contingent,81,Mother only
+1828,English,23530,43537,non-contingent,172,Mother only
+1829,English,23530,43538,contingent,42,Mother only
+1830,English,23530,43538,non-contingent,210,Mother only
+1831,English,23530,43539,contingent,92,Mother only
+1832,English,23530,43539,non-contingent,284,Mother only
+1833,English,23530,43540,contingent,82,Mother & Father
+1834,English,23530,43540,non-contingent,134,Mother & Father
+1835,English,23530,43541,contingent,44,Mother only
+1836,English,23530,43541,non-contingent,188,Mother only
+1837,English,23530,43543,contingent,66,Mother only
+1838,English,23530,43543,non-contingent,116,Mother only
+1839,English,23530,43544,contingent,48,Mother only
+1840,English,23530,43544,non-contingent,178,Mother only
+1841,English,23530,43545,contingent,109,Mother only
+1842,English,23530,43545,non-contingent,134,Mother only
+1843,English,23530,43547,contingent,56,Mother only
+1844,English,23530,43547,non-contingent,137,Mother only
+1845,English,23530,43548,contingent,65,Mother only
+1846,English,23530,43548,non-contingent,127,Mother only
+1847,English,23530,43549,contingent,84,Mother only
+1848,English,23530,43549,non-contingent,128,Mother only
+1849,English,23530,43551,contingent,57,Mother only
+1850,English,23530,43551,non-contingent,111,Mother only
+1851,English,23530,43553,contingent,32,Mother only
+1852,English,23530,43553,non-contingent,111,Mother only
+1853,English,23530,43554,contingent,12,Mother only
+1854,English,23530,43554,non-contingent,37,Mother only
+1855,English,23530,43556,contingent,55,Mother only
+1856,English,23530,43556,non-contingent,171,Mother only
+1857,Estonian,12766,20170,contingent,84,Mother only
+1858,Estonian,12766,20170,non-contingent,118,Mother only
+1859,Estonian,12766,20171,contingent,73,Mother only
+1860,Estonian,12766,20171,non-contingent,149,Mother only
+1861,Estonian,12766,20176,contingent,197,Mother only
+1862,Estonian,12766,20176,non-contingent,137,Mother only
+1863,Estonian,12766,20178,contingent,165,Mother only
+1864,Estonian,12766,20178,non-contingent,122,Mother only
+1865,Estonian,12766,20181,contingent,170,Mother only
+1866,Estonian,12766,20181,non-contingent,123,Mother only
+1867,Estonian,12766,20183,contingent,138,Mother & Father
+1868,Estonian,12766,20183,non-contingent,152,Mother & Father
+1869,Estonian,12766,20184,contingent,97,Mother only
+1870,Estonian,12766,20184,non-contingent,57,Mother only
+1871,Estonian,12799,20321,contingent,41,Mother only
+1872,Estonian,12799,20321,non-contingent,247,Mother only
+1873,Estonian,12799,20322,contingent,109,Mother only
+1874,Estonian,12799,20322,non-contingent,234,Mother only
+1875,Estonian,12799,20323,contingent,90,Mother only
+1876,Estonian,12799,20323,non-contingent,153,Mother only
+1877,Estonian,12799,20324,contingent,72,Mother only
+1878,Estonian,12799,20324,non-contingent,99,Mother only
+1879,Estonian,12799,20325,contingent,75,Mother only
+1880,Estonian,12799,20325,non-contingent,185,Mother only
+1881,Estonian,12799,20334,contingent,66,Mother only
+1882,Estonian,12799,20334,non-contingent,214,Mother only
+1883,Estonian,12802,20326,contingent,53,Mother only
+1884,Estonian,12802,20326,non-contingent,281,Mother only
+1885,Estonian,12802,20327,contingent,115,Mother only
+1886,Estonian,12802,20327,non-contingent,212,Mother only
+1887,Estonian,12802,20328,contingent,58,Mother only
+1888,Estonian,12802,20328,non-contingent,147,Mother only
+1889,Estonian,12802,20329,contingent,114,Mother only
+1890,Estonian,12802,20329,non-contingent,148,Mother only
+1891,Estonian,12802,20330,contingent,76,Mother only
+1892,Estonian,12802,20330,non-contingent,212,Mother only
+1893,Estonian,12802,20331,contingent,25,Mother only
+1894,Estonian,12802,20331,non-contingent,70,Mother only
+1895,Estonian,12802,20332,contingent,82,Mother only
+1896,Estonian,12802,20332,non-contingent,161,Mother only
+1897,Estonian,12802,20333,contingent,91,Mother only
+1898,Estonian,12802,20333,non-contingent,155,Mother only
+1899,Estonian,12802,20335,contingent,97,Mother only
+1900,Estonian,12802,20335,non-contingent,238,Mother only
+1901,French,8191,14240,contingent,57,Mother only
+1902,French,8191,14240,non-contingent,126,Mother only
+1903,French,8191,14246,contingent,97,Mother only
+1904,French,8191,14246,non-contingent,169,Mother only
+1905,French,8191,14248,contingent,90,Mother only
+1906,French,8191,14248,non-contingent,181,Mother only
+1907,French,8191,14253,contingent,106,Mother only
+1908,French,8191,14253,non-contingent,198,Mother only
+1909,French,8191,14254,contingent,105,Mother only
+1910,French,8191,14254,non-contingent,156,Mother only
+1911,French,8250,14312,contingent,20,Mother only
+1912,French,8250,14312,non-contingent,53,Mother only
+1913,French,8250,14316,contingent,71,Mother only
+1914,French,8250,14316,non-contingent,98,Mother only
+1915,French,8250,14324,contingent,20,Mother only
+1916,French,8250,14324,non-contingent,49,Mother only
+1917,French,24405,46511,contingent,2,Mother only
+1918,French,24405,46511,non-contingent,68,Mother only
+1919,French,24405,46514,contingent,23,Mother only
+1920,French,24405,46514,non-contingent,111,Mother only
+1921,French,24405,46515,contingent,12,Mother only
+1922,French,24405,46515,non-contingent,49,Mother only
+1923,French,24405,46518,contingent,68,Mother only
+1924,French,24405,46518,non-contingent,116,Mother only
+1925,French,24405,46519,contingent,56,Mother only
+1926,French,24405,46519,non-contingent,142,Mother only
+1927,French,24405,46520,contingent,16,Mother only
+1928,French,24405,46520,non-contingent,80,Mother only
+1929,French,24405,46522,contingent,9,Mother only
+1930,French,24405,46522,non-contingent,92,Mother only
+1931,French,24405,46524,contingent,9,Father only
+1932,French,24405,46524,non-contingent,78,Father only
+1933,French,24405,46525,contingent,10,Father only
+1934,French,24405,46525,non-contingent,122,Father only
+1935,French,24405,46526,contingent,37,Mother only
+1936,French,24405,46526,non-contingent,105,Mother only
+1937,French,24405,46528,contingent,15,Father only
+1938,French,24405,46528,non-contingent,167,Father only
+1939,French,24405,46529,contingent,56,Father only
+1940,French,24405,46529,non-contingent,138,Father only
+1941,French,24405,46532,contingent,60,Mother only
+1942,French,24405,46532,non-contingent,140,Mother only
+1943,French,24405,46533,contingent,30,Mother only
+1944,French,24405,46533,non-contingent,99,Mother only
+1945,French,24405,46536,contingent,25,Mother only
+1946,French,24405,46536,non-contingent,131,Mother only
+1947,French,24405,46539,contingent,55,Mother only
+1948,French,24405,46539,non-contingent,98,Mother only
+1949,French,24405,46540,contingent,22,Mother only
+1950,French,24405,46540,non-contingent,87,Mother only
+1951,French,24405,46543,contingent,25,Mother only
+1952,French,24405,46543,non-contingent,106,Mother only
+1953,French,24405,46544,contingent,82,Mother & Father
+1954,French,24405,46544,non-contingent,192,Mother & Father
+1955,French,24405,46546,contingent,106,Mother only
+1956,French,24405,46546,non-contingent,133,Mother only
+1957,French,24405,46548,contingent,83,Father only
+1958,French,24405,46548,non-contingent,138,Father only
+1959,French,24405,46549,contingent,68,Father only
+1960,French,24405,46549,non-contingent,158,Father only
+1961,French,24405,46551,contingent,43,Mother only
+1962,French,24405,46551,non-contingent,74,Mother only
+1963,French,24405,46552,contingent,119,Mother only
+1964,French,24405,46552,non-contingent,92,Mother only
+1965,French,24405,46553,contingent,88,Mother only
+1966,French,24405,46553,non-contingent,129,Mother only
+1967,French,24405,46554,contingent,80,Mother only
+1968,French,24405,46554,non-contingent,44,Mother only
+1969,French,24405,46556,contingent,16,Mother only
+1970,French,24405,46556,non-contingent,125,Mother only
+1971,French,24405,46557,contingent,62,Mother only
+1972,French,24405,46557,non-contingent,116,Mother only
+1973,French,24405,46559,contingent,99,Father only
+1974,French,24405,46559,non-contingent,134,Father only
+1975,French,24405,46561,contingent,106,Mother only
+1976,French,24405,46561,non-contingent,79,Mother only
+1977,French,24405,46563,contingent,105,Mother only
+1978,French,24405,46563,non-contingent,80,Mother only
+1979,French,24405,46565,contingent,88,Mother only
+1980,French,24405,46565,non-contingent,87,Mother only
+1981,French,24413,46586,contingent,154,Mother only
+1982,French,24413,46586,non-contingent,186,Mother only
+1983,French,24413,46588,contingent,18,Mother only
+1984,French,24413,46588,non-contingent,125,Mother only
+1985,French,24413,46589,contingent,22,Mother only
+1986,French,24413,46589,non-contingent,96,Mother only
+1987,French,24413,46590,contingent,45,Mother only
+1988,French,24413,46590,non-contingent,171,Mother only
+1989,French,24413,46592,contingent,26,Mother only
+1990,French,24413,46592,non-contingent,72,Mother only
+1991,French,24413,46594,contingent,13,Mother only
+1992,French,24413,46594,non-contingent,165,Mother only
+1993,French,24413,46595,contingent,4,Mother only
+1994,French,24413,46595,non-contingent,119,Mother only
+1995,French,24413,46597,contingent,17,Mother only
+1996,French,24413,46597,non-contingent,69,Mother only
+1997,French,24413,46599,contingent,39,Mother only
+1998,French,24413,46599,non-contingent,110,Mother only
+1999,French,24413,46602,contingent,61,Mother only
+2000,French,24413,46602,non-contingent,118,Mother only
+2001,French,24413,46603,contingent,53,Mother only
+2002,French,24413,46603,non-contingent,118,Mother only
+2003,French,24413,46604,contingent,39,Mother only
+2004,French,24413,46604,non-contingent,142,Mother only
+2005,French,24413,46606,contingent,18,Mother only
+2006,French,24413,46606,non-contingent,131,Mother only
+2007,French,24413,46607,contingent,10,Mother only
+2008,French,24413,46607,non-contingent,99,Mother only
+2009,French,24413,46609,contingent,34,Mother only
+2010,French,24413,46609,non-contingent,109,Mother only
+2011,French,24413,46610,contingent,4,Mother only
+2012,French,24413,46610,non-contingent,75,Mother only
+2013,French,24413,46611,contingent,45,Mother only
+2014,French,24413,46611,non-contingent,170,Mother only
+2015,French,24413,46612,contingent,51,Mother only
+2016,French,24413,46612,non-contingent,137,Mother only
+2017,French,24413,46613,contingent,55,Mother only
+2018,French,24413,46613,non-contingent,156,Mother only
+2019,French,24413,46614,contingent,61,Mother only
+2020,French,24413,46614,non-contingent,160,Mother only
+2021,French,24413,46615,contingent,49,Mother only
+2022,French,24413,46615,non-contingent,154,Mother only
+2023,French,24413,46616,contingent,86,Mother only
+2024,French,24413,46616,non-contingent,125,Mother only
+2025,French,24413,46617,contingent,77,Mother only
+2026,French,24413,46617,non-contingent,119,Mother only
+2027,French,24413,46619,contingent,71,Mother only
+2028,French,24413,46619,non-contingent,124,Mother only
+2029,French,24413,46623,contingent,84,Mother only
+2030,French,24413,46623,non-contingent,133,Mother only
+2031,French,24413,46624,contingent,97,Mother only
+2032,French,24413,46624,non-contingent,118,Mother only
+2033,French,24413,46625,contingent,56,Mother only
+2034,French,24413,46625,non-contingent,116,Mother only
+2035,French,24413,46627,contingent,96,Mother only
+2036,French,24413,46627,non-contingent,133,Mother only
+2037,French,24413,46628,contingent,90,Mother only
+2038,French,24413,46628,non-contingent,122,Mother only
+2039,French,24413,46630,contingent,98,Mother only
+2040,French,24413,46630,non-contingent,159,Mother only
+2041,French,24413,46631,contingent,109,Mother only
+2042,French,24413,46631,non-contingent,153,Mother only
+2043,French,24413,46633,contingent,68,Mother only
+2044,French,24413,46633,non-contingent,179,Mother only
+2045,French,24413,46634,contingent,51,Mother only
+2046,French,24413,46634,non-contingent,138,Mother only
+2047,French,24413,46635,contingent,72,Mother only
+2048,French,24413,46635,non-contingent,134,Mother only
+2049,French,24413,46636,contingent,67,Mother only
+2050,French,24413,46636,non-contingent,186,Mother only
+2051,French,24413,46638,contingent,41,Mother only
+2052,French,24413,46638,non-contingent,121,Mother only
+2053,French,24413,46679,contingent,79,Mother only
+2054,French,24413,46679,non-contingent,462,Mother only
+2055,French,24413,46680,contingent,40,Mother only
+2056,French,24413,46680,non-contingent,232,Mother only
+2057,French,24413,46681,contingent,41,Mother only
+2058,French,24413,46681,non-contingent,343,Mother only
+2059,French,24413,46682,contingent,2,Mother only
+2060,French,24413,46682,non-contingent,7,Mother only
+2061,French,24413,46683,contingent,39,Mother only
+2062,French,24413,46683,non-contingent,313,Mother only
+2063,French,24413,46685,contingent,40,Mother only
+2064,French,24413,46685,non-contingent,100,Mother only
+2065,French,24413,46686,contingent,3,Mother only
+2066,French,24413,46686,non-contingent,30,Mother only
+2067,French,24413,46687,contingent,7,Mother only
+2068,French,24413,46687,non-contingent,33,Mother only
+2069,French,24413,46688,contingent,16,Mother only
+2070,French,24413,46688,non-contingent,29,Mother only
+2071,French,24413,46692,contingent,53,Mother only
+2072,French,24413,46692,non-contingent,200,Mother only
+2073,French,24413,46693,contingent,124,Mother only
+2074,French,24413,46693,non-contingent,178,Mother only
+2075,French,24413,46694,contingent,155,Mother only
+2076,French,24413,46694,non-contingent,192,Mother only
+2077,French,24413,46695,contingent,111,Mother only
+2078,French,24413,46695,non-contingent,282,Mother only
+2079,French,24413,46696,contingent,125,Mother only
+2080,French,24413,46696,non-contingent,310,Mother only
+2081,French,24413,46697,contingent,120,Mother only
+2082,French,24413,46697,non-contingent,150,Mother only
+2083,French,24413,46699,contingent,6,Mother only
+2084,French,24413,46699,non-contingent,26,Mother only
+2085,French,24413,46701,contingent,17,Mother only
+2086,French,24413,46701,non-contingent,65,Mother only
+2087,French,24413,46702,contingent,1,Mother only
+2088,French,24413,46702,non-contingent,51,Mother only
+2089,French,24413,46704,contingent,109,Mother only
+2090,French,24413,46704,non-contingent,180,Mother only
+2091,French,24413,46705,contingent,32,Mother only
+2092,French,24413,46705,non-contingent,90,Mother only
+2093,French,24413,46706,contingent,8,Mother only
+2094,French,24413,46706,non-contingent,10,Mother only
+2095,French,24413,46707,contingent,27,Mother only
+2096,French,24413,46707,non-contingent,100,Mother only
+2097,French,24413,46712,contingent,56,Mother only
+2098,French,24413,46712,non-contingent,190,Mother only
+2099,French,24413,46718,contingent,34,Mother only
+2100,French,24413,46718,non-contingent,82,Mother only
+2101,French,24429,46689,non-contingent,52,Mother only
+2102,French,24429,46714,contingent,1,Mother only
+2103,French,24429,46714,non-contingent,10,Mother only
+2104,French,24429,46715,contingent,4,Mother only
+2105,French,24429,46715,non-contingent,3,Mother only
+2106,French,24445,46737,contingent,13,Mother only
+2107,French,24445,46737,non-contingent,114,Mother only
+2108,French,24445,46738,contingent,33,Mother only
+2109,French,24445,46738,non-contingent,102,Mother only
+2110,French,24445,46739,contingent,5,Mother only
+2111,French,24445,46739,non-contingent,96,Mother only
+2112,French,24445,46740,contingent,14,Mother only
+2113,French,24445,46740,non-contingent,94,Mother only
+2114,French,24445,46741,contingent,24,Mother only
+2115,French,24445,46741,non-contingent,110,Mother only
+2116,French,24445,46742,contingent,9,Mother only
+2117,French,24445,46742,non-contingent,91,Mother only
+2118,French,24445,46743,contingent,6,Mother only
+2119,French,24445,46743,non-contingent,97,Mother only
+2120,French,24445,46747,contingent,31,Mother only
+2121,French,24445,46747,non-contingent,68,Mother only
+2122,French,24445,46751,contingent,11,Mother only
+2123,French,24445,46751,non-contingent,143,Mother only
+2124,French,24445,46752,non-contingent,62,Mother only
+2125,French,24445,46753,contingent,4,Mother & Father
+2126,French,24445,46753,non-contingent,156,Mother & Father
+2127,French,24445,46754,contingent,14,Mother only
+2128,French,24445,46754,non-contingent,153,Mother only
+2129,French,24445,46756,contingent,49,Mother only
+2130,French,24445,46756,non-contingent,101,Mother only
+2131,French,24445,46760,contingent,13,Mother only
+2132,French,24445,46760,non-contingent,90,Mother only
+2133,French,24445,46763,contingent,23,Mother only
+2134,French,24445,46763,non-contingent,57,Mother only
+2135,French,24445,46764,contingent,10,Mother only
+2136,French,24445,46764,non-contingent,148,Mother only
+2137,French,24445,46765,contingent,17,Mother only
+2138,French,24445,46765,non-contingent,96,Mother only
+2139,French,24445,46766,contingent,7,Mother & Father
+2140,French,24445,46766,non-contingent,109,Mother & Father
+2141,French,24445,46767,contingent,105,Mother only
+2142,French,24445,46767,non-contingent,163,Mother only
+2143,French,24445,46769,contingent,35,Mother only
+2144,French,24445,46769,non-contingent,99,Mother only
+2145,French,24445,46771,contingent,26,Mother & Father
+2146,French,24445,46771,non-contingent,126,Mother & Father
+2147,French,24445,46772,contingent,36,Mother & Father
+2148,French,24445,46772,non-contingent,173,Mother & Father
+2149,French,24445,46775,contingent,20,Mother only
+2150,French,24445,46775,non-contingent,117,Mother only
+2151,French,24445,46776,contingent,35,Mother only
+2152,French,24445,46776,non-contingent,163,Mother only
+2153,French,24445,46777,contingent,74,Mother only
+2154,French,24445,46777,non-contingent,135,Mother only
+2155,French,24445,46778,contingent,32,Mother only
+2156,French,24445,46778,non-contingent,129,Mother only
+2157,French,24445,46781,contingent,24,Mother only
+2158,French,24445,46781,non-contingent,106,Mother only
+2159,French,24445,46782,contingent,25,Mother only
+2160,French,24445,46782,non-contingent,105,Mother only
+2161,French,24445,46783,contingent,25,Mother only
+2162,French,24445,46783,non-contingent,101,Mother only
+2163,French,24445,46786,contingent,26,Mother & Father
+2164,French,24445,46786,non-contingent,105,Mother & Father
+2165,French,24445,46788,contingent,50,Mother only
+2166,French,24445,46788,non-contingent,181,Mother only
+2167,French,24445,46789,contingent,46,Mother only
+2168,French,24445,46789,non-contingent,113,Mother only
+2169,French,24445,46791,contingent,15,Mother only
+2170,French,24445,46791,non-contingent,124,Mother only
+2171,French,24445,46793,contingent,17,Mother only
+2172,French,24445,46793,non-contingent,58,Mother only
+2173,French,24445,46795,contingent,36,Mother only
+2174,French,24445,46795,non-contingent,54,Mother only
+2175,French,24459,46821,contingent,11,Mother only
+2176,French,24459,46821,non-contingent,106,Mother only
+2177,French,24459,46822,contingent,27,Mother only
+2178,French,24459,46822,non-contingent,178,Mother only
+2179,French,24459,46823,contingent,23,Mother only
+2180,French,24459,46823,non-contingent,135,Mother only
+2181,French,24459,46825,contingent,40,Mother only
+2182,French,24459,46825,non-contingent,138,Mother only
+2183,French,24459,46826,contingent,1,Mother only
+2184,French,24459,46826,non-contingent,115,Mother only
+2185,French,24459,46827,contingent,15,Mother only
+2186,French,24459,46827,non-contingent,155,Mother only
+2187,French,24459,46828,contingent,10,Mother only
+2188,French,24459,46828,non-contingent,136,Mother only
+2189,French,24459,46830,contingent,60,Mother only
+2190,French,24459,46830,non-contingent,173,Mother only
+2191,French,24459,46831,contingent,25,Mother only
+2192,French,24459,46831,non-contingent,151,Mother only
+2193,French,24459,46832,contingent,43,Mother only
+2194,French,24459,46832,non-contingent,145,Mother only
+2195,French,24459,46833,contingent,58,Mother only
+2196,French,24459,46833,non-contingent,144,Mother only
+2197,French,24459,46834,contingent,31,Mother & Father
+2198,French,24459,46834,non-contingent,105,Mother & Father
+2199,French,24459,46835,contingent,13,Mother & Father
+2200,French,24459,46835,non-contingent,60,Mother & Father
+2201,French,24459,46838,contingent,51,Mother only
+2202,French,24459,46838,non-contingent,166,Mother only
+2203,French,24459,46839,contingent,65,Mother only
+2204,French,24459,46839,non-contingent,174,Mother only
+2205,French,24459,46840,contingent,42,Mother only
+2206,French,24459,46840,non-contingent,156,Mother only
+2207,French,24459,46841,contingent,28,Mother only
+2208,French,24459,46841,non-contingent,129,Mother only
+2209,French,24459,46844,contingent,19,Mother only
+2210,French,24459,46844,non-contingent,121,Mother only
+2211,French,24459,46845,contingent,59,Mother only
+2212,French,24459,46845,non-contingent,145,Mother only
+2213,French,24459,46846,contingent,86,Mother only
+2214,French,24459,46846,non-contingent,135,Mother only
+2215,French,24459,46847,contingent,88,Mother only
+2216,French,24459,46847,non-contingent,179,Mother only
+2217,French,24459,46849,contingent,63,Mother only
+2218,French,24459,46849,non-contingent,165,Mother only
+2219,French,24459,46854,contingent,40,Mother only
+2220,French,24459,46854,non-contingent,139,Mother only
+2221,French,24459,46855,contingent,48,Mother only
+2222,French,24459,46855,non-contingent,140,Mother only
+2223,French,24459,46859,contingent,57,Mother only
+2224,French,24459,46859,non-contingent,152,Mother only
+2225,French,24459,46861,contingent,110,Mother only
+2226,French,24459,46861,non-contingent,104,Mother only
+2227,French,24459,46866,contingent,95,Mother only
+2228,French,24459,46866,non-contingent,126,Mother only
+2229,French,24459,46869,contingent,108,Mother only
+2230,French,24459,46869,non-contingent,144,Mother only
+2231,French,24459,46871,contingent,26,Mother only
+2232,French,24459,46871,non-contingent,81,Mother only
+2233,French,24459,46872,contingent,20,Mother only
+2234,French,24459,46872,non-contingent,59,Mother only
+2235,French,24459,46873,contingent,76,Mother only
+2236,French,24459,46873,non-contingent,91,Mother only
+2237,French,24459,46875,contingent,60,Mother only
+2238,French,24459,46875,non-contingent,142,Mother only
+2239,French,24459,46876,contingent,87,Mother only
+2240,French,24459,46876,non-contingent,92,Mother only
+2241,French,24459,46877,contingent,35,Mother only
+2242,French,24459,46877,non-contingent,81,Mother only
+2243,French,24459,46878,contingent,64,Mother only
+2244,French,24459,46878,non-contingent,131,Mother only
+2245,French,24459,46879,contingent,57,Mother only
+2246,French,24459,46879,non-contingent,128,Mother only
+2247,French,24459,46881,contingent,57,Mother only
+2248,French,24459,46881,non-contingent,132,Mother only
+2249,French,24466,46906,contingent,39,Mother & Father
+2250,French,24466,46906,non-contingent,209,Mother & Father
+2251,French,24466,46907,contingent,5,Mother & Father
+2252,French,24466,46907,non-contingent,109,Mother & Father
+2253,French,24466,46910,contingent,51,Mother & Father
+2254,French,24466,46910,non-contingent,91,Mother & Father
+2255,French,24466,46911,contingent,62,Mother & Father
+2256,French,24466,46911,non-contingent,155,Mother & Father
+2257,French,24466,46913,contingent,84,Mother & Father
+2258,French,24466,46913,non-contingent,185,Mother & Father
+2259,French,24466,46914,contingent,106,Mother & Father
+2260,French,24466,46914,non-contingent,138,Mother & Father
+2261,French,24466,46915,contingent,92,Mother & Father
+2262,French,24466,46915,non-contingent,122,Mother & Father
+2263,French,24466,46916,contingent,97,Mother only
+2264,French,24466,46916,non-contingent,145,Mother only
+2265,French,24466,46917,contingent,84,Mother & Father
+2266,French,24466,46917,non-contingent,83,Mother & Father
+2267,French,24483,46971,contingent,44,Mother only
+2268,French,24483,46971,non-contingent,144,Mother only
+2269,French,24483,46972,contingent,74,Mother & Father
+2270,French,24483,46972,non-contingent,197,Mother & Father
+2271,French,24483,46973,contingent,59,Mother only
+2272,French,24483,46973,non-contingent,199,Mother only
+2273,French,24483,46975,contingent,77,Mother only
+2274,French,24483,46975,non-contingent,189,Mother only
+2275,French,24483,46977,contingent,47,Mother only
+2276,French,24483,46977,non-contingent,96,Mother only
+2277,French,24483,46979,contingent,79,Mother only
+2278,French,24483,46979,non-contingent,162,Mother only
+2279,French,24483,46980,contingent,66,Mother only
+2280,French,24483,46980,non-contingent,89,Mother only
+2281,French,24483,46981,contingent,81,Mother only
+2282,French,24483,46981,non-contingent,155,Mother only
+2283,French,24483,46982,contingent,124,Mother only
+2284,French,24483,46982,non-contingent,160,Mother only
+2285,French,24512,47007,contingent,40,Mother only
+2286,French,24512,47007,non-contingent,132,Mother only
+2287,French,24512,47009,contingent,39,Mother & Father
+2288,French,24512,47009,non-contingent,159,Mother & Father
+2289,French,24512,47025,contingent,83,Mother only
+2290,French,24512,47025,non-contingent,171,Mother only
+2291,French,24512,47026,contingent,7,Father only
+2292,French,24512,47026,non-contingent,107,Father only
+2293,French,24512,47027,contingent,89,Mother only
+2294,French,24512,47027,non-contingent,187,Mother only
+2295,French,24548,47049,contingent,14,Mother & Father
+2296,French,24548,47049,non-contingent,117,Mother & Father
+2297,French,24548,47050,contingent,37,Mother only
+2298,French,24548,47050,non-contingent,140,Mother only
+2299,French,24548,47051,contingent,32,Mother & Father
+2300,French,24548,47051,non-contingent,117,Mother & Father
+2301,French,24548,47052,contingent,58,Mother only
+2302,French,24548,47052,non-contingent,200,Mother only
+2303,French,24548,47054,contingent,14,Mother only
+2304,French,24548,47054,non-contingent,129,Mother only
+2305,French,24548,47056,contingent,27,Mother only
+2306,French,24548,47056,non-contingent,133,Mother only
+2307,French,24559,47063,contingent,53,Mother & Father
+2308,French,24559,47063,non-contingent,139,Mother & Father
+2309,French,24559,47064,contingent,82,Mother & Father
+2310,French,24559,47064,non-contingent,140,Mother & Father
+2311,French,24559,47065,contingent,79,Mother & Father
+2312,French,24559,47065,non-contingent,239,Mother & Father
+2313,French,24559,47066,contingent,94,Mother & Father
+2314,French,24559,47066,non-contingent,139,Mother & Father
+2315,French,24559,47067,contingent,43,Mother only
+2316,French,24559,47067,non-contingent,86,Mother only
+2317,French,24559,47068,contingent,89,Mother & Father
+2318,French,24559,47068,non-contingent,108,Mother & Father
+2319,French,24559,47069,contingent,48,Mother only
+2320,French,24559,47069,non-contingent,102,Mother only
+2321,French,24559,47070,contingent,50,Mother only
+2322,French,24559,47070,non-contingent,59,Mother only
+2323,French,24559,47071,contingent,71,Mother & Father
+2324,French,24559,47071,non-contingent,107,Mother & Father
+2325,French,24568,47078,contingent,54,Mother only
+2326,French,24568,47078,non-contingent,147,Mother only
+2327,French,24568,47079,contingent,32,Mother only
+2328,French,24568,47079,non-contingent,124,Mother only
+2329,French,24568,47083,contingent,83,Mother only
+2330,French,24568,47083,non-contingent,113,Mother only
+2331,French,24568,47084,contingent,85,Mother only
+2332,French,24568,47084,non-contingent,150,Mother only
+2333,French,24568,47085,contingent,104,Mother only
+2334,French,24568,47085,non-contingent,181,Mother only
+2335,French,24568,47086,contingent,41,Mother only
+2336,French,24568,47086,non-contingent,174,Mother only
+2337,French,24568,47087,contingent,113,Mother only
+2338,French,24568,47087,non-contingent,166,Mother only
+2339,French,24568,47088,contingent,85,Mother only
+2340,French,24568,47088,non-contingent,148,Mother only
+2341,French,24568,47089,contingent,77,Mother only
+2342,French,24568,47089,non-contingent,169,Mother only
+2343,French,24568,47090,contingent,15,Father only
+2344,French,24568,47090,non-contingent,9,Father only
+2345,French,24568,47091,contingent,68,Mother only
+2346,French,24568,47091,non-contingent,149,Mother only
+2347,French,24592,47112,contingent,2,Mother & Father
+2348,French,24592,47112,non-contingent,84,Mother & Father
+2349,French,24592,47113,non-contingent,92,Mother only
+2350,French,24592,47115,contingent,6,Mother & Father
+2351,French,24592,47115,non-contingent,174,Mother & Father
+2352,French,24592,47116,contingent,36,Father only
+2353,French,24592,47116,non-contingent,122,Father only
+2354,French,24592,47117,contingent,18,Mother & Father
+2355,French,24592,47117,non-contingent,175,Mother & Father
+2356,French,24592,47118,contingent,67,Mother & Father
+2357,French,24592,47118,non-contingent,134,Mother & Father
+2358,French,24592,47120,contingent,9,Mother & Father
+2359,French,24592,47120,non-contingent,130,Mother & Father
+2360,French,24592,47122,non-contingent,134,Mother & Father
+2361,French,24592,47124,contingent,23,Mother & Father
+2362,French,24592,47124,non-contingent,160,Mother & Father
+2363,French,24592,47125,contingent,47,Father only
+2364,French,24592,47125,non-contingent,119,Father only
+2365,French,24592,47126,contingent,6,Mother only
+2366,French,24592,47126,non-contingent,168,Mother only
+2367,French,24592,47127,contingent,46,Mother & Father
+2368,French,24592,47127,non-contingent,195,Mother & Father
+2369,French,24592,47128,contingent,8,Mother only
+2370,French,24592,47128,non-contingent,164,Mother only
+2371,French,24592,47129,contingent,13,Mother & Father
+2372,French,24592,47129,non-contingent,178,Mother & Father
+2373,French,24615,47151,contingent,38,Mother only
+2374,French,24615,47151,non-contingent,63,Mother only
+2375,French,24615,47152,contingent,21,Mother only
+2376,French,24615,47152,non-contingent,44,Mother only
+2377,French,24615,47153,contingent,63,Mother only
+2378,French,24615,47153,non-contingent,63,Mother only
+2379,French,24615,47154,contingent,24,Mother only
+2380,French,24615,47154,non-contingent,26,Mother only
+2381,French,24615,47155,contingent,15,Mother only
+2382,French,24615,47155,non-contingent,14,Mother only
+2383,French,24615,47156,contingent,23,Mother only
+2384,French,24615,47156,non-contingent,37,Mother only
+2385,French,24615,47157,contingent,23,Mother only
+2386,French,24615,47157,non-contingent,35,Mother only
+2387,French,24615,47158,contingent,29,Mother only
+2388,French,24615,47158,non-contingent,6,Mother only
+2389,French,24615,47159,contingent,72,Mother only
+2390,French,24615,47159,non-contingent,50,Mother only
+2391,French,24615,47160,contingent,50,Mother only
+2392,French,24615,47160,non-contingent,71,Mother only
+2393,French,24615,47161,contingent,89,Mother only
+2394,French,24615,47161,non-contingent,88,Mother only
+2395,French,24615,47162,contingent,21,Mother only
+2396,French,24615,47162,non-contingent,36,Mother only
+2397,French,24615,47163,contingent,17,Mother only
+2398,French,24615,47163,non-contingent,13,Mother only
+2399,French,24615,47164,contingent,27,Mother only
+2400,French,24615,47164,non-contingent,26,Mother only
+2401,French,24615,47165,contingent,47,Mother only
+2402,French,24615,47165,non-contingent,50,Mother only
+2403,French,24615,47166,contingent,38,Mother only
+2404,French,24615,47166,non-contingent,44,Mother only
+2405,French,24615,47167,contingent,34,Mother only
+2406,French,24615,47167,non-contingent,48,Mother only
+2407,French,24615,47168,contingent,45,Mother only
+2408,French,24615,47168,non-contingent,29,Mother only
+2409,French,24615,47169,contingent,69,Mother only
+2410,French,24615,47169,non-contingent,57,Mother only
+2411,French,24615,47170,contingent,68,Mother only
+2412,French,24615,47170,non-contingent,51,Mother only
+2413,French,24615,47171,contingent,44,Mother only
+2414,French,24615,47171,non-contingent,40,Mother only
+2415,French,24615,47172,contingent,24,Mother only
+2416,French,24615,47172,non-contingent,23,Mother only
+2417,French,24615,47173,contingent,27,Mother only
+2418,French,24615,47173,non-contingent,25,Mother only
+2419,French,24618,47174,contingent,16,Mother only
+2420,French,24618,47174,non-contingent,27,Mother only
+2421,French,24618,47176,contingent,17,Mother only
+2422,French,24618,47176,non-contingent,8,Mother only
+2423,French,24618,47178,contingent,8,Mother only
+2424,French,24618,47178,non-contingent,9,Mother only
+2425,French,24618,47180,contingent,25,Mother only
+2426,French,24618,47180,non-contingent,42,Mother only
+2427,French,24618,47181,contingent,29,Mother only
+2428,French,24618,47181,non-contingent,23,Mother only
+2429,French,24618,47182,contingent,32,Mother only
+2430,French,24618,47182,non-contingent,24,Mother only
+2431,French,24618,47183,contingent,43,Mother only
+2432,French,24618,47183,non-contingent,48,Mother only
+2433,French,24618,47184,contingent,53,Mother only
+2434,French,24618,47184,non-contingent,25,Mother only
+2435,French,24618,47185,contingent,28,Mother only
+2436,French,24618,47185,non-contingent,25,Mother only
+2437,French,24618,47187,contingent,42,Mother only
+2438,French,24618,47187,non-contingent,52,Mother only
+2439,French,24618,47188,contingent,51,Mother only
+2440,French,24618,47188,non-contingent,71,Mother only
+2441,French,24618,47190,contingent,33,Mother only
+2442,French,24618,47190,non-contingent,57,Mother only
+2443,French,24618,47191,contingent,44,Mother only
+2444,French,24618,47191,non-contingent,42,Mother only
+2445,French,24618,47192,contingent,30,Mother only
+2446,French,24618,47192,non-contingent,46,Mother only
+2447,French,24618,47193,contingent,47,Mother only
+2448,French,24618,47193,non-contingent,84,Mother only
+2449,French,24618,47194,contingent,61,Mother only
+2450,French,24618,47194,non-contingent,23,Mother only
+2451,French,24618,47196,contingent,41,Mother only
+2452,French,24618,47196,non-contingent,47,Mother only
+2453,French,24618,47197,contingent,69,Mother only
+2454,French,24618,47197,non-contingent,39,Mother only
+2455,German,19070,30478,contingent,96,Mother only
+2456,German,19070,30478,non-contingent,125,Mother only
+2457,German,19070,30482,contingent,139,Mother only
+2458,German,19070,30482,non-contingent,198,Mother only
+2459,German,19070,30490,contingent,165,Mother only
+2460,German,19070,30490,non-contingent,192,Mother only
+2461,German,19070,30508,contingent,146,Father only
+2462,German,19070,30508,non-contingent,216,Father only
+2463,German,19070,30512,contingent,36,Mother only
+2464,German,19070,30512,non-contingent,31,Mother only
+2465,German,19070,30555,contingent,107,Mother & Father
+2466,German,19070,30555,non-contingent,181,Mother & Father
+2467,German,19070,30569,contingent,107,Mother & Father
+2468,German,19070,30569,non-contingent,228,Mother & Father
+2469,German,19070,30587,contingent,50,Mother only
+2470,German,19070,30587,non-contingent,122,Mother only
+2471,German,19070,30633,contingent,117,Mother & Father
+2472,German,19070,30633,non-contingent,160,Mother & Father
+2473,German,19070,30636,contingent,131,Mother only
+2474,German,19070,30636,non-contingent,143,Mother only
+2475,German,19070,30660,contingent,99,Mother & Father
+2476,German,19070,30660,non-contingent,131,Mother & Father
+2477,German,19070,30665,contingent,138,Mother & Father
+2478,German,19070,30665,non-contingent,234,Mother & Father
+2479,German,19127,31127,contingent,71,Mother only
+2480,German,19127,31127,non-contingent,160,Mother only
+2481,German,19127,31128,contingent,58,Mother only
+2482,German,19127,31128,non-contingent,198,Mother only
+2483,German,19127,31129,contingent,98,Mother & Father
+2484,German,19127,31129,non-contingent,160,Mother & Father
+2485,German,19127,31130,contingent,50,Mother only
+2486,German,19127,31130,non-contingent,181,Mother only
+2487,German,19127,31131,contingent,95,Mother only
+2488,German,19127,31131,non-contingent,99,Mother only
+2489,German,19127,31132,contingent,65,Mother only
+2490,German,19127,31132,non-contingent,200,Mother only
+2491,German,19127,31134,contingent,132,Mother only
+2492,German,19127,31134,non-contingent,161,Mother only
+2493,German,19127,31135,contingent,106,Mother only
+2494,German,19127,31135,non-contingent,98,Mother only
+2495,German,19127,31136,contingent,110,Mother only
+2496,German,19127,31136,non-contingent,196,Mother only
+2497,German,19127,31137,contingent,73,Mother only
+2498,German,19127,31137,non-contingent,259,Mother only
+2499,German,19127,31139,contingent,58,Mother only
+2500,German,19127,31139,non-contingent,111,Mother only
+2501,German,19127,31140,contingent,72,Mother only
+2502,German,19127,31140,non-contingent,123,Mother only
+2503,German,19127,31141,contingent,12,Mother only
+2504,German,19127,31141,non-contingent,25,Mother only
+2505,German,19127,31143,contingent,121,Mother only
+2506,German,19127,31143,non-contingent,128,Mother only
+2507,German,19149,31265,contingent,80,Mother only
+2508,German,19149,31265,non-contingent,142,Mother only
+2509,German,19149,31266,contingent,118,Mother only
+2510,German,19149,31266,non-contingent,203,Mother only
+2511,German,19149,31268,contingent,135,Mother only
+2512,German,19149,31268,non-contingent,152,Mother only
+2513,German,19149,31269,contingent,103,Mother only
+2514,German,19149,31269,non-contingent,164,Mother only
+2515,German,19149,31270,contingent,110,Mother only
+2516,German,19149,31270,non-contingent,134,Mother only
+2517,German,19149,31271,contingent,37,Mother only
+2518,German,19149,31271,non-contingent,94,Mother only
+2519,German,19149,31272,contingent,81,Mother only
+2520,German,19149,31272,non-contingent,195,Mother only
+2521,German,19149,31275,contingent,145,Mother only
+2522,German,19149,31275,non-contingent,183,Mother only
+2523,German,19149,31276,contingent,123,Mother only
+2524,German,19149,31276,non-contingent,201,Mother only
+2525,German,19167,31402,contingent,118,Mother only
+2526,German,19167,31402,non-contingent,274,Mother only
+2527,German,19167,31405,contingent,141,Mother only
+2528,German,19167,31405,non-contingent,300,Mother only
+2529,German,19167,31408,contingent,206,Mother only
+2530,German,19167,31408,non-contingent,276,Mother only
+2531,Japanese,13623,21085,contingent,9,Father only
+2532,Japanese,13623,21085,non-contingent,71,Father only
+2533,Japanese,13623,21086,contingent,33,Father only
+2534,Japanese,13623,21086,non-contingent,66,Father only
+2535,Japanese,13623,21087,contingent,20,Father only
+2536,Japanese,13623,21087,non-contingent,119,Father only
+2537,Japanese,13623,21088,contingent,51,Father only
+2538,Japanese,13623,21088,non-contingent,98,Father only
+2539,Japanese,13623,21089,contingent,34,Father only
+2540,Japanese,13623,21089,non-contingent,74,Father only
+2541,Japanese,13623,21090,contingent,13,Father only
+2542,Japanese,13623,21090,non-contingent,80,Father only
+2543,Japanese,13623,21091,contingent,27,Father only
+2544,Japanese,13623,21091,non-contingent,86,Father only
+2545,Japanese,13623,21092,contingent,33,Father only
+2546,Japanese,13623,21092,non-contingent,61,Father only
+2547,Japanese,13623,21093,contingent,23,Father only
+2548,Japanese,13623,21093,non-contingent,99,Father only
+2549,Japanese,13623,21094,contingent,30,Father only
+2550,Japanese,13623,21094,non-contingent,95,Father only
+2551,Japanese,13623,21095,contingent,38,Father only
+2552,Japanese,13623,21095,non-contingent,114,Father only
+2553,Japanese,13623,21096,contingent,38,Father only
+2554,Japanese,13623,21096,non-contingent,119,Father only
+2555,Japanese,13623,21097,contingent,48,Father only
+2556,Japanese,13623,21097,non-contingent,89,Father only
+2557,Japanese,13623,21098,contingent,18,Father only
+2558,Japanese,13623,21098,non-contingent,69,Father only
+2559,Japanese,13623,21099,contingent,50,Father only
+2560,Japanese,13623,21099,non-contingent,151,Father only
+2561,Japanese,13623,21101,contingent,26,Father only
+2562,Japanese,13623,21101,non-contingent,100,Father only
+2563,Japanese,13623,21102,contingent,70,Father only
+2564,Japanese,13623,21102,non-contingent,87,Father only
+2565,Japanese,13623,21103,contingent,43,Father only
+2566,Japanese,13623,21103,non-contingent,128,Father only
+2567,Japanese,13623,21104,contingent,57,Father only
+2568,Japanese,13623,21104,non-contingent,101,Father only
+2569,Japanese,13623,21105,contingent,23,Father only
+2570,Japanese,13623,21105,non-contingent,56,Father only
+2571,Japanese,13623,21106,contingent,94,Father only
+2572,Japanese,13623,21106,non-contingent,97,Father only
+2573,Japanese,13623,21107,contingent,49,Father only
+2574,Japanese,13623,21107,non-contingent,95,Father only
+2575,Japanese,13623,21108,contingent,84,Father only
+2576,Japanese,13623,21108,non-contingent,117,Father only
+2577,Japanese,13623,21109,contingent,63,Mother & Father
+2578,Japanese,13623,21109,non-contingent,117,Mother & Father
+2579,Japanese,13623,21110,contingent,67,Father only
+2580,Japanese,13623,21110,non-contingent,99,Father only
+2581,Japanese,13623,21111,contingent,108,Father only
+2582,Japanese,13623,21111,non-contingent,95,Father only
+2583,Japanese,13623,21112,contingent,65,Father only
+2584,Japanese,13623,21112,non-contingent,101,Father only
+2585,Japanese,13623,21113,contingent,62,Father only
+2586,Japanese,13623,21113,non-contingent,119,Father only
+2587,Japanese,13623,21116,contingent,97,Father only
+2588,Japanese,13623,21116,non-contingent,116,Father only
+2589,Japanese,13623,21117,contingent,118,Father only
+2590,Japanese,13623,21117,non-contingent,106,Father only
+2591,Japanese,13623,21118,contingent,105,Father only
+2592,Japanese,13623,21118,non-contingent,101,Father only
+2593,Japanese,13623,21119,contingent,102,Father only
+2594,Japanese,13623,21119,non-contingent,133,Father only
+2595,Japanese,13623,21120,contingent,132,Father only
+2596,Japanese,13623,21120,non-contingent,100,Father only
+2597,Japanese,13623,21121,contingent,100,Father only
+2598,Japanese,13623,21121,non-contingent,105,Father only
+2599,Japanese,13623,21122,contingent,122,Father only
+2600,Japanese,13623,21122,non-contingent,87,Father only
+2601,Japanese,13623,21123,contingent,105,Father only
+2602,Japanese,13623,21123,non-contingent,101,Father only
+2603,Japanese,13623,21124,contingent,62,Father only
+2604,Japanese,13623,21124,non-contingent,100,Father only
+2605,Japanese,13623,21125,contingent,50,Father only
+2606,Japanese,13623,21125,non-contingent,63,Father only
+2607,Japanese,13623,21126,contingent,76,Father only
+2608,Japanese,13623,21126,non-contingent,92,Father only
+2609,Japanese,13623,21127,contingent,88,Father only
+2610,Japanese,13623,21127,non-contingent,95,Father only
+2611,Japanese,13623,21128,contingent,42,Father only
+2612,Japanese,13623,21128,non-contingent,71,Father only
+2613,Japanese,13623,21129,contingent,92,Father only
+2614,Japanese,13623,21129,non-contingent,88,Father only
+2615,Japanese,13623,21130,contingent,62,Father only
+2616,Japanese,13623,21130,non-contingent,78,Father only
+2617,Japanese,13623,21131,contingent,70,Father only
+2618,Japanese,13623,21131,non-contingent,95,Father only
+2619,Japanese,13623,21132,contingent,62,Father only
+2620,Japanese,13623,21132,non-contingent,73,Father only
+2621,Japanese,13623,21133,contingent,69,Father only
+2622,Japanese,13623,21133,non-contingent,72,Father only
+2623,Japanese,13623,21134,contingent,72,Father only
+2624,Japanese,13623,21134,non-contingent,75,Father only
+2625,Japanese,13623,21135,contingent,77,Father only
+2626,Japanese,13623,21135,non-contingent,102,Father only
+2627,Japanese,13623,21136,contingent,93,Mother & Father
+2628,Japanese,13623,21136,non-contingent,121,Mother & Father
+2629,Japanese,13623,21137,contingent,50,Father only
+2630,Japanese,13623,21137,non-contingent,93,Father only
+2631,Japanese,13623,21138,contingent,38,Mother & Father
+2632,Japanese,13623,21138,non-contingent,75,Mother & Father
+2633,Japanese,13623,21139,contingent,82,Father only
+2634,Japanese,13623,21139,non-contingent,70,Father only
+2635,Japanese,13623,21140,contingent,77,Father only
+2636,Japanese,13623,21140,non-contingent,79,Father only
+2637,Japanese,14071,21910,contingent,16,Mother only
+2638,Japanese,14071,21910,non-contingent,174,Mother only
+2639,Japanese,14071,21911,contingent,54,Mother only
+2640,Japanese,14071,21911,non-contingent,146,Mother only
+2641,Japanese,14071,21914,contingent,48,Mother only
+2642,Japanese,14071,21914,non-contingent,180,Mother only
+2643,Japanese,14071,21916,contingent,52,Mother only
+2644,Japanese,14071,21916,non-contingent,124,Mother only
+2645,Japanese,14071,21918,contingent,59,Mother only
+2646,Japanese,14071,21918,non-contingent,114,Mother only
+2647,Japanese,14071,21919,contingent,62,Mother only
+2648,Japanese,14071,21919,non-contingent,131,Mother only
+2649,Japanese,14071,21920,contingent,47,Mother only
+2650,Japanese,14071,21920,non-contingent,140,Mother only
+2651,Japanese,14071,21922,contingent,68,Mother only
+2652,Japanese,14071,21922,non-contingent,145,Mother only
+2653,Japanese,14071,21923,contingent,68,Mother only
+2654,Japanese,14071,21923,non-contingent,160,Mother only
+2655,Japanese,14071,21924,contingent,83,Mother only
+2656,Japanese,14071,21924,non-contingent,127,Mother only
+2657,Japanese,14071,21925,contingent,94,Mother only
+2658,Japanese,14071,21925,non-contingent,83,Mother only
+2659,Japanese,14071,21926,contingent,74,Mother only
+2660,Japanese,14071,21926,non-contingent,126,Mother only
+2661,Japanese,14071,21927,contingent,57,Mother only
+2662,Japanese,14071,21927,non-contingent,69,Mother only
+2663,Japanese,14071,21928,contingent,60,Mother only
+2664,Japanese,14071,21928,non-contingent,105,Mother only
+2665,Japanese,14071,21929,contingent,82,Mother only
+2666,Japanese,14071,21929,non-contingent,126,Mother only
+2667,Japanese,14071,21932,contingent,75,Mother only
+2668,Japanese,14071,21932,non-contingent,105,Mother only
+2669,Japanese,14071,21933,contingent,117,Mother only
+2670,Japanese,14071,21933,non-contingent,147,Mother only
+2671,Japanese,14071,21934,contingent,68,Mother only
+2672,Japanese,14071,21934,non-contingent,129,Mother only
+2673,Japanese,14071,21935,contingent,54,Mother only
+2674,Japanese,14071,21935,non-contingent,159,Mother only
+2675,Japanese,14071,21936,contingent,72,Mother only
+2676,Japanese,14071,21936,non-contingent,199,Mother only
+2677,Japanese,14071,21937,contingent,71,Mother only
+2678,Japanese,14071,21937,non-contingent,107,Mother only
+2679,Japanese,14071,21938,contingent,86,Mother only
+2680,Japanese,14071,21938,non-contingent,86,Mother only
+2681,Japanese,14071,21939,contingent,57,Mother only
+2682,Japanese,14071,21939,non-contingent,132,Mother only
+2683,Japanese,14071,21940,contingent,44,Mother only
+2684,Japanese,14071,21940,non-contingent,60,Mother only
+2685,Japanese,14071,21941,contingent,108,Mother only
+2686,Japanese,14071,21941,non-contingent,143,Mother only
+2687,Japanese,14072,21908,contingent,29,Mother only
+2688,Japanese,14072,21908,non-contingent,184,Mother only
+2689,Japanese,14072,21912,contingent,55,Mother only
+2690,Japanese,14072,21912,non-contingent,149,Mother only
+2691,Japanese,14072,21913,contingent,50,Mother only
+2692,Japanese,14072,21913,non-contingent,134,Mother only
+2693,Japanese,14072,21917,contingent,55,Mother only
+2694,Japanese,14072,21917,non-contingent,153,Mother only
+2695,Japanese,14072,21921,contingent,52,Mother only
+2696,Japanese,14072,21921,non-contingent,225,Mother only
+2697,Japanese,14072,21930,contingent,87,Mother only
+2698,Japanese,14072,21930,non-contingent,167,Mother only
+2699,Japanese,14093,21971,contingent,18,Mother only
+2700,Japanese,14093,21971,non-contingent,91,Mother only
+2701,Japanese,14093,21973,contingent,48,Mother only
+2702,Japanese,14093,21973,non-contingent,158,Mother only
+2703,Japanese,14093,21975,contingent,63,Mother only
+2704,Japanese,14093,21975,non-contingent,219,Mother only
+2705,Japanese,14093,21976,contingent,37,Mother only
+2706,Japanese,14093,21976,non-contingent,189,Mother only
+2707,Japanese,14093,21980,contingent,75,Mother only
+2708,Japanese,14093,21980,non-contingent,163,Mother only
+2709,Japanese,14093,21981,contingent,86,Mother only
+2710,Japanese,14093,21981,non-contingent,129,Mother only
+2711,Japanese,14093,21983,contingent,105,Mother only
+2712,Japanese,14093,21983,non-contingent,134,Mother only
+2713,Japanese,14105,21993,contingent,73,Mother only
+2714,Japanese,14105,21993,non-contingent,117,Mother only
+2715,Japanese,14143,22028,contingent,26,Mother only
+2716,Japanese,14143,22028,non-contingent,231,Mother only
+2717,Japanese,14143,22029,contingent,35,Mother only
+2718,Japanese,14143,22029,non-contingent,200,Mother only
+2719,Japanese,14143,22030,contingent,46,Mother only
+2720,Japanese,14143,22030,non-contingent,190,Mother only
+2721,Japanese,14143,22032,contingent,52,Mother only
+2722,Japanese,14143,22032,non-contingent,213,Mother only
+2723,Japanese,14143,22035,contingent,29,Mother only
+2724,Japanese,14143,22035,non-contingent,135,Mother only
+2725,Japanese,14143,22037,contingent,51,Mother only
+2726,Japanese,14143,22037,non-contingent,81,Mother only
+2727,Japanese,14143,22040,contingent,79,Mother only
+2728,Japanese,14143,22040,non-contingent,182,Mother only
+2729,Japanese,14143,22041,contingent,47,Mother only
+2730,Japanese,14143,22041,non-contingent,161,Mother only
+2731,Japanese,14143,22042,contingent,76,Mother only
+2732,Japanese,14143,22042,non-contingent,177,Mother only
+2733,Japanese,14143,22045,contingent,51,Mother only
+2734,Japanese,14143,22045,non-contingent,160,Mother only
+2735,Japanese,14143,22046,contingent,108,Mother only
+2736,Japanese,14143,22046,non-contingent,184,Mother only
+2737,Japanese,14143,22047,contingent,106,Mother only
+2738,Japanese,14143,22047,non-contingent,192,Mother only
+2739,Japanese,14143,22049,contingent,90,Mother only
+2740,Japanese,14143,22049,non-contingent,215,Mother only
+2741,Japanese,14143,22050,contingent,120,Mother only
+2742,Japanese,14143,22050,non-contingent,159,Mother only
+2743,Japanese,14143,22051,contingent,88,Mother only
+2744,Japanese,14143,22051,non-contingent,201,Mother only
+2745,Japanese,14143,22052,contingent,106,Mother only
+2746,Japanese,14143,22052,non-contingent,122,Mother only
+2747,Japanese,14143,22054,contingent,109,Mother only
+2748,Japanese,14143,22054,non-contingent,161,Mother only
+2749,Japanese,14143,22055,contingent,141,Mother only
+2750,Japanese,14143,22055,non-contingent,247,Mother only
+2751,Japanese,14143,22058,contingent,105,Mother only
+2752,Japanese,14143,22058,non-contingent,172,Mother only
+2753,Japanese,14148,22057,contingent,183,Mother only
+2754,Japanese,14148,22057,non-contingent,188,Mother only
+2755,Japanese,14158,22053,contingent,130,Mother only
+2756,Japanese,14158,22053,non-contingent,239,Mother only
+2757,Japanese,14195,22227,contingent,34,Mother only
+2758,Japanese,14195,22227,non-contingent,83,Mother only
+2759,Japanese,14195,22228,contingent,87,Mother only
+2760,Japanese,14195,22228,non-contingent,135,Mother only
+2761,Japanese,14195,22229,contingent,48,Mother only
+2762,Japanese,14195,22229,non-contingent,119,Mother only
+2763,Japanese,14195,22230,contingent,56,Mother only
+2764,Japanese,14195,22230,non-contingent,122,Mother only
+2765,Japanese,14195,22231,contingent,56,Mother only
+2766,Japanese,14195,22231,non-contingent,124,Mother only
+2767,Japanese,14195,22232,contingent,50,Mother only
+2768,Japanese,14195,22232,non-contingent,111,Mother only
+2769,Japanese,14195,22233,contingent,99,Mother only
+2770,Japanese,14195,22233,non-contingent,121,Mother only
+2771,Japanese,14195,22234,contingent,62,Mother only
+2772,Japanese,14195,22234,non-contingent,99,Mother only
+2773,Japanese,14195,22235,contingent,76,Mother only
+2774,Japanese,14195,22235,non-contingent,107,Mother only
+2775,Japanese,14195,22236,contingent,63,Mother only
+2776,Japanese,14195,22236,non-contingent,130,Mother only
+2777,Japanese,14195,22237,contingent,94,Mother only
+2778,Japanese,14195,22237,non-contingent,137,Mother only
+2779,Japanese,14195,22238,contingent,70,Mother only
+2780,Japanese,14195,22238,non-contingent,142,Mother only
+2781,Japanese,14195,22239,contingent,74,Mother only
+2782,Japanese,14195,22239,non-contingent,79,Mother only
+2783,Japanese,14195,22241,contingent,87,Mother only
+2784,Japanese,14195,22241,non-contingent,98,Mother only
+2785,Japanese,14195,22242,contingent,35,Mother only
+2786,Japanese,14195,22242,non-contingent,80,Mother only
+2787,Japanese,14195,22243,contingent,63,Mother only
+2788,Japanese,14195,22243,non-contingent,75,Mother only
+2789,Japanese,14195,22244,contingent,79,Mother only
+2790,Japanese,14195,22244,non-contingent,113,Mother only
+2791,Japanese,14195,22245,contingent,94,Mother only
+2792,Japanese,14195,22245,non-contingent,88,Mother only
+2793,Japanese,14195,22246,contingent,115,Mother only
+2794,Japanese,14195,22246,non-contingent,117,Mother only
+2795,Japanese,14195,22247,contingent,76,Mother only
+2796,Japanese,14195,22247,non-contingent,138,Mother only
+2797,Japanese,14195,22248,contingent,51,Mother only
+2798,Japanese,14195,22248,non-contingent,69,Mother only
+2799,Japanese,14195,22249,contingent,77,Mother only
+2800,Japanese,14195,22249,non-contingent,81,Mother only
+2801,Japanese,14195,22250,contingent,103,Mother only
+2802,Japanese,14195,22250,non-contingent,122,Mother only
+2803,Japanese,14195,22251,contingent,80,Mother only
+2804,Japanese,14195,22251,non-contingent,100,Mother only
+2805,Japanese,14195,22252,contingent,61,Mother only
+2806,Japanese,14195,22252,non-contingent,120,Mother only
+2807,Japanese,14195,22253,contingent,101,Mother only
+2808,Japanese,14195,22253,non-contingent,91,Mother only
+2809,Japanese,14195,22254,contingent,62,Mother only
+2810,Japanese,14195,22254,non-contingent,123,Mother only
+2811,Japanese,14195,22255,contingent,55,Mother only
+2812,Japanese,14195,22255,non-contingent,142,Mother only
+2813,Japanese,14195,22256,contingent,57,Mother only
+2814,Japanese,14195,22256,non-contingent,124,Mother only
+2815,Japanese,14195,22257,contingent,89,Mother only
+2816,Japanese,14195,22257,non-contingent,125,Mother only
+2817,Japanese,14195,22258,contingent,69,Mother only
+2818,Japanese,14195,22258,non-contingent,104,Mother only
+2819,Japanese,14195,22259,contingent,61,Mother only
+2820,Japanese,14195,22259,non-contingent,142,Mother only
+2821,Japanese,14195,22260,contingent,107,Mother only
+2822,Japanese,14195,22260,non-contingent,114,Mother only
+2823,Japanese,14195,22261,contingent,80,Mother only
+2824,Japanese,14195,22261,non-contingent,113,Mother only
+2825,Japanese,14195,22262,contingent,111,Mother only
+2826,Japanese,14195,22262,non-contingent,98,Mother only
+2827,Japanese,14195,22263,contingent,87,Mother only
+2828,Japanese,14195,22263,non-contingent,113,Mother only
+2829,Japanese,14195,22264,contingent,92,Mother only
+2830,Japanese,14195,22264,non-contingent,107,Mother only
+2831,Japanese,14195,22265,contingent,99,Mother only
+2832,Japanese,14195,22265,non-contingent,132,Mother only
+2833,Japanese,14195,22266,contingent,120,Mother only
+2834,Japanese,14195,22266,non-contingent,119,Mother only
+2835,Japanese,14195,22267,contingent,97,Mother only
+2836,Japanese,14195,22267,non-contingent,127,Mother only
+2837,Japanese,14195,22268,contingent,83,Mother only
+2838,Japanese,14195,22268,non-contingent,165,Mother only
+2839,Japanese,14195,22269,contingent,93,Mother only
+2840,Japanese,14195,22269,non-contingent,115,Mother only
+2841,Japanese,14195,22270,contingent,85,Mother only
+2842,Japanese,14195,22270,non-contingent,102,Mother only
+2843,Japanese,14195,22271,contingent,101,Mother only
+2844,Japanese,14195,22271,non-contingent,126,Mother only
+2845,Japanese,14195,22272,contingent,75,Mother only
+2846,Japanese,14195,22272,non-contingent,132,Mother only
+2847,Japanese,14195,22273,contingent,135,Mother only
+2848,Japanese,14195,22273,non-contingent,111,Mother only
+2849,Japanese,14195,22274,contingent,82,Mother only
+2850,Japanese,14195,22274,non-contingent,113,Mother only
+2851,Korean,17372,28133,contingent,100,Mother only
+2852,Korean,17372,28133,non-contingent,300,Mother only
+2853,Korean,17372,28134,contingent,78,Mother only
+2854,Korean,17372,28134,non-contingent,284,Mother only
+2855,Korean,17372,28135,contingent,100,Mother & Father
+2856,Korean,17372,28135,non-contingent,347,Mother & Father
+2857,Korean,17372,28136,contingent,77,Mother only
+2858,Korean,17372,28136,non-contingent,265,Mother only
+2859,Korean,17372,28138,contingent,94,Mother only
+2860,Korean,17372,28138,non-contingent,255,Mother only
+2861,Korean,17372,28139,contingent,81,Mother only
+2862,Korean,17372,28139,non-contingent,263,Mother only
+2863,Korean,17372,28141,contingent,98,Mother only
+2864,Korean,17372,28141,non-contingent,265,Mother only
+2865,Korean,17372,28142,contingent,87,Mother only
+2866,Korean,17372,28142,non-contingent,233,Mother only
+2867,Korean,17372,28143,contingent,151,Mother & Father
+2868,Korean,17372,28143,non-contingent,250,Mother & Father
+2869,Korean,17372,28154,contingent,119,Mother only
+2870,Korean,17372,28154,non-contingent,184,Mother only
+2871,Korean,17372,28155,contingent,88,Mother only
+2872,Korean,17372,28155,non-contingent,290,Mother only
+2873,Korean,17372,28156,contingent,101,Mother only
+2874,Korean,17372,28156,non-contingent,221,Mother only
+2875,Korean,17372,28159,contingent,174,Mother only
+2876,Korean,17372,28159,non-contingent,204,Mother only
+2877,Korean,17372,28160,contingent,109,Mother & Father
+2878,Korean,17372,28160,non-contingent,159,Mother & Father
+2879,Korean,17372,28161,contingent,110,Mother & Father
+2880,Korean,17372,28161,non-contingent,196,Mother & Father
+2881,Korean,17372,28162,contingent,128,Mother only
+2882,Korean,17372,28162,non-contingent,151,Mother only
+2883,Korean,17372,28163,contingent,104,Mother only
+2884,Korean,17372,28163,non-contingent,217,Mother only
+2885,Korean,17372,28165,contingent,98,Mother & Father
+2886,Korean,17372,28165,non-contingent,208,Mother & Father
+2887,Korean,17372,28166,contingent,161,Mother only
+2888,Korean,17372,28166,non-contingent,243,Mother only
+2889,Korean,17372,28168,contingent,192,Mother only
+2890,Korean,17372,28168,non-contingent,199,Mother only
+2891,Korean,17372,28169,contingent,144,Mother only
+2892,Korean,17372,28169,non-contingent,234,Mother only
+2893,Korean,17372,28170,contingent,69,Mother only
+2894,Korean,17372,28170,non-contingent,274,Mother only
+2895,Korean,17372,28171,contingent,87,Mother & Father
+2896,Korean,17372,28171,non-contingent,140,Mother & Father
+2897,Korean,17372,28172,contingent,194,Mother only
+2898,Korean,17372,28172,non-contingent,166,Mother only
+2899,Korean,17372,28173,contingent,143,Mother only
+2900,Korean,17372,28173,non-contingent,311,Mother only
+2901,Korean,17372,28174,contingent,143,Mother & Father
+2902,Korean,17372,28174,non-contingent,117,Mother & Father
+2903,Korean,17372,28176,contingent,218,Mother only
+2904,Korean,17372,28176,non-contingent,195,Mother only
+2905,Korean,17372,28177,contingent,127,Mother only
+2906,Korean,17372,28177,non-contingent,200,Mother only
+2907,Norwegian,23625,44931,contingent,109,Mother only
+2908,Norwegian,23625,44931,non-contingent,139,Mother only
+2909,Norwegian,23625,44932,contingent,6,Mother only
+2910,Norwegian,23625,44932,non-contingent,35,Mother only
+2911,Norwegian,23625,44936,contingent,12,Mother only
+2912,Norwegian,23625,44936,non-contingent,1,Mother only
+2913,Norwegian,23625,44937,contingent,188,Mother only
+2914,Norwegian,23625,44937,non-contingent,125,Mother only
+2915,Norwegian,23625,44942,contingent,43,Mother only
+2916,Norwegian,23625,44942,non-contingent,194,Mother only
+2917,Norwegian,23625,44943,contingent,92,Mother & Father
+2918,Norwegian,23625,44943,non-contingent,212,Mother & Father
+2919,Norwegian,23625,44945,contingent,38,Mother only
+2920,Norwegian,23625,44945,non-contingent,15,Mother only
+2921,Norwegian,23625,44946,contingent,30,Father only
+2922,Norwegian,23625,44946,non-contingent,3,Father only
+2923,Norwegian,23625,44947,contingent,15,Father only
+2924,Norwegian,23625,44947,non-contingent,6,Father only
+2925,Norwegian,23625,44948,contingent,24,Mother & Father
+2926,Norwegian,23625,44948,non-contingent,40,Mother & Father
+2927,Norwegian,23625,44951,contingent,160,Mother & Father
+2928,Norwegian,23625,44951,non-contingent,168,Mother & Father
+2929,Norwegian,23625,44952,contingent,8,Mother only
+2930,Norwegian,23625,44953,contingent,80,Mother & Father
+2931,Norwegian,23625,44953,non-contingent,105,Mother & Father
+2932,Norwegian,23625,44954,contingent,68,Mother & Father
+2933,Norwegian,23625,44954,non-contingent,36,Mother & Father
+2934,Norwegian,23625,44955,contingent,9,Mother only
+2935,Norwegian,23625,44955,non-contingent,4,Mother only
+2936,Norwegian,23625,44957,contingent,8,Mother only
+2937,Norwegian,23625,44957,non-contingent,94,Mother only
+2938,Norwegian,23625,44959,contingent,10,Mother only
+2939,Norwegian,23625,44959,non-contingent,13,Mother only
+2940,Norwegian,23625,44964,contingent,35,Mother only
+2941,Norwegian,23625,44964,non-contingent,212,Mother only
+2942,Norwegian,23625,44965,contingent,21,Mother & Father
+2943,Norwegian,23625,44965,non-contingent,87,Mother & Father
+2944,Norwegian,23625,44966,contingent,4,Mother only
+2945,Norwegian,23625,44966,non-contingent,117,Mother only
+2946,Norwegian,23625,44973,contingent,65,Mother & Father
+2947,Norwegian,23625,44973,non-contingent,223,Mother & Father
+2948,Norwegian,23625,44974,contingent,108,Father only
+2949,Norwegian,23625,44974,non-contingent,117,Father only
+2950,Norwegian,23625,44975,contingent,11,Father only
+2951,Norwegian,23625,44975,non-contingent,20,Father only
+2952,Norwegian,23625,44980,contingent,150,Mother only
+2953,Norwegian,23625,44980,non-contingent,227,Mother only
+2954,Norwegian,23625,44984,contingent,37,Mother only
+2955,Norwegian,23625,44984,non-contingent,12,Mother only
+2956,Norwegian,23625,44985,contingent,30,Mother only
+2957,Norwegian,23625,44985,non-contingent,10,Mother only
+2958,Norwegian,23625,44986,contingent,27,Mother only
+2959,Norwegian,23625,44986,non-contingent,24,Mother only
+2960,Norwegian,23632,44950,contingent,12,Mother & Father
+2961,Norwegian,23632,44950,non-contingent,1,Mother & Father
+2962,Persian,13594,20935,contingent,43,Mother only
+2963,Persian,13594,20935,non-contingent,96,Mother only
+2964,Persian,13594,20936,contingent,14,Mother only
+2965,Persian,13594,20936,non-contingent,94,Mother only
+2966,Persian,13594,20938,contingent,13,Mother only
+2967,Persian,13594,20938,non-contingent,30,Mother only
+2968,Persian,13594,20939,contingent,28,Mother only
+2969,Persian,13594,20939,non-contingent,111,Mother only
+2970,Persian,13594,20940,contingent,8,Mother only
+2971,Persian,13594,20940,non-contingent,61,Mother only
+2972,Persian,13594,20943,contingent,39,Mother only
+2973,Persian,13594,20943,non-contingent,57,Mother only
+2974,Persian,13594,20944,contingent,30,Mother only
+2975,Persian,13594,20944,non-contingent,144,Mother only
+2976,Persian,13594,20946,contingent,30,Mother only
+2977,Persian,13594,20946,non-contingent,53,Mother only
+2978,Persian,13594,20947,contingent,13,Mother only
+2979,Persian,13594,20947,non-contingent,167,Mother only
+2980,Persian,13594,20948,contingent,58,Mother only
+2981,Persian,13594,20948,non-contingent,93,Mother only
+2982,Persian,13594,20949,contingent,21,Mother only
+2983,Persian,13594,20949,non-contingent,88,Mother only
+2984,Portuguese,14765,23228,contingent,72,Mother only
+2985,Portuguese,14765,23228,non-contingent,190,Mother only
+2986,Portuguese,14765,23229,contingent,75,Mother only
+2987,Portuguese,14765,23229,non-contingent,153,Mother only
+2988,Portuguese,14765,23230,contingent,36,Mother only
+2989,Portuguese,14765,23230,non-contingent,109,Mother only
+2990,Portuguese,14765,23231,contingent,28,Mother only
+2991,Portuguese,14765,23231,non-contingent,55,Mother only
+2992,Portuguese,14765,23232,contingent,53,Mother only
+2993,Portuguese,14765,23232,non-contingent,95,Mother only
+2994,Portuguese,14765,23233,contingent,62,Mother only
+2995,Portuguese,14765,23233,non-contingent,209,Mother only
+2996,Portuguese,14765,23234,contingent,65,Mother only
+2997,Portuguese,14765,23234,non-contingent,105,Mother only
+2998,Portuguese,14765,23236,contingent,10,Mother only
+2999,Portuguese,14765,23236,non-contingent,67,Mother only
+3000,Portuguese,14765,23237,contingent,53,Mother only
+3001,Portuguese,14765,23237,non-contingent,187,Mother only
+3002,Portuguese,14765,23238,contingent,65,Mother only
+3003,Portuguese,14765,23238,non-contingent,108,Mother only
+3004,Portuguese,14765,23239,contingent,9,Mother only
+3005,Portuguese,14765,23239,non-contingent,17,Mother only
+3006,Portuguese,14765,23242,contingent,53,Mother only
+3007,Portuguese,14765,23242,non-contingent,63,Mother only
+3008,Portuguese,14781,23267,contingent,111,Mother only
+3009,Portuguese,14781,23267,non-contingent,126,Mother only
+3010,Portuguese,14781,23268,contingent,129,Mother only
+3011,Portuguese,14781,23268,non-contingent,125,Mother only
+3012,Portuguese,14781,23269,contingent,88,Mother only
+3013,Portuguese,14781,23269,non-contingent,94,Mother only
+3014,Portuguese,14781,23270,contingent,100,Mother only
+3015,Portuguese,14781,23270,non-contingent,109,Mother only
+3016,Portuguese,14781,23271,contingent,112,Mother only
+3017,Portuguese,14781,23271,non-contingent,112,Mother only
+3018,Portuguese,14781,23272,contingent,108,Mother only
+3019,Portuguese,14781,23272,non-contingent,146,Mother only
+3020,Portuguese,14781,23273,contingent,97,Mother only
+3021,Portuguese,14781,23273,non-contingent,122,Mother only
+3022,Portuguese,14781,23274,contingent,118,Mother only
+3023,Portuguese,14781,23274,non-contingent,147,Mother only
+3024,Portuguese,14781,23275,contingent,136,Mother only
+3025,Portuguese,14781,23275,non-contingent,141,Mother only
+3026,Portuguese,14781,23276,contingent,93,Mother only
+3027,Portuguese,14781,23276,non-contingent,128,Mother only
+3028,Portuguese,14781,23277,contingent,156,Mother only
+3029,Portuguese,14781,23277,non-contingent,127,Mother only
+3030,Spanish,6037,12201,contingent,64,Mother only
+3031,Spanish,6037,12201,non-contingent,108,Mother only
+3032,Spanish,6037,12202,contingent,111,Mother only
+3033,Spanish,6037,12202,non-contingent,105,Mother only
+3034,Spanish,6037,12203,contingent,116,Mother only
+3035,Spanish,6037,12203,non-contingent,111,Mother only
+3036,Spanish,6037,12204,contingent,80,Mother only
+3037,Spanish,6037,12204,non-contingent,82,Mother only
+3038,Spanish,6037,12205,contingent,118,Mother only
+3039,Spanish,6037,12205,non-contingent,124,Mother only
+3040,Spanish,6037,12207,contingent,74,Mother only
+3041,Spanish,6037,12207,non-contingent,120,Mother only
+3042,Spanish,6037,12208,contingent,106,Mother only
+3043,Spanish,6037,12208,non-contingent,162,Mother only
+3044,Spanish,6037,12210,contingent,104,Mother only
+3045,Spanish,6037,12210,non-contingent,133,Mother only
+3046,Spanish,6037,12211,contingent,88,Mother only
+3047,Spanish,6037,12211,non-contingent,85,Mother only
+3048,Spanish,6037,12213,contingent,129,Mother & Father
+3049,Spanish,6037,12213,non-contingent,92,Mother & Father
+3050,Spanish,6037,12214,contingent,119,Father only
+3051,Spanish,6037,12214,non-contingent,102,Father only
+3052,Spanish,6037,12215,contingent,150,Mother only
+3053,Spanish,6037,12215,non-contingent,85,Mother only
+3054,Spanish,6037,12216,contingent,120,Mother & Father
+3055,Spanish,6037,12216,non-contingent,114,Mother & Father
+3056,Spanish,6037,12217,contingent,95,Mother & Father
+3057,Spanish,6037,12217,non-contingent,78,Mother & Father
+3058,Spanish,6037,12218,contingent,90,Mother only
+3059,Spanish,6037,12218,non-contingent,77,Mother only
+3060,Spanish,6037,12219,contingent,110,Father only
+3061,Spanish,6037,12219,non-contingent,149,Father only
+3062,Spanish,6037,12220,contingent,25,Father only
+3063,Spanish,6037,12220,non-contingent,22,Father only
+3064,Spanish,6037,12221,contingent,142,Mother only
+3065,Spanish,6037,12221,non-contingent,125,Mother only
+3066,Spanish,6037,12222,contingent,123,Mother only
+3067,Spanish,6037,12222,non-contingent,145,Mother only
+3068,Spanish,6037,12223,contingent,92,Mother only
+3069,Spanish,6037,12223,non-contingent,99,Mother only
+3070,Spanish,6037,12225,contingent,79,Mother only
+3071,Spanish,6037,12225,non-contingent,100,Mother only
+3072,Spanish,6037,12226,contingent,109,Mother only
+3073,Spanish,6037,12226,non-contingent,122,Mother only
+3074,Spanish,6037,12228,contingent,109,Mother only
+3075,Spanish,6037,12228,non-contingent,112,Mother only
+3076,Spanish,6048,12212,contingent,132,Mother only
+3077,Spanish,6048,12212,non-contingent,132,Mother only
+3078,Spanish,6315,12653,contingent,127,Father only
+3079,Spanish,6315,12653,non-contingent,89,Father only
+3080,Spanish,6315,12655,contingent,191,Father only
+3081,Spanish,6315,12655,non-contingent,102,Father only
+3082,Spanish,6315,12656,contingent,149,Father only
+3083,Spanish,6315,12656,non-contingent,146,Father only
+3084,Spanish,6315,12659,contingent,112,Father only
+3085,Spanish,6315,12659,non-contingent,164,Father only
+3086,Spanish,6315,12660,contingent,99,Father only
+3087,Spanish,6315,12660,non-contingent,131,Father only
+3088,Spanish,6315,12661,contingent,140,Father only
+3089,Spanish,6315,12661,non-contingent,162,Father only
+3090,Swedish,5838,11393,contingent,94,Mother & Father
+3091,Swedish,5838,11393,non-contingent,91,Mother & Father
+3092,Swedish,5838,11395,contingent,95,Mother only
+3093,Swedish,5838,11395,non-contingent,107,Mother only
+3094,Swedish,5838,11396,contingent,142,Mother & Father
+3095,Swedish,5838,11396,non-contingent,91,Mother & Father
+3096,Swedish,5838,11514,contingent,146,Mother only
+3097,Swedish,5838,11514,non-contingent,173,Mother only
+3098,Swedish,5843,11434,contingent,81,Mother only
+3099,Swedish,5843,11434,non-contingent,115,Mother only
+3100,Swedish,5843,11435,contingent,115,Mother only
+3101,Swedish,5843,11435,non-contingent,139,Mother only
+3102,Swedish,5843,11436,contingent,135,Mother only
+3103,Swedish,5843,11436,non-contingent,154,Mother only
+3104,Swedish,5843,11441,contingent,157,Mother only
+3105,Swedish,5843,11441,non-contingent,135,Mother only
+3106,Swedish,5843,11445,contingent,132,Mother only
+3107,Swedish,5843,11445,non-contingent,136,Mother only
+3108,Swedish,5863,11552,contingent,119,Mother only
+3109,Swedish,5863,11552,non-contingent,155,Mother only
+3110,Swedish,5863,11553,contingent,27,Mother only
+3111,Swedish,5863,11553,non-contingent,114,Mother only
+3112,Swedish,5863,11554,contingent,72,Mother only
+3113,Swedish,5863,11554,non-contingent,146,Mother only
+3114,Swedish,5863,11555,contingent,72,Mother & Father
+3115,Swedish,5863,11555,non-contingent,194,Mother & Father
+3116,Swedish,5863,11556,contingent,128,Mother only
+3117,Swedish,5863,11556,non-contingent,151,Mother only
+3118,Swedish,5863,11557,contingent,115,Mother only
+3119,Swedish,5863,11557,non-contingent,198,Mother only
+3120,Swedish,5863,11558,contingent,98,Mother only
+3121,Swedish,5863,11558,non-contingent,249,Mother only
+3122,Tseltal,643,643,contingent,1,Mother only
+3123,Tseltal,643,643,non-contingent,92,Mother only
+3124,Tseltal,2109,2109,non-contingent,3,Mother only
+3125,Tseltal,2625,2625,contingent,29,Mother only
+3126,Tseltal,2625,2625,non-contingent,40,Mother only
+3127,Tseltal,3026,3026,contingent,19,Mother only
+3128,Tseltal,3026,3026,non-contingent,28,Mother only
+3129,Tseltal,6216,6216,contingent,31,Mother only
+3130,Tseltal,6216,6216,non-contingent,77,Mother only
+3131,Tseltal,7220,7220,contingent,4,Mother only
+3132,Tseltal,7220,7220,non-contingent,184,Mother only
+3133,Tseltal,7326,7326,contingent,76,Mother only
+3134,Tseltal,7326,7326,non-contingent,79,Mother only
+3135,Tseltal,8179,8179,contingent,26,Mother only
+3136,Tseltal,8179,8179,non-contingent,42,Mother only
+3137,Tseltal,8787,8787,contingent,73,Mother only
+3138,Tseltal,8787,8787,non-contingent,159,Mother only

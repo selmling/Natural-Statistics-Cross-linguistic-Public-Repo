@@ -77,6 +77,9 @@ TSE_time_chunks <- read_csv("data/TSE_time_chunks.csv") %>%
     mutate(duration = offset - onset,
            duration_min = duration/60)
 
+# 2109 doesn't have many utterances
+# 7176 has no caregiver utterances
+
 # set seed for reproducibility
 set.seed(123)
 
@@ -110,6 +113,8 @@ age_dat <- TSE_demo_data %>%
     rename(transcript_id = aclew_id,
            target_child_age = age_mo_round) %>% 
     mutate(transcript_id = as.numeric(transcript_id))
+
+TSE_demo_data %>% select(aclew_id)
 
 TSE_data <- TSE_data %>%
     left_join(age_dat, by = "transcript_id") %>% 
