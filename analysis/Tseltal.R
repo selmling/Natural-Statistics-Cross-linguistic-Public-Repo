@@ -81,9 +81,12 @@ TSE_time_chunks <- read_csv("data/TSE_time_chunks.csv") %>%
 # 7176 has no caregiver utterances
 
 # set seed for reproducibility
-set.seed(123)
+set.seed(47)
 
 # randomly sample 2 5-minute chunks from each transcript_id
+
+# * this needs to ensure that there are >= 5 child utterances across the two chunks
+# * this needs to ensure that there are >= 5 caregiver utterances across the two chunks
 
 TSE_time_chunks %>%
     filter(duration_min >= 5) %>% 
@@ -128,6 +131,25 @@ TSE_cont_dat <- TSE_data %>%
     assign_contingency(.,3,.001)
 
 # save to file
+# * subset to include randomly selected time chunks
+# * convert the following python code into R code:
+
+TSE_dat_inc = pd.read_csv("../data/TSE_cont_dat.csv")
+TSE_rand_time_chunks = pd.read_csv("../data/TSE_rand_time_chunks.csv")
+TSE_dat_inc.rename(columns={'Langauge_name': 'Language_name'}, inplace=True)
+TSE_dat_inc['target_child_id'] = TSE_dat_inc['transcript_id']
+
+def is_within_time_chunk(transcript):
+    transcript_id, transcript_rows = transcript
+    time_chunks = TSE_rand_time_chunks[TSE_rand_time_chunks['transcript_id'] == transcript_id]
+    mask = transcript_rows.apply(lambda row: any(time_chunk['media_start'] <= row['media_start'] and time_chunk['media_end'] >= row['media_end'] for _, time_chunk in time_chunks.iterrows()), axis=1)
+    return transcript_rows[mask]
+
+TSE_dat_inc_grouped = TSE_dat_inc.groupby('transcript_id')
+
+TSE_rand_dat_inc = pd.concat([is_within_time_chunk(transcript) for transcript in TSE_dat_inc_grouped])
+
+# ----
 
 TSE_cont_dat %>% 
     write_csv("data/TSE_cont_dat.csv")
