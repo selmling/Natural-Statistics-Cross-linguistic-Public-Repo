@@ -149,20 +149,44 @@ TSE_rand_dat <- TSE_rand_dat %>%
 # ---- check for sufficient utterances
 
 # at least 5 child utterances
-TSE_rand_dat %>%
+CH_U_req <- TSE_rand_dat %>%
     group_by(transcript_id) %>% nest() %>%
     mutate(sufficient_utterances = map_lgl(data, ~sufficient_child_utterances(.x, 5)))
 
 # at least 5 caregiver utterances
-TSE_rand_dat %>%
+CG_U_req <- TSE_rand_dat %>%
     group_by(transcript_id) %>% nest() %>%
     mutate(sufficient_utterances = map_lgl(data, ~sufficient_caregiver_utterances(.x, 5)))
 
 # take new time chunks where sufficient_utterances == False
 
-TSE_rand_time_chunks_new <- TSE_rand_time_chunks %>%
-    filter(transcript_id %in% TSE_rand_dat$transcript_id) %>%
-    anti_join(TSE_rand_dat %>% filter(sufficient_utterances == TRUE), by = "transcript_id")
+req_fails <- CH_U_req %>%
+    select(transcript_id, sufficient_utterances) %>%
+    left_join(CG_U_req, by = c("transcript_id")) %>%
+    select(transcript_id, sufficient_utterances.x, sufficient_utterances.y) %>%
+    filter(sufficient_utterances.x == FALSE | sufficient_utterances.y == FALSE)
+
+needs_new_time_chunks <- TSE_rand_time_chunks %>%
+    filter(transcript_id %in% req_fails$transcript_id)
+
+set.seed(81)
+
+TSE_time_chunks %>%
+    mutate(transcript_id = str_remove(filename, ".eaf"),
+           media_start = onset,
+           media_end = offset) %>%
+    filter(transcript_id %in% needs_new_time_chunks$transcript_id,
+           duration_min >= 5) %>% 
+    group_by(transcript_id) %>%
+    sample_n(2) %>%
+    ungroup() %>%
+    select(transcript_id, media_start, media_end)
+
+# extract new data for those two transcripts
+
+# add those newly extracted transcripts to the main dataset (after removing the old)
+
+# check for sufficient utterances again
 
 # ---- save to file
 
