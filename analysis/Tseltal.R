@@ -171,7 +171,7 @@ needs_new_time_chunks <- TSE_rand_time_chunks %>%
 
 set.seed(81)
 
-TSE_time_chunks %>%
+TSE_new_time_chunks <- TSE_time_chunks %>%
     mutate(transcript_id = str_remove(filename, ".eaf"),
            media_start = onset,
            media_end = offset) %>%
@@ -180,13 +180,55 @@ TSE_time_chunks %>%
     group_by(transcript_id) %>%
     sample_n(2) %>%
     ungroup() %>%
-    select(transcript_id, media_start, media_end)
+    select(transcript_id, media_start, media_end) %>%
+    group_by(transcript_id) %>%
+    mutate(chunk_index = row_number()) %>%
+    ungroup()
 
 # extract new data for those two transcripts
 
+TSE_new_rand_time_chunk_nest <- TSE_new_time_chunks %>%
+  group_by(transcript_id) %>%
+  nest()
+
+TSE_new_rand_dat <- TSE_cont_dat_nest %>%
+  left_join(TSE_new_rand_time_chunk_nest, by = "transcript_id", suffix = c("", "_chunks")) %>% 
+  filter(!map_lgl(data_chunks, is.null))
+
+# denote chunk index for each row
+TSE_new_rand_dat <- TSE_new_rand_dat %>%
+  mutate(data = map2(data, data_chunks, ~ .x %>%
+         rowwise() %>%
+         mutate(chunk_index = check_event_in_chunks(media_start, media_end, .y)) %>%
+         ungroup())) %>%
+  select(-data_chunks) %>%
+  unnest(data)
+
+# filter to keep only rows with chunk index
+TSE_new_rand_dat <- TSE_new_rand_dat %>%
+  filter(!is.na(chunk_index))
+
 # add those newly extracted transcripts to the main dataset (after removing the old)
 
-# check for sufficient utterances again
+TSE_rand_dat <- TSE_rand_dat %>% 
+    filter(!transcript_id %in% TSE_new_rand_dat$transcript_id)
+
+TSE_rand_dat <- bind_rows(TSE_rand_dat, TSE_new_rand_dat)
+
+# dplyr call to list unique transcript_id in TSE_rand_dat
+TSE_rand_dat %>% 
+    select(transcript_id) %>% 
+    unique()
+
+# at least 5 child utterances
+TSE_rand_dat %>%
+    group_by(transcript_id) %>% nest() %>%
+    mutate(sufficient_utterances = map_lgl(data, ~sufficient_child_utterances(.x, 5)))
+
+# at least 5 caregiver utterances
+TSE_rand_dat %>%
+    group_by(transcript_id) %>% nest() %>%
+    mutate(sufficient_utterances = map_lgl(data, ~sufficient_caregiver_utterances(.x, 5)))
 
 # ---- save to file
 
