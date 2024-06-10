@@ -22,6 +22,11 @@ TSE_data <- read_csv("data/TSE_dat.csv") %>%
     select(-1) %>% 
     arrange(transcript_id, media_start)
 
+# convert xds@FA1 to caregiver column 
+
+# include child directed utterances in general
+
+# see if column spill-over is happening to 60 some utterances... if so, fix...
 
 # ---- test sample_extraction python functions
 
