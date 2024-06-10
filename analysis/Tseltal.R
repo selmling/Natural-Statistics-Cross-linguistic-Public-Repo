@@ -105,6 +105,23 @@ TSE_data <- TSE_data %>%
            target_child_id = transcript_id) %>%
     arrange(transcript_id, media_start)
 
+
+# transcription clense
+TSE_data <- TSE_data %>%
+    mutate(gloss = str_replace_all(gloss,
+                                c("@s:spa" = "",
+                                  "&=laughs" = "",
+                                  "&=inhales" = "",
+                                  "&=sucksteeth" = "",
+                                  "&=sucksin" = "",
+                                  "&=sings" = "",
+                                  "@c" = "",
+                                  "yyy" = "",
+                                  "nt" = "",
+                                  " x " = ""))) %>% 
+    create_result(.)
+
+# assign contingency
 TSE_cont_dat <- TSE_data %>% 
     assign_contingency(.,3,.001)
 
@@ -229,8 +246,8 @@ TSE_rand_dat %>%
 TSE_rand_dat %>%
     group_by(transcript_id) %>% nest() %>%
     mutate(sufficient_utterances = map_lgl(data, ~sufficient_caregiver_utterances(.x, 5)))
-
+    
 # ---- save to file
 
-TSE_cont_dat %>% 
+TSE_rand_dat %>% 
     write_csv("data/TSE_cont_dat.csv")

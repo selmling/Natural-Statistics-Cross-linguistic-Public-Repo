@@ -49,8 +49,8 @@ def create_result(df):
     
     # filter out rows
     filtered = filter_table(df)
-
-    filtered.to_csv("../data/rand_dat_inc_master.csv")
+    return filtered
+    # filtered.to_csv("../data/rand_dat_inc_master.csv")
     
 def create_tp_result(df):
 

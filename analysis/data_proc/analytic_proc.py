@@ -36,7 +36,7 @@ def assign_uniqueness(df,sample):
         tar_col = 38
     elif sample=="maxturn":
         tar_col = 39
-    df['uniquenss'] = ""
+    df['uniqueness'] = ""
     word_set = set()
     sub_set = set()
     trans = df["transcript_id"].unique()
