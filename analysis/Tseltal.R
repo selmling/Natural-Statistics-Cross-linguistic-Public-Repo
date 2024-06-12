@@ -18,13 +18,25 @@ TSE_data <- read_csv("data/TSE_dat.csv") %>%
                 TRUE ~ speaker_role),
             language = "tzh",
             corpus_name = "Casillas") %>%
-    filter(!gloss %in% c("L", "Y", "U")) %>%
     select(-1) %>% 
     arrange(transcript_id, media_start)
 
-# convert xds@FA1 to caregiver column 
+# convert xds@FA1 to directedness column 
+
+directedness_df <- TSE_data %>% filter(speaker_role == 'xds@FA1') %>%
+    rename(directedness = gloss) %>%
+    select(transcript_id, media_start, media_end, directedness) %>% 
+    filter(directedness %in% c("T", "C"))
+
+TSE_data <- TSE_data %>%
+    filter(speaker_role != 'xds@FA1') %>%
+    left_join(directedness_df, by = c('transcript_id', 'media_start', 'media_end')) %>% 
+    filter(!gloss %in% c("L", "Y", "U"))
 
 # include child directed utterances in general
+
+TSE_data <- TSE_data %>%
+  filter(!(speaker_role == "Mother" & is.na(directedness)))
 
 # see if column spill-over is happening to 60 some utterances... if so, fix...
 
