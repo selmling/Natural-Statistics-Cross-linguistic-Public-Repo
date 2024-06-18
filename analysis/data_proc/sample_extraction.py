@@ -33,6 +33,31 @@ def get_random_samples(corpora, interval):
     print("Errors: ", errs)
     return random_dat
 
+def get_Persian_samples(corpora):
+    pers_dat = pd.DataFrame()
+    for i in corpora:
+        c = cpy.get_utterances(corpus=i)
+        print(i)
+        ids = c['transcript_id'].unique()
+        valid_ids = []
+        for i in ids:
+            tran = c[c['transcript_id']==i]
+            if longer_than_ten(tran) and \
+               sufficient_child_utterances(tran, 5) and \
+               sufficient_caregiver_utterances(tran, 5) and \
+               has_times(tran) and \
+               "Target_Child" in list(tran["speaker_role"]):
+                valid_ids.append(i)
+        errs = []
+        for tid in valid_ids:
+            tran = c[c['transcript_id']==tid]
+            try:
+              pers_dat = pd.concat([pers_dat, tran], ignore_index=True)
+            except:
+              errs.append(tid)
+    print("Errors: ", errs)
+    return pers_dat
+
 def get_random_samples_TSE(corpora, interval):
     c = corpora
     random_dat = pd.DataFrame()    
