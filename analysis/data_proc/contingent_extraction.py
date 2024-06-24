@@ -7,13 +7,15 @@ pp = pprint.PrettyPrinter()
 # delete anything with pound sign
 
 def clean_string(dirty_string):
-    removed_pound = re.sub(r'#+\s|#+', "", dirty_string)
+    removed_pointers = re.sub(r'[<>]', '', dirty_string)
+    removed_squares = re.sub(r'\[[^\]]+\]', '', removed_pointers)
+    remove_andeq = re.sub('&[^ ]+ ', '', removed_squares)
+    removed_pound = re.sub(r'#+\s|#+', "", remove_andeq)
     removed_astrisk = re.sub(r'\*', "", removed_pound)
     removed_parens = re.sub(r'\(.*\)', "", removed_astrisk)
     removed_brackets = re.sub(r'\[.*\]', "", removed_parens)
     removed_qmarks = removed_brackets.replace("?", "")
     removed_periods = removed_qmarks.replace(".", "")
-    removed_dash = removed_periods.replace("-", "")
     removed_fslash = removed_periods.replace("/", "")
     removed_bslash = removed_fslash.replace("\\", "")
     lower = removed_bslash.lower()

@@ -243,16 +243,16 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 643,11319.121,11319.973,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,11320.651,11321.257,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,11323.053,11323.288,xit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,1,1
-643,11326.288,11326.72,<ju sit>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,2
-643,11328.819,11329.591,<ju sit sit sit>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,4
+643,11326.288,11326.72,ju sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,2
+643,11328.819,11329.591,ju sit sit sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,4
 643,11331.101,11331.249,xit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
 643,11331.967,11332.124,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,11332.453,11333.283,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,11332.606,11332.824,xit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,1,1
 643,11334.828,11335.576,xit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
-643,11338.023,11338.71,<ju sit sit sit>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,4
-643,11341.053,11341.902,<ju sit sit sit sit>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
-643,11344.468,11345.416,<ju sit sit sit sit>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
+643,11338.023,11338.71,ju sit sit sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,4
+643,11341.053,11341.902,ju sit sit sit sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
+643,11344.468,11345.416,ju sit sit sit sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
 643,11352.094,11352.186,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,11352.818,11352.993,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,11353.935,11354.388,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
@@ -293,7 +293,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 643,11461.914,11462.824,ay,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,1,1
 643,11463.153,11464.413,ay,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
 643,11463.176,11463.82,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
-643,11465.634,11466.674,<mm>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,1,1
+643,11465.634,11466.674,mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,1,1
 643,11465.945,11466.301,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,11467.47,11468.9,ay,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,1,1
 643,11469.246,11470.361,ay,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
@@ -314,7 +314,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 643,14945.62,14948.325,muk'a i ja' ya xchik'iai poxili,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,8
 643,14953.568,14954.571,ba baj'tiki as,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,4
 643,16625,16625.952,-mat jich ek ini,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,4
-643,16627.528,16629.715,ja'i bit'il bi xkuchoj <viri>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,7
+643,16627.528,16629.715,ja'i bit'il bi xkuchoj viri,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,7
 643,16631.309,16634.177,ma'yuk k'axemat ek i ta sna me'el gringai,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,11
 643,16635.372,16635.975,ma'yuk,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,2
 643,16636.638,16637.208,mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
@@ -337,7 +337,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 643,16862.564,16864.493,aa jich la anet' mene,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
 643,16865.162,16867.2,ila awil i ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
 643,16867.606,16868.255,k'okoke,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,2
-643,16870.387,16872.67,&=blows &=blows &=blows &=blows &=blows,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
+643,16870.387,16872.67,&=blows,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
 643,16872.946,16875.53,wa'i ya xkejchaix te a yaxub me i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,9
 643,16914.65,16915.042,jae,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
 643,16916.572,16917.652,ma'yukix sp'olmal,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,4
@@ -380,7 +380,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 643,17923.078,17923.792,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,20473.68,20473.824,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,20481.612,20481.724,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
-643,20509.974,20510.362,<clau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
+643,20509.974,20510.362,clau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
 643,20511.412,20513.742,majtek' lekil aye yakalat smaklael i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,6
 643,20518.422,20520.287,bistuk ek i kojkoltsa' akuchoji,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,5
 643,20596.77,20597.326,bebebe,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
@@ -441,7 +441,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 643,26193.126,26193.892,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,1
 643,26194.46,26195.638,ts'isbil yilel,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,3
 643,26196.73,26198.866,ts'isbil seguro ime ala ch'in,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,7
-643,26200.31,26204.042,<pe>  ya xben ime k'uilalema xa'na' mach'a ya slapixan pajele'k'ai,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,15
+643,26200.31,26204.042,pe  ya xben ime k'uilalema xa'na' mach'a ya slapixan pajele'k'ai,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,2,caregiver,643,0,15
 643,26204.512,26204.918,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,26205.75,26206.36,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
 643,26207.276,26207.632,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,2,target_child,643,0,1
@@ -585,7 +585,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,3593.258,3593.9,aa xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,3600.864,3601.857,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,3603.974,3604.742,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,3604.605,3605.263,<ixtalat>  la i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,3
+2109,3604.605,3605.263,ixtalat  la i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,3
 2109,3606.034,3606.226,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,3606.215,3606.377,la',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,1
 2109,3608.991,3610.524,mm naklan i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
@@ -628,7 +628,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,4102.388,4102.896,pasa i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,4104.43,4104.798,pasa,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4105.403,4108.243,xi jichini,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
-2109,4116.734,4118.504,<pasa ek'i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
+2109,4116.734,4118.504,pasa ek'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
 2109,4118.982,4119.368,jae,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4120.307,4121.35,0,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4122.688,4124.307,0,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
@@ -659,29 +659,29 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,4186.933,4191.428,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4195.203,4196.464,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,4197.15,4199.079,bii ek'a te jononetate,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,5
-2109,4322.47,4324.72,<wau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,4322.47,4324.72,wau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4328.28,4328.639,jichini,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4328.834,4329.069,laura,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4330.545,4330.796,ya jpasa'wil,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
 2109,4331.305,4331.502,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4331.866,4332.147,xit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,4333.814,4337.464,<wau>  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,4333.814,4337.464,wau  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,4336.883,4337.239,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,4338.665,4338.989,pasa i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,2
-2109,4340.306,4344.207,<wau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,4340.306,4344.207,wau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,4344.579,4344.94,pasaek'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,4346.605,4346.841,pasa i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,4347.224,4347.914,uu xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,4349.525,4350.141,jichini,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,4350.981,4356.41,<wau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,4357.296,4360.264,<wau>  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,4350.981,4356.41,wau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,4357.296,4360.264,wau  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,4361.664,4362.44,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,4362.611,4367.218,<wau>  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,2
+2109,4362.611,4367.218,wau  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,2
 2109,4366.404,4366.85,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,4369.75,4370.349,xxx ay ay!,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
 2109,4370.749,4371.725,mamexa' majotik i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
-2109,4372.099,4374.596,<wau>  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
-2109,4375.539,4378.043,<trum>  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,4372.099,4374.596,wau  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,4375.539,4378.043,trum  xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,14206.194,14206.302,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,14208.07,14208.756,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,14236.756,14236.988,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
@@ -724,7 +724,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,15501.286,15501.376,mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,1
 2109,15502.257,15503.155,&=imitates,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,15503.562,15503.955,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,15504.075,15505.795,&=imitates mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,2
+2109,15504.075,15505.795,mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,1
 2109,15508.965,15509.609,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,15510.559,15513.159,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,15515.94,15516.899,ja'ts'i ay yan xxx,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,6
@@ -860,7 +860,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,20219.546,20220.168,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,20221.108,20221.57,jpastik a'waye'k'a,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,5
 2109,20222.625,20222.978,jpastik i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
-2109,20223.234,20226.472,<ch'ay ch'ay>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,4
+2109,20223.234,20226.472,ch'ay ch'ay,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,4
 2109,20226.792,20227.076,k'ux,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,20228.214,20228.526,k'ux,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,20229.48,20229.684,la'ich'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
@@ -885,7 +885,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,22798.64,22798.738,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,22800.424,22801.007,ya xtal ja'al,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,4
 2109,22800.9,22801.324,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,22801.716,22804.088,<ya xtal ja'al ya xtal ja'al>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,8
+2109,22801.716,22804.088,ya xtal ja'al ya xtal ja'al,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,8
 2109,22804.576,22805.68,ya xtal ja',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
 2109,22816.682,22817.202,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,22817.364,22817.888,jo on,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,2
@@ -919,7 +919,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,22924.244,22924.976,ban tatik uta,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
 2109,22926.122,22927.14,banme tatik uta,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
 2109,22947.658,22953.183,sit xi sit sit xi sit sit xi sit sit xi sit sit xi sit sit xi sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,18
-2109,22955.712,22957.124,&=growls xit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,22955.712,22957.124,xit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,22956.254,22956.382,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,22957.946,22958.036,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,22959.061,22959.21,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
@@ -934,7 +934,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,24339.996,24342.154,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,24345.77,24346.836,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,24347.042,24347.668,ay!,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,1
-2109,24348.936,24349.316,<ay> !,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,24348.936,24349.316,ay !,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,24357.316,24357.612,k'ux,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,24358.578,24359.116,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,24358.75,24359.84,talom k'ux ya xti'wanat,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,6
@@ -958,16 +958,16 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,24584.49,24584.888,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,24585.228,24586.344,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,24591.36,24591.808,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,24594.92,24596.64,&=imitates xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,24594.92,24596.64,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,24596.984,24597.664,maxa'tun i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,3
 2109,24598.34,24599.56,yu'astak' jtuik ek,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,4
 2109,24600.224,24601.74,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,24600.432,24602.244,&=imitates xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,2
-2109,24602.724,24604.04,&=imitates xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,24600.432,24602.244,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,1
+2109,24602.724,24604.04,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,24604.868,24605.824,&=imitates,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,24607.41,24609.028,&=imitates xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,24607.41,24609.028,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,24611.132,24612.316,&=imitates,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,24614.308,24616.004,&=imitates xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
+2109,24614.308,24616.004,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,24616.88,24618.02,&=imitates,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,24619.425,24619.972,&=imitates,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,25201.176,25201.92,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
@@ -978,7 +978,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,25213.216,25213.484,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,25213.896,25214.068,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,25214.466,25214.646,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,25222.306,25225.524,<masta'k'ix ti'el stukele'k'a i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,9
+2109,25222.306,25225.524,masta'k'ix ti'el stukele'k'a i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,9
 2109,25224.06,25224.504,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,25226.032,25227.206,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,25226.302,25227.396,jm mastak',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,2
@@ -1031,10 +1031,10 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,29374.343,29375.366,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,29375.776,29377.176,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,29377.718,29378.054,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
-2109,29381.378,29382.248,<lau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,29383.536,29384.1,<lau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,29387.398,29387.728,<lau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
-2109,29391.866,29392.468,<lau>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,29381.378,29382.248,lau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,29383.536,29384.1,lau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,29387.398,29387.728,lau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
+2109,29391.866,29392.468,lau,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,29398.476,29398.724,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
 2109,30718.09,30718.462,ila,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,30718.768,30719.262,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
@@ -1045,7 +1045,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2109,30741.06,30742.95,lu't'elnax te jichuke,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,1,5
 2109,30743.82,30745.352,jichayich' lu't'elini kiltika'wil a,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,7
 2109,30760.496,30760.8,la'wil,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
-2109,30763.752,30768.35,<jichayich' lu't'elini k'ox>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,6
+2109,30763.752,30768.35,jichayich' lu't'elini k'ox,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,6
 2109,30768.46,30768.992,ila'wil,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,2
 2109,30776.592,30777.92,a,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,7,caregiver,2109,0,1
 2109,30776.776,30777.988,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,7,target_child,2109,0,1
@@ -1381,7 +1381,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2625,10014.934,10016.092,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,10016.585,10017.025,bai la,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,2
 2625,10017.533,10018.836,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
-2625,10019.217,10020.041,a baem ta <<moeley>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,4
+2625,10019.217,10020.041,a baem ta moeley,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,4
 2625,10020.69,10021.414,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,10021.54,10022.433,a ta mexico,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,3
 2625,10022.431,10022.928,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
@@ -1394,14 +1394,14 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2625,10031.11,10032.31,bombom,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,1
 2625,10032.627,10032.838,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,10033.418,10034.212,bombom,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,1
-2625,12240.151,12240.459,<yos>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,1
+2625,12240.151,12240.459,yos,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,1
 2625,12240.818,12241.049,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,12241.256,12243.757,ma yakuk kilati yakalat yixlaneli ya xtal julat ya'tik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,10
 2625,12245.041,12246.09,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,12249.548,12251.949,ma xawixlan ts'usa ja' ts'i yaxlok'ix tal yik' awu'un nak'ai,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,15
 2625,12253.456,12254.858,ya ak'an ya xtal julati ya xtal awixlanlai,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,9
 2625,12259.235,12260.974,aye ch'i chajp to yik' ak'ab akay ai,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,10
-2625,12270.619,12271.66,ila xan i akamarai <yo>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,5
+2625,12270.619,12271.66,ila xan i akamarai yo,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,5
 2625,12272.316,12272.761,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,12272.66,12273.561,ya akuch xan,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,1,3
 2625,12274.264,12275.471,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
@@ -1464,7 +1464,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2625,12939.291,12940.449,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,12942.981,12943.725,ya awuch' mats',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,3
 2625,12944.092,12945.553,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
-2625,12947.76,12948.71,<talixa' papa>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,2
+2625,12947.76,12948.71,talixa' papa,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,2
 2625,12949.099,12949.734,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,12950.422,12950.828,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
 2625,12952.755,12952.842,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,32,target_child,2625,0,1
@@ -1614,8 +1614,8 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 2625,27374.608,27374.951,as',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,1
 2625,27377.598,27377.904,as',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,1
 2625,27397.608,27399.156,vanessa,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,1
-2625,27428.927,27430.374,keremek'i <muy>  ya'wali,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,5
-2625,27431.826,27432.982,mach'a <muysese>  kerem,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,4
+2625,27428.927,27430.374,keremek'i muy  ya'wali,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,5
+2625,27431.826,27432.982,mach'a muysese  kerem,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,4
 2625,27435.617,27437.045,tsakatal k'oxoxtee ya jwe,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,5
 2625,27437.488,27438.596,chajpech xa' tsaktal,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,3
 2625,27439.846,27440.704,0,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,32,caregiver,2625,0,1
@@ -1950,13 +1950,13 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 3026,1875.165,1875.647,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,36,target_child,3026,0,1
 3026,1876.401,1876.951,aa,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,1,1
 3026,1877.905,1879.227,mame' lok'estal mame' lok'estal i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,7
-3026,1879.57,1881.539,aa <bik'abelts'i>  xa'tion ya'tik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,8
+3026,1879.57,1881.539,aa bik'abelts'i  xa'tion ya'tik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,8
 3026,1882.957,1884.514,lok'atsa a kay i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,5
 3026,1885.139,1886.187,maniba' a tsa'ukteye,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,4
-3026,1899.344,1901.334,cha'cha'tenanix ya <bikxa>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,5
+3026,1899.344,1901.334,cha'cha'tenanix ya bikxa  yan ya'tik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,8
 3026,1901.555,1904.109,yu' ya'way teme ya stak  skap- ya kapxan sokek'ae,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,11
 3026,1906.928,1907.562,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,36,target_child,3026,0,1
-3026,1907.254,1910.457,jich- jicha bik woje biya wal <a>  a'wak' smilate,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,1,10
+3026,1907.254,1910.457,jich- jicha bik woje biya wal a  a'wak' smilate,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,1,10
 3026,1911.28,1912.288,aa ch'enan kere,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,4
 3026,1913.87,1914.373,mm jmm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,2
 3026,1915.598,1916.633,jae,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,1
@@ -2397,7 +2397,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 3026,32499.071,32499.445,mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,1
 3026,32499.944,32504.361,la wixlan xit ila me alale ila i alali,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,9
 3026,32522.412,32523.316,maxa wuts'in,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,3
-3026,32548.415,32550.714,sfirma areli'in <yeli>  areli mene,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,6
+3026,32548.415,32550.714,sfirma areli'in yeli  areli mene,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,6
 3026,32551.822,32553.471,pajalkati a firma soki areli'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,6
 3026,32554.839,32555.51,joo,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,1
 3026,32571.438,32571.999,jmm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,36,caregiver,3026,0,1
@@ -2479,7 +2479,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,1593.641,1594.978,jmm paleta,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,1598.62,1599.198,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,1600.088,1600.64,jmm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
-6216,1600.977,1601.594,<<tuxul>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,1
+6216,1600.977,1601.594,tuxul,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,1
 6216,1602.236,1603.367,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,1603.465,1604.527,joo ts'usul,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,3
 6216,1605.405,1606.011,gol,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,1
@@ -2760,8 +2760,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,6402.151,6402.434,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,6402.594,6404.559,kaytik tajimal,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6403.865,6404.212,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6404.559,6405.939,&=imitates,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
-6216,6406.114,6408.104,ay ay ay!,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,3
+6216,6406.114,6408.104,ay ay ay!,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,3
 6216,6408.154,6408.654,ju'sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,2
 6216,6408.839,6409.169,kurik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,1
 6216,6409.299,6409.689,la'me,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,2
@@ -2791,6 +2790,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,6456.804,6457.723,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,6458.11,6458.956,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,6459.247,6460.037,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
+6216,6460.079,6461.337,awa  awa,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6461.239,6461.787,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,6462.029,6462.533,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,6462.871,6463.65,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
@@ -2817,19 +2817,19 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,6505.165,6505.681,chi',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,6506.423,6507.972,ba uch'a a wala mats' ch'e,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,8
 6216,6508.401,6509.32,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6509.6,6510.552,<jo on>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
+6216,6509.6,6510.552,jo on,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6511.457,6512.489,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6512.431,6513.399,<jo on>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
+6216,6512.431,6513.399,jo on,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6513.392,6514.441,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6514.367,6515.367,<jo on>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
+6216,6514.367,6515.367,jo on,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6515.384,6516.303,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6515.964,6516.883,<mm-mm>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
+6216,6515.964,6516.883,mm-mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6517.032,6517.76,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6517.713,6518.326,<ju'uk>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
+6216,6517.713,6518.326,ju'uk,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6518.577,6519.565,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6518.955,6519.568,<ju'uk>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
+6216,6518.955,6519.568,ju'uk,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
 6216,6520.117,6520.741,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,6520.826,6521.197,<aa>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
+6216,6520.826,6521.197,aa,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,6521.286,6523.093,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,6523.738,6525.46,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,6525.051,6526.455,bai xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,2
@@ -3045,8 +3045,8 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,17792.47,17792.89,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17793.07,17793.51,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17794.142,17794.97,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,17795.17,17797.1,<aya'way ch''i julixmetal ya'way i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,8
-6216,17798.47,17800.29,&=imitates xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,2
+6216,17795.17,17797.1,aya'way ch''i julixmetal ya'way i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,8
+6216,17798.47,17800.29,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,1
 6216,17800.44,17801.3,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17802.865,17803.13,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17803.785,17805.14,jo on maxa' xi',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,4
@@ -3057,7 +3057,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,17808.29,17808.77,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,17808.752,17808.856,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17809.178,17809.358,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,17810.055,17812.745,ay xmobel &=imitates xi moel ima,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,6
+6216,17810.055,17812.745,ay xmobel xi moel ima,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,5
 6216,17812.715,17813.275,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17813.365,17814.285,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,17814.746,17815.274,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
@@ -3070,12 +3070,12 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,17821.83,17822.82,joo,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,17822.906,17824.382,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17824.17,17824.95,eso,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
-6216,17824.97,17826.77,&=imitates xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,2
+6216,17824.97,17826.77,xi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,1
 6216,17826.792,17827.524,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17827.135,17828.275,joo ila'wil ts'i',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,5
 6216,17828.275,17829.605,ba nutsabel,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,2
 6216,17830.065,17830.71,ban me,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,2
-6216,17830.71,17832.13,<tsakatal i' wu'uni>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,4
+6216,17830.71,17832.13,tsakatal i' wu'uni,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,4
 6216,17831.265,17832.516,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,17832.815,17833.135,jae,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,17833.31,17834.76,"oo, yu'wayaxtal",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,3
@@ -3106,7 +3106,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,18302.902,18303.713,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,18303.722,18304.471,joo,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,18304.325,18305.104,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,18306.812,18308.254,"<sumeba>  kalame, sumeba",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,3
+6216,18306.812,18308.254,"sumeba  kalame, sumeba",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,3
 6216,18327.398,18327.64,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,18329.42,18330.35,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,18331.906,18332.792,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
@@ -3135,7 +3135,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,18426.011,18427.306,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,18428.144,18428.849,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,18430.096,18430.694,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,18430.938,18433.155,<ja' a k'anbe i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,5
+6216,18430.938,18433.155,ja' a k'anbe i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,5
 6216,18431.011,18431.694,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,18433.34,18434.969,ya jk'an ek uta,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,5
 6216,18433.384,18433.702,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
@@ -3448,7 +3448,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 6216,27363.704,27364.25,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,27365.474,27365.958,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,27366.192,27366.716,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
-6216,27366.78,27367.43,<bixi>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
+6216,27366.78,27367.43,bixi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,1,1
 6216,27367.468,27367.918,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
 6216,27371.65,27373.42,ja' la sk'ani kajpei ya xk'ixna'bet ch'ujt,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,27,caregiver,6216,0,11
 6216,29006.722,29007.156,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,27,target_child,6216,0,1
@@ -4015,11 +4015,11 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7176,23607.547,23607.927,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23609.067,23609.487,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23609.857,23612.037,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
-7176,23612.157,23613.857,<bii>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,4,caregiver,7176,1,1
+7176,23612.157,23613.857,bii,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,4,caregiver,7176,1,1
 7176,23612.197,23613.707,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23613.867,23614.257,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,4,caregiver,7176,1,1
 7176,23613.887,23614.817,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
-7176,23615.247,23616.977,<jm>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,4,caregiver,7176,1,1
+7176,23615.247,23616.977,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,4,caregiver,7176,1,1
 7176,23616.99,23617.901,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23618.513,23618.77,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23619.154,23619.282,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
@@ -4037,7 +4037,6 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7176,23631.464,23632.475,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23632.767,23633.614,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23634.031,23635.463,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
-7176,23635.483,23636.451,<&=cries>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,4,caregiver,7176,1,1
 7176,23635.907,23636.769,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23637.143,23638.61,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
 7176,23643.8,23643.978,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,4,target_child,7176,0,1
@@ -4370,8 +4369,8 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7220,2212.782,2214.521,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,2215.846,2221.019,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,2259.413,2261.32,ba tsaka pelota kalame' jujup'ej awunik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,7
-7220,2262.043,2264.683,te enuk ai mene ja' ts'i xkucho eki <jmatek>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,10
-7220,2265.122,2266.864,ja' ts'i xkuchoj ek i <matek>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,7
+7220,2262.043,2264.683,te enuk ai mene ja' ts'i xkucho eki jmatek,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,10
+7220,2265.122,2266.864,ja' ts'i xkuchoj ek i matek,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,7
 7220,2266.415,2267.328,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,2269.346,2272.964,tajinan am-,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,2
 7220,2269.758,2270.343,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
@@ -4382,7 +4381,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7220,2286.083,2287.971,ila sne awixtabi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
 7220,2289.376,2290.825,aye xk'opo te maxe,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,5
 7220,2291.344,2292.288,ba ila awil,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
-7220,2293.486,2294.521,ba tsaka tal sok <mate>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,5
+7220,2293.486,2294.521,ba tsaka tal sok mate,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,5
 7220,2297.561,2300.306,li' la xawak'be ini ya yixla stukelik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,8
 7220,2305.38,2306.78,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,2307.429,2310.679,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
@@ -4476,7 +4475,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7220,4664.785,4665.285,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,4665.285,4665.695,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
 7220,4666.035,4666.405,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
-7220,4669.13,4669.85,<ma stak>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,2
+7220,4669.13,4669.85,ma stak,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,2
 7220,4671.62,4672.1,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,1
 7220,4672.54,4673.03,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,4694.702,4696.583,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
@@ -4524,10 +4523,10 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7220,5024.7,5025.21,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,5025.77,5026.09,la'me,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,2
 7220,5026.61,5027.59,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
-7220,5027.81,5028.43,<kurik>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
-7220,5028.555,5029.075,<a'k'a>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
+7220,5027.81,5028.43,kurik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
+7220,5028.555,5029.075,a'k'a,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
 7220,5028.65,5029,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
-7220,5029.2,5029.85,<kurik>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
+7220,5029.2,5029.85,kurik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
 7220,5029.94,5030.52,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,5033.265,5034.045,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,5033.42,5034.53,kootikbel ta alan,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,3
@@ -4562,7 +4561,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7220,5104.41,5105.53,jm mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,2
 7220,5105.75,5108.7,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,5109.35,5110.44,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
-7220,5113.28,5114.72,<sujame'ba i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
+7220,5113.28,5114.72,sujame'ba i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
 7220,5114.69,5115.17,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
 7220,5115.2,5116.77,"ya me kijkitaati'ch'i, ya me xban",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,8
 7220,5202.04,5202.63,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
@@ -4695,7 +4694,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7220,15237,15237.44,jm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
 7220,15237.6,15238.57,a ya' wuch' ja',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,4
 7220,15239.06,15239.83,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,22,target_child,7220,0,1
-7220,15240.36,15240.91,<kalak'>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
+7220,15240.36,15240.91,kalak',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,1,1
 7220,15243.45,15245.35,bala tsakatal vaso ya la yuch',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,6
 7220,15245.8,15246.57,ma'ba ya,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
 7220,15246.97,15247.7,ya yuch' ja',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,22,caregiver,7220,0,3
@@ -4884,7 +4883,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7326,7056.697,7058.636,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,7062.15,7063.32,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,7063.909,7064.757,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
-7326,7065.051,7065.757,<ay ti'>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,2
+7326,7065.051,7065.757,ay ti',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,2
 7326,7067.045,7068.338,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,7071.469,7071.969,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,7073.878,7075.575,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
@@ -5104,7 +5103,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7326,15055.246,15056.151,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,15055.786,15056.442,joo,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,1
 7326,15056.837,15056.994,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
-7326,15057.352,15058.147,<tajinan i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,2
+7326,15057.352,15058.147,tajinan i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,2
 7326,15058.387,15058.598,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,15067.781,15068.172,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,15068.655,15069.483,ay,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,1
@@ -5248,12 +5247,12 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7326,18522.594,18524.672,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,18525.254,18527.72,am ch'i am am,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,5
 7326,18528.847,18530.195,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
-7326,18530.102,18530.602,<xi'>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,1
+7326,18530.102,18530.602,xi',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,1
 7326,18533.629,18533.924,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
-7326,18534.227,18534.876,<xi' ch'i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,3
+7326,18534.227,18534.876,xi' ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,3
 7326,18536.828,18537.156,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,18537.65,18537.912,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
-7326,18537.913,18538.734,<xi'>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,1
+7326,18537.913,18538.734,xi',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,1
 7326,18539.867,18542.04,"ma xt'uxajat i, mame xt'uxajat mame' xt'uxajat",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,10
 7326,18542.614,18543.307,teklan i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,2
 7326,18544.172,18544.546,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
@@ -5291,7 +5290,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7326,18614.077,18614.614,jmm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,1
 7326,18616.759,18617.918,ak'bil jilel,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,3
 7326,18619.311,18619.91,jmm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,1
-7326,18622.09,18623.889,"ma xkil, <yu'>  yakal ek' i ma",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,7
+7326,18622.09,18623.889,"ma xkil, yu'  yakal ek' i ma",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,7
 7326,18626.004,18628.311,"ay i ma, ju'uk kala me' ma xatsakbe",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,9
 7326,18628.348,18630.225,"ya kaytik utel awa'ye, ya me xtal bel ta ich'el",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,12
 7326,18631.985,18632.709,jmm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,1
@@ -5479,14 +5478,14 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 7326,27543.8,27545.824,ya me xlok'tal bii sbil ma' ya' xi',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,9
 7326,27546.672,27547.071,ja'in ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,4
 7326,27547.873,27550.378,ay mete  ja'in ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,6
-7326,27551.554,27552.567,<ya jxi' ch'i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,4
-7326,27553.972,27554.837,<ay ya xi'>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,3
+7326,27551.554,27552.567,ya jxi' ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,4
+7326,27553.972,27554.837,ay ya xi',Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,3
 7326,27557.405,27558.075,ja'in ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,4
 7326,27558.188,27559.338,ma bi te ay a ja'in ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,9
-7326,27560.274,27560.988,<sit>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,1
-7326,27562.418,27563.189,<ju sit>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,2
+7326,27560.274,27560.988,sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,1
+7326,27562.418,27563.189,ju sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,0,2
 7326,27565.14,27565.406,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
-7326,27565.677,27566.777,<ju sit ch'i>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,4
+7326,27565.677,27566.777,ju sit ch'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,4
 7326,27569.328,27571.396,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
 7326,27571.458,27572.39,sit sit sit,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,14,caregiver,7326,1,3
 7326,27572.172,27573.032,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,14,target_child,7326,0,1
@@ -6039,7 +6038,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8179,30137.122,30137.543,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30137.778,30143.224,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30156.068,30156.66,chikil,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,1
-8179,30157.978,30159.325,<ta@s:tso>  bon nix ta lo'bal li' k'u'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,12
+8179,30157.978,30159.325,ta@s:tso  bon nix ta lo'bal li' k'u'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,12
 8179,30161.723,30162.973,ay ay ay,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,3
 8179,30163.337,30164.355,kala buts,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,2
 8179,30164.374,30164.874,&=kisses,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,1
@@ -6049,7 +6048,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8179,30177.657,30177.846,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30208.619,30209.44,xtin,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,1
 8179,30210.21,30212.21,ma me xalo' mene,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,4
-8179,30212.609,30214.774,ma xalo' <ta@s:tso>  ts'ustik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,7
+8179,30212.609,30214.774,ma xalo' ta@s:tso  ts'ustik,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,7
 8179,30213.664,30213.884,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30215.023,30215.726,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30216.462,30216.692,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
@@ -6060,7 +6059,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8179,30228.229,30229.479,"ma xanit, ma xanit",Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,4
 8179,30230.108,30230.768,ju'uk,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,2
 8179,30231.537,30232.258,kuch,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,1
-8179,30232.635,30235.734,ya la me <xbat@s:tso>  ta puebla,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,8
+8179,30232.635,30235.734,ya la me xbat@s:tso  ta karo i a mamai ya la xbat@s:tso  ta puebla,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,18
 8179,30236.009,30236.796,ya xjilat,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,2
 8179,30238.618,30239.74,poxil ya k'ani,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,4
 8179,30239.74,30240.434,poxil i-,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,2
@@ -6077,7 +6076,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8179,30276.844,30277.52,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30278.669,30279.589,ya xjilat,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,2
 8179,30278.692,30279.519,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
-8179,30279.834,30281.339,<batix@s:tso>  me amamá,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,5
+8179,30279.834,30281.339,batix@s:tso  me amamá,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,5
 8179,30279.846,30280.428,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30288.073,30288.534,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,30290.361,30292.507,banix me a ts'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,5
@@ -6123,9 +6122,9 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8179,31489.116,31489.414,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,31505.595,31507.816,ma'yuk ya ju'tesbeix a,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,0,6
 8179,31512.619,31512.716,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
-8179,31512.835,31516.055,tea i <ma'>  ju'tesbeixae,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,5
+8179,31512.835,31516.055,tea i ma'  ju'tesbeixae,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,5
 8179,31514.252,31514.53,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
-8179,31516.176,31518.265,<<smelix>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,1
+8179,31516.176,31518.265,smelix  yo'tan,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,6,caregiver,8179,1,3
 8179,31516.763,31517.268,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,31517.786,31518.304,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
 8179,31519.019,31519.483,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,6,target_child,8179,0,1
@@ -6216,7 +6215,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8787,3979.406,3979.608,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,3980.086,3980.194,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,3980.64,3980.739,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
-8787,3981.328,3982.082,<bi bi bi>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,1,3
+8787,3981.328,3982.082,bi bi bi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,1,3
 8787,3982.664,3985.063,ya'kuta xlok'oela wu'un ya'tik mene kala k'ox,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,12
 8787,3982.807,3982.96,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,4010.775,4011.335,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
@@ -6499,7 +6498,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8787,14839.264,14839.347,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,14842.962,14844.724,ju'uk ju'uk ju'uk ju'uk ju'uk ju'uk,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,12
 8787,14847.267,14848.278,tajinan i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,2
-8787,14851.866,14852.533,<bi>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,1
+8787,14851.866,14852.533,bi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,1
 8787,14858.441,14859.056,mm,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,1
 8787,14866.089,14866.808,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,14871.451,14871.86,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
@@ -6667,7 +6666,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8787,24839.818,24842.094,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,24842.525,24842.954,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,24842.99,24846.4,bine'k'i jchap ya' wutotike'k'ai xweotike'ke,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,1,10
-8787,24852.23,24852.94,<ila>,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,1
+8787,24852.23,24852.94,ila,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,1
 8787,24852.756,24853.224,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,24859.818,24859.99,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,24859.94,24860.6,aye'chi,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,1,2
@@ -6805,7 +6804,7 @@ transcript_id,media_start,media_end,gloss,speaker_role,language,corpus_name,Lang
 8787,28180.375,28181.88,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,28182.448,28182.625,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,28185.345,28187.318,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
-8787,29369.978,29371.943,xun &=makesnoise xun,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,3
+8787,29369.978,29371.943,xun xun,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,0,2
 8787,29376.196,29377.294,n,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,29381.916,29384.638,c,Target_Child,tzh,Casillas,Tseltal,Mayan,Mayan,11,target_child,8787,0,1
 8787,29384.684,29385.358,bii xan ek'i ch'omate'i,Mother,tzh,Casillas,Tseltal,Mayan,Mayan,11,caregiver,8787,1,7
