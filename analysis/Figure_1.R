@@ -46,6 +46,6 @@ mp <- mp +
             legend.background = element_rect(fill=alpha("white",0.90),
                                              size=0, linetype="dotted",
                                              colour = "white"),
-            legend.text=element_text(size=16,colour="black"))
+            legend.text=element_text(size=20,colour="black"))
             
 ggsave("figures/geo_dat.pdf", width = 11.7, height = 6.2,dpi = 1200, scale = 1.2)
