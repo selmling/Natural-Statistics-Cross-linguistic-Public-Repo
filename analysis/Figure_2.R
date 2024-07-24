@@ -54,7 +54,7 @@ lex_labels_sig3 <- create_label_data(lex_sig3_languages, 250, "***")
 lex_labels_sig2 <- create_label_data(lex_sig2_languages, 250, "**")
 lex_labels_ns <- create_label_data(lex_ns_languages, 285, "ns")
 
-mlu_labels_sig <- create_label_data(languages, 6.65, "***")
+mlu_labels_sig <- create_label_data(languages, 5.75, "***")
 
 swu_labels_sig3 <- create_label_data(swu_sig3_languages, 0.57, "***")
 swu_labels_sig2 <- create_label_data(swu_sig2_languages, 0.57, "**")
@@ -84,7 +84,7 @@ p2 <- ggplot(rand_mlu_sumstats, aes(x = contingent, y = means, color = Language_
   stat_summary(fun.data = mean_se, geom = "errorbar", size = 1.25, width = .5) +
   facet_wrap(. ~ Language_name, ncol = 7) +
   geom_text(data = mlu_labels_sig, aes(label = label, y = y), size = 6, color = "black") +
-  coord_cartesian(ylim = c(0, 8)) +
+  coord_cartesian(ylim = c(0, 7)) +
   labs(tag = "B", y = wrapper("Mean Length of Utterance in Words", width = 25), x = "") +
   theme_classic() +
   scale_x_discrete(labels = xlabs) +
