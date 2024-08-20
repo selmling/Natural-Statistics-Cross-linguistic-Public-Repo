@@ -104,6 +104,12 @@ TSE_data <- TSE_data %>%
                                   " x " = ""))) %>% 
     create_result(.)
 
+# create targetchild speech only dataframe
+
+child_dat <- TSE_data %>% 
+    filter(speaker_role == "Target_Child") %>%
+    write_csv("data/TSE_child_dat.csv")
+
 # assign contingency
 TSE_cont_dat <- TSE_data %>% 
     assign_contingency(.,3,.001)

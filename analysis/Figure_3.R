@@ -9,6 +9,8 @@ library("broom")
 
 child_dat <- read_csv("data/child_dat.csv")
 
+# Tseltal target child speech was not transcribed, thus not included in this analysis
+
 # drop child blank utterances
 
 child_dat_cln <- child_dat %>%
@@ -126,7 +128,7 @@ child_word_dat_prop %>%
   theme(text = element_text(size = 14),
         legend.text = element_text(size = 12))
 
-ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6)
+ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6, dpi = 1200)
 
 # ---- difference score test as a function of language competence
 
@@ -142,14 +144,7 @@ cdat <- read_csv("data/rand_dat_inc_master_cc_lexdiv.csv")
 ncdat <- read_csv("data/rand_dat_inc_master_nc_lexdiv.csv")
 
 dat <- rbind(cdat, ncdat) %>% 
-  mutate(single_word_utterance = ifelse(num_tokens==1,1,0)) %>%
-  rename(uniqueness = uniquenss)
-
-# corpora_year <- read_csv("data/corpora_year.csv") %>%
-#     rename(corpus_name = Corpora) %>%
-#     select(corpus_name, `Year collected`)
-
-# dat <- dat %>% left_join(corpora_year)
+  mutate(single_word_utterance = ifelse(num_tokens==1,1,0))
 
 # ---- linguistic complexity contingent and non-contingent 
 
@@ -211,7 +206,7 @@ shape = 21
 size = 2
 
 lexdiv_sumstats_long_types <- lexdiv_sumstats_long_types %>% 
-  filter(!Language_name %in% c("Mandarin", "Polish"))
+  filter(!Language_name %in% c("Mandarin", "Polish", "Tseltal"))
 
 p1 <- lexdiv_sumstats_long_types %>%
   drop_na(type_diff) %>%
@@ -255,7 +250,7 @@ lexdiv_sumstats_long_tokens <- lexdiv_sumstats %>%
   pivot_longer(cols = c(`tokens_non-contingent`, tokens_contingent)) %>% 
   rename(Contingency = name,
          Tokens = value) %>% 
-  filter(!Language_name %in% c("Mandarin", "Polish"))
+  filter(!Language_name %in% c("Mandarin", "Polish", "Tseltal"))
 
 p2 <- ggplot(lexdiv_sumstats_long_tokens, aes(color = Language_name)) +
   geom_point(aes(x = prop_multiword, y = Tokens, fill = Contingency),
@@ -320,7 +315,7 @@ adjust_pvalues_and_format <- function(df) {
 # number of unique words (types)
 
 # vector for rows to remove
-to_remove <- c("Mandarin", "Polish") # less than 3 observations
+to_remove <- c("Mandarin", "Polish", "Tseltal") # less than 3 observations
 
 tp_diff_reg_nest <- lexdiv_sumstats_long_types %>%
   filter(!Language_name %in% to_remove) %>%
