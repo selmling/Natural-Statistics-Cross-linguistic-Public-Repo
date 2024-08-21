@@ -11,6 +11,24 @@ child_dat <- read_csv("data/child_dat.csv")
 
 # Tseltal target child speech was not transcribed, thus not included in this analysis
 
+TSE_child_data <- read_csv("data/TSE_dat.csv") %>%
+    rename(transcript_id = sub,
+           media_start = onset,
+           media_end = offset,
+           speaker_role = tier,
+           gloss = cat) %>%
+    mutate(speaker_role = case_when(
+                speaker_role == "vcm@CHI" ~ "Target_Child",
+                speaker_role == "FA1" ~ "Mother",
+                TRUE ~ speaker_role),
+            language = "tzh",
+            corpus_name = "Casillas") %>%
+    select(-1) %>% 
+    arrange(transcript_id, media_start) %>%
+    filter(speaker_role == "Target_Child") %>%
+    left_join(age_dat, by = "transcript_id") %>%
+    mutate(gloss = factor(gloss, levels = c("C", "N", "L", "Y", "U")))
+
 # drop child blank utterances
 
 child_dat_cln <- child_dat %>%
@@ -108,11 +126,22 @@ child_word_dat_prop <- child_dat_cln %>%
   mutate(proportion = n / sum(n)) %>% 
   select(Language_name, transcript_id, target_child_age, child_utt_cat, proportion)
 
+# Tseltal
+
+TSE_child_word_dat_prop <- TSE_child_data %>%
+    group_by(transcript_id, target_child_age, gloss) %>%
+    summarize(n = n(), .groups = "drop") %>%
+    complete(gloss, nesting(transcript_id, target_child_age), fill = list(n = 0)) %>%
+    group_by(transcript_id) %>%
+    mutate(proportion = n / sum(n)) %>%
+    arrange(transcript_id) %>%
+    ungroup()
+
 # vis check
 
 library("wesanderson")
 
-child_word_dat_prop %>%
+p01 <- child_word_dat_prop %>%
   filter(!Language_name %in% c("Mandarin", "Polish")) %>% 
   mutate(child_utt_cat = factor(child_utt_cat, levels=c("babble", "single word", "multiword"))) %>%
   ggplot(aes(x=target_child_age, y = proportion, color=child_utt_cat)) +
@@ -128,7 +157,30 @@ child_word_dat_prop %>%
   theme(text = element_text(size = 14),
         legend.text = element_text(size = 12))
 
-ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6, dpi = 1200)
+p02 <- TSE_child_word_dat_prop %>%
+  filter(!gloss %in% c("L", "Y", "U")) %>% # laughter, cry, unsure
+  mutate(language = "Tseltal") %>%
+  ggplot(aes(x = target_child_age, y = proportion, color = gloss)) +
+  geom_point(alpha = .5) +
+  geom_smooth(method = "lm",size = 2) +
+  coord_cartesian(y = c(0, 1),
+                  xlim = c(0, 40)) +
+  scale_x_continuous(breaks = seq(5, 35, by = 5)) +
+  labs(x = "Child age (months)",
+       y = "Proportion of\nutterance type") +
+  scale_color_manual(name = "Child utterance types",
+                     values = c("C" = "#3B9AB2", "N" = "#4E9A06"),
+                     labels = c("C" = "canonical babble", "N" = "non-canonical babble")) +
+  theme_classic() +
+  theme(text = element_text(size = 14),
+        legend.text = element_text(size = 12),
+        aspect.ratio = .70) +
+  facet_wrap(~language)
+
+plot_grid(p01, p02, ncol = 1, labels = c("", ""),
+          rel_heights = c(2, 1))
+
+ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 6, dpi = 1200)
 
 # ---- difference score test as a function of language competence
 
@@ -139,6 +191,11 @@ ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 3.6, dpi = 1200)
 child_word_dat_prop_multiword <- child_word_dat_prop %>%
   filter(child_utt_cat == "multiword") %>%
   rename(prop_multiword = proportion)
+
+TSE_child_word_dat_prop_canonical <- TSE_child_word_dat_prop %>%
+  filter(gloss == "C") %>%
+  rename(prop_canonical = proportion,
+         child_utt_cat = gloss)
 
 cdat <- read_csv("data/rand_dat_inc_master_cc_lexdiv.csv")
 ncdat <- read_csv("data/rand_dat_inc_master_nc_lexdiv.csv")
@@ -157,16 +214,39 @@ lexdiv_sumstats <- dat %>%
             types = sum(as.numeric(unlist(uniqueness))),
             tokens = sum(num_tokens),
             age = unique(target_child_age),
-            # year_collected = unique(`Year collected`)
             ) %>%
   pivot_wider(names_from = contingent,
               values_from = c(types, tokens)) %>%
-  left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name"))
+  left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name")) %>%
+  filter(Language_name != "Tseltal") 
+
+TSE_lexdiv_sumstats <- dat %>% 
+  filter(Language_name == "Tseltal") %>%
+  dplyr::select(target_child_id, transcript_id, target_child_age,
+                Language_name, contingent, uniqueness, num_tokens) %>%
+                # `Year collected`
+  group_by(target_child_id, transcript_id, contingent) %>% 
+  summarise(variable = 'result',
+            types = sum(as.numeric(unlist(uniqueness))),
+            tokens = sum(num_tokens),
+            age = unique(target_child_age),
+            ) %>%
+  pivot_wider(names_from = contingent,
+              values_from = c(types, tokens)) %>%
+  left_join(TSE_child_word_dat_prop_canonical, by=c("transcript_id"))
 
 # wide to long
 lexdiv_sumstats_long_types <- lexdiv_sumstats %>% 
   select(target_child_id, transcript_id, Language_name, age, types_contingent,
          `types_non-contingent`, prop_multiword) %>% 
+  mutate(type_diff = `types_non-contingent` - types_contingent) %>% 
+  pivot_longer(cols = c(`types_non-contingent`, types_contingent)) %>% 
+  rename(Contingency = name,
+         Types = value)
+
+TSE_lexdiv_sumstats_long_types <- TSE_lexdiv_sumstats %>% 
+  select(target_child_id, transcript_id, age, types_contingent,
+         `types_non-contingent`, prop_canonical) %>% 
   mutate(type_diff = `types_non-contingent` - types_contingent) %>% 
   pivot_longer(cols = c(`types_non-contingent`, types_contingent)) %>% 
   rename(Contingency = name,
@@ -283,13 +363,13 @@ p2 <- ggplot(lexdiv_sumstats_long_tokens, aes(color = Language_name)) +
         legend.text = element_text(size = 12),
         panel.background = element_rect(fill = "grey90"))
 
-pcol <- plot_grid(p1, p2 + guides(color=FALSE), ncol = 1, labels = c("", ""))
+legend <- cowplot::get_plot_component(p2, 'guide-box-bottom', return_all = TRUE)
 
-legend <- get_legend(
-  p2
-)
+pcol <- plot_grid(p1, p2 + theme(legend.position='none'), ncol = 1, labels = c("", ""))
 
 g <- plot_grid(pcol, legend, ncol = 1, rel_heights = c(3, .4))
+
+g
 
 ggsave("figures/Figure_3.pdf", g, width = 12, height = 8.5)
 
