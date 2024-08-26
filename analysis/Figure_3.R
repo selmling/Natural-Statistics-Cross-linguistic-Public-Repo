@@ -108,7 +108,7 @@ TSE_child_data <- TSE_child_data %>%
   mutate(child_utt_cat = case_when(
     is.na(c_lang_prof) ~ "babble",
     c_lang_prof == "1" ~ "single word",
-    c_lang_prof == "M" ~ "multi word"))
+    c_lang_prof == "M" ~ "multiword"))
 
 # rbind.fill child_dat_cln and TSE_child_data
 
@@ -133,7 +133,7 @@ p01 <- child_word_dat_prop %>%
   ggplot(aes(x=target_child_age, y = proportion, color=child_utt_cat)) +
   geom_point(alpha = .5) +
   geom_smooth(method = "lm",size = 2) +
-  facet_wrap(~Language_name, ncol = 6) +
+  facet_wrap(~Language_name, ncol = 7) +
   scale_color_manual(name = "Child utterance types",
                      values = wes_palette("Zissou1", n = 3, type = "continuous")) +
   coord_cartesian(y = c(0, 1)) +
@@ -143,30 +143,7 @@ p01 <- child_word_dat_prop %>%
   theme(text = element_text(size = 14),
         legend.text = element_text(size = 12))
 
-p02 <- TSE_child_word_dat_prop %>%
-  filter(!gloss %in% c("L", "Y", "U")) %>% # laughter, cry, unsure
-  mutate(language = "Tseltal") %>%
-  ggplot(aes(x = target_child_age, y = proportion, color = gloss)) +
-  geom_point(alpha = .5) +
-  geom_smooth(method = "lm",size = 2) +
-  coord_cartesian(y = c(0, 1),
-                  xlim = c(0, 40)) +
-  scale_x_continuous(breaks = seq(5, 35, by = 5)) +
-  labs(x = "Child age (months)",
-       y = "Proportion of\nutterance type") +
-  scale_color_manual(name = "Child utterance types",
-                     values = c("C" = "#3B9AB2", "N" = "#4E9A06"),
-                     labels = c("C" = "canonical babble", "N" = "non-canonical babble")) +
-  theme_classic() +
-  theme(text = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        aspect.ratio = .70) +
-  facet_wrap(~language)
-
-plot_grid(p01, p02, ncol = 1, labels = c("", ""),
-          rel_heights = c(2, 1))
-
-ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 6, dpi = 1200)
+ggsave("figures/child_utt_prop_x_age.pdf", width = 12, height = 3.4, dpi = 1200)
 
 # ---- difference score test as a function of language competence
 
