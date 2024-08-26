@@ -11,23 +11,7 @@ child_dat <- read_csv("data/child_dat.csv")
 
 # Tseltal target child speech was not transcribed, thus not included in this analysis
 
-TSE_child_data <- read_csv("data/TSE_dat.csv") %>%
-    rename(transcript_id = sub,
-           media_start = onset,
-           media_end = offset,
-           speaker_role = tier,
-           gloss = cat) %>%
-    mutate(speaker_role = case_when(
-                speaker_role == "vcm@CHI" ~ "Target_Child",
-                speaker_role == "FA1" ~ "Mother",
-                TRUE ~ speaker_role),
-            language = "tzh",
-            corpus_name = "Casillas") %>%
-    select(-1) %>% 
-    arrange(transcript_id, media_start) %>%
-    filter(speaker_role == "Target_Child") %>%
-    left_join(age_dat, by = "transcript_id") %>%
-    mutate(gloss = factor(gloss, levels = c("C", "N", "L", "Y", "U")))
+TSE_child_data <- read_csv("data/TSE_child_dat.csv")
 
 # drop child blank utterances
 
@@ -99,7 +83,7 @@ g <- child_word_dat_summary %>%
 
 g
 
-ggsave("../figures/ling_comp_x_age.pdf", g, width = 9, height = 6)
+# ggsave("../figures/ling_comp_x_age.pdf", g, width = 9, height = 6)
 
 # ---- Language proficiency measure 2 (continuous)
 
@@ -118,6 +102,19 @@ child_dat_cln <- child_dat_cln %>%
     word_count > 1 & babble_count == 0 ~ "multiword"
   ), .after = word_count)
 
+# give Tseltal child_utt_cat like above
+
+TSE_child_data <- TSE_child_data %>%
+  mutate(child_utt_cat = case_when(
+    is.na(c_lang_prof) ~ "babble",
+    c_lang_prof == "1" ~ "single word",
+    c_lang_prof == "M" ~ "multi word"))
+
+# rbind.fill child_dat_cln and TSE_child_data
+
+child_dat_cln <- bind_rows(child_dat_cln, TSE_child_data)
+
+
 child_word_dat_prop <- child_dat_cln %>% 
   group_by(Language_name, transcript_id, target_child_age, child_utt_cat) %>%
   summarize(n = n(), .groups = 'drop') %>%
@@ -125,17 +122,6 @@ child_word_dat_prop <- child_dat_cln %>%
   group_by(transcript_id) %>% 
   mutate(proportion = n / sum(n)) %>% 
   select(Language_name, transcript_id, target_child_age, child_utt_cat, proportion)
-
-# Tseltal
-
-TSE_child_word_dat_prop <- TSE_child_data %>%
-    group_by(transcript_id, target_child_age, gloss) %>%
-    summarize(n = n(), .groups = "drop") %>%
-    complete(gloss, nesting(transcript_id, target_child_age), fill = list(n = 0)) %>%
-    group_by(transcript_id) %>%
-    mutate(proportion = n / sum(n)) %>%
-    arrange(transcript_id) %>%
-    ungroup()
 
 # vis check
 

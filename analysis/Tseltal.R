@@ -1,10 +1,10 @@
 library(tidyverse)
-# Sys.setenv(RETICULATE_PYTHON = "/usr/bin/python3.11")
-Sys.setenv(RETICULATE_PYTHON = "/opt/homebrew/bin/python3.11")
+Sys.setenv(RETICULATE_PYTHON = "/usr/bin/python3.11")
 library(reticulate)
-# use_python("/usr/bin/python3.11")
-use_python("/opt/homebrew/bin/python3.11")
+use_python("/usr/bin/python3.11")
 source_python("analysis/data_proc/sample_extraction.py")
+library(wesanderson)
+library(cowplot)
 
 # ---- load and clean data
 
@@ -20,67 +20,17 @@ TSE_data <- read_csv("data/TSE_dat.csv") %>%
                 TRUE ~ speaker_role),
             language = "tzh",
             corpus_name = "Casillas") %>%
-    select(-1) %>% 
     arrange(transcript_id, media_start)
 
-# ---- experimental look into child vocalizations
+# convert mwu@CHI to c_lang_prof column 
 
-TSE_child_data <- TSE_data %>%
-  filter(speaker_role == "Target_Child") %>%
-  left_join(age_dat, by = "transcript_id") %>%
-  mutate(gloss = factor(gloss, levels = c("C", "N", "L", "Y", "U")))
+c_lang_prof <- TSE_data %>% filter(speaker_role == 'mwu@CHI') %>%
+    rename(c_lang_prof = gloss) %>%
+    select(transcript_id, media_start, media_end, c_lang_prof)
 
-utt_props <- TSE_child_data %>%
-    group_by(transcript_id, target_child_age, gloss) %>%
-    summarize(n = n(), .groups = "drop") %>%
-    complete(gloss, nesting(transcript_id, target_child_age), fill = list(n = 0)) %>%
-    group_by(transcript_id) %>%
-    mutate(proportion = n / sum(n)) %>%
-    arrange(transcript_id) %>%
-    ungroup()
-
-sorted_filenames <- utt_props %>%
-  filter(gloss == "C") %>%  
-  arrange(proportion) %>%
-  pull(transcript_id)
-
-p1 <- ggplot(utt_props, aes(x = factor(transcript_id, levels = sorted_filenames),
-                                  y = proportion, fill = gloss)) +
-    geom_bar(stat = "identity") +
-    labs(x = "",
-         y = "Proportion of utt types",
-         fill = "Utterance type") +
-    scale_fill_viridis(discrete = TRUE,
-                       labels = c("Y" = "Cry", "N" = "Non-canonical", "C" = "Canonical", "L"= "Laughter", "U" = "Unsure")) +
-    theme_classic()
-
-p2 <- ggplot(utt_props, aes(x = factor(transcript_id, levels = sorted_filenames), y = target_child_age)) +
-  geom_point(shape=4) +
-  labs(x = "Participant",
-       y = "Age") +
-  theme_classic()
-
-legend <- get_legend(
-  p1 + theme(legend.box.margin = margin(50, 0, 50, 0))
-)
-
-column_1 <- plot_grid(p1 + theme(legend.position="none"),
-                      p2,
-                      ncol=1,
-                      align = "v",
-                      rel_heights = c(1, .5))
-
-plot_grid(column_1,
-          legend,
-          ncol=2,
-          rel_widths = c(2, .5)) +
-          theme(plot.margin = margin(0, 0, 0, 0, "cm"))
-
-golden_ratio <- 1.61803398875
-width <- 6.5
-height <- width / golden_ratio
-
-ggsave("figures/tseltal_child_utterance_descriptives.pdf", dpi = 1200, width = width, height = height)
+TSE_data <- TSE_data %>%
+    filter(speaker_role != 'mwu@CHI') %>%
+    left_join(c_lang_prof, by = c('transcript_id', 'media_start', 'media_end'))
 
 # convert xds@FA1 to directedness column 
 
@@ -91,8 +41,8 @@ directedness_df <- TSE_data %>% filter(speaker_role == 'xds@FA1') %>%
 
 TSE_data <- TSE_data %>%
     filter(speaker_role != 'xds@FA1') %>%
-    left_join(directedness_df, by = c('transcript_id', 'media_start', 'media_end')) %>% 
-    filter(!gloss %in% c("L", "Y", "U")) # no laugh, cry or unsure
+    left_join(directedness_df, by = c('transcript_id', 'media_start', 'media_end'))
+    # filter(!gloss %in% c("L", "Y", "U")) # no laugh, cry or unsure
 
 # include child directed utterances in general
 
@@ -149,6 +99,69 @@ TSE_data <- TSE_data %>%
                 speaker_role == "Mother" ~ "caregiver"),
                 target_child_id = transcript_id) %>%
     arrange(transcript_id, media_start)
+
+
+# ---- exploratory look into child vocalizations
+
+TSE_child_data <- TSE_data %>%
+  filter(speaker_role == "Target_Child") %>%
+  mutate(c_lang_prof = case_when(
+            is.na(c_lang_prof) ~ "Babble",
+            c_lang_prof == "1" ~ "Single-word",
+            c_lang_prof == "M" ~ "Multi-word"),
+        c_lang_prof = factor(c_lang_prof, levels = c("Babble", "Single-word", "Multi-word")))
+
+utt_props <- TSE_child_data %>%
+    group_by(transcript_id, target_child_age, c_lang_prof) %>%
+    summarize(n = n(), .groups = "drop") %>%
+    complete(c_lang_prof, nesting(transcript_id, target_child_age), fill = list(n = 0)) %>%
+    group_by(transcript_id) %>%
+    mutate(proportion = n / sum(n)) %>%
+    arrange(transcript_id) %>%
+    ungroup()
+
+sorted_filenames <- utt_props %>%
+  filter(c_lang_prof == "Multi-word") %>%  
+  arrange(proportion) %>%
+  pull(transcript_id)
+
+p1 <- ggplot(utt_props, aes(x = factor(transcript_id, levels = sorted_filenames),
+                                  y = proportion, fill = c_lang_prof)) +
+    geom_bar(stat = "identity") +
+    labs(x = "",
+         y = "Proportion of utt types",
+         fill = "Utterance type") +
+    scale_fill_manual(name = "Child utterance types",
+                      values = wes_palette("Zissou1", n = 3,type = "continuous")) +
+    theme_classic()
+
+p2 <- ggplot(utt_props, aes(x = factor(transcript_id, levels = sorted_filenames), y = target_child_age)) +
+  geom_point(shape=4) +
+  labs(x = "Participant",
+       y = "Age") +
+  theme_classic()
+
+legend <- get_legend(
+  p1 + theme(legend.box.margin = margin(50, 0, 50, 0))
+)
+
+column_1 <- plot_grid(p1 + theme(legend.position="none"),
+                      p2,
+                      ncol=1,
+                      align = "v",
+                      rel_heights = c(1, .5))
+
+plot_grid(column_1,
+          legend,
+          ncol=2,
+          rel_widths = c(2, .5)) +
+          theme(plot.margin = margin(0, 0, 0, 0, "cm"))
+
+golden_ratio <- 1.61803398875
+width <- 6.5
+height <- width / golden_ratio
+
+ggsave("figures/tseltal_child_utterance_descriptives.pdf", dpi = 1200, width = width, height = height)
 
 # transcription clense
 TSE_data <- TSE_data %>%
