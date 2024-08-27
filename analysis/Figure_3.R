@@ -155,11 +155,6 @@ child_word_dat_prop_multiword <- child_word_dat_prop %>%
   filter(child_utt_cat == "multiword") %>%
   rename(prop_multiword = proportion)
 
-TSE_child_word_dat_prop_canonical <- TSE_child_word_dat_prop %>%
-  filter(gloss == "C") %>%
-  rename(prop_canonical = proportion,
-         child_utt_cat = gloss)
-
 cdat <- read_csv("data/rand_dat_inc_master_cc_lexdiv.csv")
 ncdat <- read_csv("data/rand_dat_inc_master_nc_lexdiv.csv")
 
@@ -180,36 +175,12 @@ lexdiv_sumstats <- dat %>%
             ) %>%
   pivot_wider(names_from = contingent,
               values_from = c(types, tokens)) %>%
-  left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name")) %>%
-  filter(Language_name != "Tseltal") 
-
-TSE_lexdiv_sumstats <- dat %>% 
-  filter(Language_name == "Tseltal") %>%
-  dplyr::select(target_child_id, transcript_id, target_child_age,
-                Language_name, contingent, uniqueness, num_tokens) %>%
-                # `Year collected`
-  group_by(target_child_id, transcript_id, contingent) %>% 
-  summarise(variable = 'result',
-            types = sum(as.numeric(unlist(uniqueness))),
-            tokens = sum(num_tokens),
-            age = unique(target_child_age),
-            ) %>%
-  pivot_wider(names_from = contingent,
-              values_from = c(types, tokens)) %>%
-  left_join(TSE_child_word_dat_prop_canonical, by=c("transcript_id"))
+  left_join(child_word_dat_prop_multiword, by=c("transcript_id", "Language_name"))
 
 # wide to long
 lexdiv_sumstats_long_types <- lexdiv_sumstats %>% 
   select(target_child_id, transcript_id, Language_name, age, types_contingent,
          `types_non-contingent`, prop_multiword) %>% 
-  mutate(type_diff = `types_non-contingent` - types_contingent) %>% 
-  pivot_longer(cols = c(`types_non-contingent`, types_contingent)) %>% 
-  rename(Contingency = name,
-         Types = value)
-
-TSE_lexdiv_sumstats_long_types <- TSE_lexdiv_sumstats %>% 
-  select(target_child_id, transcript_id, age, types_contingent,
-         `types_non-contingent`, prop_canonical) %>% 
   mutate(type_diff = `types_non-contingent` - types_contingent) %>% 
   pivot_longer(cols = c(`types_non-contingent`, types_contingent)) %>% 
   rename(Contingency = name,
@@ -249,7 +220,7 @@ shape = 21
 size = 2
 
 lexdiv_sumstats_long_types <- lexdiv_sumstats_long_types %>% 
-  filter(!Language_name %in% c("Mandarin", "Polish", "Tseltal"))
+  filter(!Language_name %in% c("Mandarin", "Polish"))
 
 p1 <- lexdiv_sumstats_long_types %>%
   drop_na(type_diff) %>%
@@ -261,7 +232,7 @@ p1 <- lexdiv_sumstats_long_types %>%
   new_scale_color() +
   stat_smooth(method=lm,size=1.2, se = TRUE,
               aes (x = prop_multiword, y = Types, color=Contingency)) +
-  facet_wrap(. ~ Language_name,ncol = 6) +
+  facet_wrap(. ~ Language_name,ncol = 7) +
   scale_color_manual(labels = c("Contingent", "Non-Contingent"),
                      values = alpha(c("black","white"), .95)) +
   scale_fill_manual(values = alpha(c("black", "white"), .3)) +
@@ -293,7 +264,7 @@ lexdiv_sumstats_long_tokens <- lexdiv_sumstats %>%
   pivot_longer(cols = c(`tokens_non-contingent`, tokens_contingent)) %>% 
   rename(Contingency = name,
          Tokens = value) %>% 
-  filter(!Language_name %in% c("Mandarin", "Polish", "Tseltal"))
+  filter(!Language_name %in% c("Mandarin", "Polish"))
 
 p2 <- ggplot(lexdiv_sumstats_long_tokens, aes(color = Language_name)) +
   geom_point(aes(x = prop_multiword, y = Tokens, fill = Contingency),
@@ -303,7 +274,7 @@ p2 <- ggplot(lexdiv_sumstats_long_tokens, aes(color = Language_name)) +
   new_scale_color() +
   stat_smooth(method=lm,size=1.2, se = TRUE,
               aes (x = prop_multiword, y = Tokens, color=Contingency)) +
-  facet_wrap(. ~ Language_name,ncol = 6) +
+  facet_wrap(. ~ Language_name,ncol = 7) +
   scale_color_manual(labels = c("Contingent", "Non-Contingent"),
                      values = alpha(c("black","white"), .95)) +
   scale_fill_manual(values = alpha(c("black", "white"), .3)) +
@@ -358,7 +329,7 @@ adjust_pvalues_and_format <- function(df) {
 # number of unique words (types)
 
 # vector for rows to remove
-to_remove <- c("Mandarin", "Polish", "Tseltal") # less than 3 observations
+to_remove <- c("Mandarin", "Polish") # less than 3 observations
 
 tp_diff_reg_nest <- lexdiv_sumstats_long_types %>%
   filter(!Language_name %in% to_remove) %>%
@@ -407,8 +378,8 @@ table_S11 <- bind_rows(tp_diff_reg_pr, tk_diff_reg_pr) %>%
          `p-value` = p.value, `Adjusted p-value`= p.adj) %>% 
   kbl(.) %>% 
   kable_paper("striped", full_width = F) %>%
-  pack_rows("Lexical diversity", 1, 12) %>%
-  pack_rows("Total number of words", 13, 24)
+  pack_rows("Lexical diversity", 1, 13) %>%
+  pack_rows("Total number of words", 14, 26)
 
 
 # model functions
@@ -479,9 +450,9 @@ table_S13 <- bind_rows(tp_diff_reg_pr, mlu_diff_reg_pr, swu_diff_reg_pr) %>%
          `p-value` = p.value, `Adjusted p-value`= p.adj) %>%
   kbl(.) %>%
   kable_paper("striped", full_width = F) %>%
-  pack_rows("Number of unique words", 1, 12) %>%
-  pack_rows("Mean length of utterance in words", 13, 24) %>%
-  pack_rows("Proportion single word utterances", 25, 36)
+  pack_rows("Number of unique words", 1, 13) %>%
+  pack_rows("Mean length of utterance in words", 14, 26) %>%
+  pack_rows("Proportion single word utterances", 27, 39)
 
 # ---- contingent increase test
 
@@ -543,8 +514,8 @@ table_S14 <- bind_rows(C_tp_reg_pr, NC_tp_reg_pr) %>%
          `p-value` = p.value, `Adjusted p-value`= p.adj) %>%
   kbl(.) %>%
   kable_paper("striped", full_width = F) %>%
-  pack_rows("Number of contingent unique words", 1, 12) %>%
-  pack_rows("Number of non-contingent unique words", 13, 24)
+  pack_rows("Number of contingent unique words", 1, 13) %>%
+  pack_rows("Number of non-contingent unique words", 14, 26)
 
 # number of words (tokens)
 
