@@ -22,8 +22,9 @@ There are required packages in both python and R for this project. You must inst
 
 - `rand_sample.ipynb` [30 min]
 - `rand_gen_contingency.ipynb` [5 min]
+- `Tseltal.R` [5 min]
 - `rand_LexDiv.ipynb` [<1 min]
 - `rand_MLUw.ipynb`[<1 min]
-- `rand_SWU.ipynb`. [<1 min]
+- `rand_SWU.ipynb` [<1 min]
 - `Figure_2.ipynb`
 - `Figre_3.R`
