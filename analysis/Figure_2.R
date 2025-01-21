@@ -1,5 +1,6 @@
 library('tidyverse')
 library('patchwork')
+library('cowplot')
 library('ggplot2')
 library('repr')
 
@@ -69,14 +70,18 @@ p1 <- ggplot(rand_lex_sumstats, aes(x = contingent, y = sums, color = Language_n
   geom_text(data = lex_labels_sig2, aes(label = label, y = y), size = 6, color = "black") +
   geom_text(data = lex_labels_ns, aes(label = label, y = y), size = 2.5, color = "black",fontface = "italic") +
   coord_cartesian(ylim = c(0, 300)) +
-  labs(tag = "A", y = "Number of Unique Words", x = "") +
+  labs( y = "Number of Unique Words", x = "") +
   theme_classic() +
   scale_x_discrete(labels = xlabs) +
+  # theme_black() +
   theme(text = element_text(size = font_sz),
         axis.text.x = element_text(vjust = 0.5, hjust = .5, color = "black"),
         axis.text.y = element_text(color = "black"),
+        axis.title.y = element_text(vjust=.25),
         axis.ticks.length = unit(-2.5, "pt"),
         legend.position = "none")
+
+ggsave("figures/Figure_2A.pdf", width = 6.47, height = 2.4, dpi = 1200)
 
 # Plot 2: Mean Length of Utterance
 p2 <- ggplot(rand_mlu_sumstats, aes(x = contingent, y = means, color = Language_name)) +
@@ -85,15 +90,18 @@ p2 <- ggplot(rand_mlu_sumstats, aes(x = contingent, y = means, color = Language_
   facet_wrap(. ~ Language_name, ncol = 7) +
   geom_text(data = mlu_labels_sig, aes(label = label, y = y), size = 6, color = "black") +
   coord_cartesian(ylim = c(0, 7)) +
-  labs(tag = "B", y = wrapper("Mean Length of Utterance in Words", width = 25), x = "") +
+  labs(y = "Mean Length of Utterance\nin Words", x = "") +
   theme_classic() +
   scale_x_discrete(labels = xlabs) +
+  # theme_black() +
   theme(text = element_text(size = font_sz),
         axis.text.x = element_text(vjust = 0.5, hjust = 0.5, color = "black"),
         axis.text.y = element_text(color = "black"),
-           axis.title.y = element_text(vjust=-2.5),
+        axis.title.y = element_text(vjust=-2.5),
         axis.ticks.length = unit(-2.5, "pt"),
         legend.position = "none")
+
+ggsave("figures/Figure_2B.pdf", width = 6.47, height = 2.4, dpi = 1200)
 
 # Plot 3: Proportion Single Word Utterances
 p3 <- ggplot(rand_swu_sumstats, aes(x = contingent, y = means, color = Language_name)) +
@@ -104,17 +112,26 @@ p3 <- ggplot(rand_swu_sumstats, aes(x = contingent, y = means, color = Language_
   geom_text(data = swu_labels_sig2, aes(label = label, y = y), size = 6, color = "black") +
   geom_text(data = swu_labels_trend, aes(label = label, y = y), size = 3, color = "black") +
   coord_cartesian(ylim = c(0, .7)) +
-  labs(tag = "C", y = "Prop. Single Word Utterances", x = "") +
+  labs(y = "Prop. Single Word\nUtterances", x = "") +
   theme_classic() +
   scale_x_discrete(labels = xlabs) +
+  # theme_black() +
   theme(text = element_text(size = font_sz),
         axis.text.x = element_text(vjust = 0.5, hjust = 0.5, color = "black"),
         axis.text.y = element_text(color = "black"),
         axis.ticks.length = unit(-2.5, "pt"),
         legend.position = "none")
 
+ggsave("figures/Figure_2C.pdf", width = 6.47, height = 2.4, dpi = 1200)
+
 # Combine plots
-p <- p1 / p2 / p3
+p <- plot_grid(
+  p1, p2, p3,
+  ncol = 1,
+  labels = c("A", "B", "C"),
+  align = "v"
+)
+
 ggsave("figures/Figure_2.pdf", width = 6.47, height = 7.3, dpi = 1200)
 
 
